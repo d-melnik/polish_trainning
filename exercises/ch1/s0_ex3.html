@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 3 — Uzupełnij dialogi formami „być"</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział I: Skąd jesteś?</h1>
+    <h2>Ćwiczenie 3 — Uzupełnij dialogi formami czasownika „być"</h2>
+    
+    <div class="chapter-info">
+        Strona 8 podręcznika. Odmiana czasownika „być" w czasie teraźniejszym.
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij dialogi zgodnie z podanym przykładem. Wpisz odpowiednią formę czasownika „być".</p>
+
+        <div class="word-bank">
+            <strong>BYĆ:</strong>
+            <span>(ja) jestem</span>
+            <span>(ty) jesteś</span>
+            <span>(on/ona/ono) jest</span>
+            <span>(my) jesteśmy</span>
+            <span>(wy) jesteście</span>
+            <span>(oni/one) są</span>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog A</h3>
+            <p class="dialog-line">– Cześć. <input type="text" class="answer-input" value="Jestem" readonly style="background:#eafaf1; font-weight:bold; width:120px;"> (być)<sub>0</sub> Ania.</p>
+            <p class="dialog-line">– Natalia. Miło mi! A skąd <input type="text" class="answer-input" placeholder="(być)₁" style="width:120px;"> ?</p>
+            <p class="dialog-line">– Z Ukrainy. A ty?</p>
+            <p class="dialog-line">– Z Polski.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog B</h3>
+            <p class="dialog-line">– Skąd państwo <input type="text" class="answer-input" placeholder="(być)₂" style="width:120px;"> ?</p>
+            <p class="dialog-line">– <input type="text" class="answer-input" placeholder="(być)₃" style="width:120px;"> z Włodawy.</p>
+            <p class="dialog-line">– A gdzie to <input type="text" class="answer-input" placeholder="(być)₄" style="width:120px;"> ?</p>
+            <p class="dialog-line">– Niedaleko Białorusi i Ukrainy.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog C</h3>
+            <p class="dialog-line">– Czy to krzesło <input type="text" class="answer-input" placeholder="(być)₅" style="width:120px;"> wolne?</p>
+            <p class="dialog-line">– Niestety, nie. Ale tam <input type="text" class="answer-input" placeholder="(być)₆" style="width:120px;"> miejsca.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog D</h3>
+            <p class="dialog-line">– Przepraszam państwa, gdzie <input type="text" class="answer-input" placeholder="(być)₇" style="width:120px;"> dworzec kolejowy?</p>
+            <p class="dialog-line">– Nie wiemy, nie <input type="text" class="answer-input" placeholder="(być)₈" style="width:120px;"> stąd.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog E</h3>
+            <p class="dialog-line">– Dzieci, czy <input type="text" class="answer-input" placeholder="(być)₉" style="width:120px;"> głodne?</p>
+            <p class="dialog-line">– A co <input type="text" class="answer-input" placeholder="(być)₁₀" style="width:120px;"> do jedzenia?</p>
+            <p class="dialog-line">– <input type="text" class="answer-input" placeholder="(Być)₁₁" style="width:120px;"> placki ziemniaczane!</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog F</h3>
+            <p class="dialog-line">– Dlaczego <input type="text" class="answer-input" placeholder="(być)₁₂" style="width:120px;"> taka smutna?</p>
+            <p class="dialog-line">– Nie <input type="text" class="answer-input" placeholder="(być)₁₃" style="width:120px;"> smutna, tylko zmęczona.</p>
+            <p class="dialog-line">– No tak, <input type="text" class="answer-input" placeholder="(być)₁₄" style="width:120px;"> już bardzo późno.</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s0_ex2.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s0_ex_plus.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        function checkAnswers() {
+            // Index 0 is pre-filled "Jestem", answers start from index 1
+            const answers = [
+                'Jestem',    // 0 - pre-filled
+                'jesteś',    // 1
+                'są',        // 2
+                'Jesteśmy',  // 3
+                'jest',      // 4
+                'jest',      // 5
+                'są',        // 6
+                'jest',      // 7
+                'jesteśmy',  // 8
+                'jesteście', // 9
+                'jest',      // 10
+                'Są',        // 11
+                'jesteś',    // 12
+                'jestem',    // 13
+                'jest'       // 14
+            ];
+            checkExercise(answers);
+        }
+    </script>
+</body>
+</html>

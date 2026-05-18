@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1b — Zaznacz odpowiednie słowo (Jak spędzasz dzień?)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 1b — Zaznacz odpowiednie słowo (Jak spędzasz dzień?)</h2>
+<div class="chapter-info">Strona 33 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Moje życie codzienne. Zaznacz odpowiednie słowo. (Ćwiczenie 1b, str. 33)</p>
+<p style="line-height:2.4">
+Moje życie codzienne? Na początku wyłączam (czas, zegar, <b>budzik</b>)<sup>0</sup>, odsłaniam okna i sprawdzam, jaka jest pogoda. Potem korzystam z łazienki, szybko się ubieram i siadam do
+(<select class="answer-input"><option value="">—</option><option>śniadanie</option><option>śniadania</option><option>śniadaniu</option></select>)<sup>1</sup>.
+Na przystanku czekam na
+(<select class="answer-input"><option value="">—</option><option>samochód</option><option>autobus</option><option>pociąg</option></select>)<sup>2</sup>,
+a jeśli nie mam czasu, to zamawiam taksówkę. W pracy odpowiadam na maile, a także rozmawiam przez telefon z
+(<select class="answer-input"><option value="">—</option><option>klientami</option><option>sąsiadami</option><option>rodzicami</option></select>)<sup>3</sup>.
+Po południu wracam do domu i w końcu mam czas dla
+(<select class="answer-input"><option value="">—</option><option>siebie</option><option>sobie</option><option>sobą</option></select>)<sup>4</sup>.
+Słucham muzyki, czytam książkę, a czasem oglądam
+(<select class="answer-input"><option value="">—</option><option>telewizor</option><option>telewizja</option><option>telewizję</option></select>)<sup>5</sup>
+i narzekam, że nic tam nie ma. Wieczorem sprzątam
+(<select class="answer-input"><option value="">—</option><option>mieszkanie</option><option>śniadanie</option><option>pływanie</option></select>)<sup>6</sup>,
+zamiatam podłogę, odkurzam
+(<select class="answer-input"><option value="">—</option><option>ściany</option><option>dywany</option><option>bałwany</option></select>)<sup>7</sup>,
+zmywam
+(<select class="answer-input"><option value="">—</option><option>ubrania</option><option>naczynia</option><option>ćwiczenia</option></select>)<sup>8</sup>,
+podlewam kwiaty, wyrzucam
+(<select class="answer-input"><option value="">—</option><option>sieci</option><option>śmieci</option><option>części</option></select>)<sup>9</sup>,
+bo dbam o
+(<select class="answer-input"><option value="">—</option><option>porządek</option><option>porządku</option><option>porządki</option></select>)<sup>10</sup>.
+</p>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex20.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'śniadania',
+        'autobus',
+        'klientami',
+        'siebie',
+        'telewizję',
+        'mieszkanie',
+        'dywany',
+        'naczynia',
+        'śmieci',
+        'porządek'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

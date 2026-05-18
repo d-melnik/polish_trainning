@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1b — Wybierz odpowiednie słowo</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział XI: Pomyślano i o formach nieosobowych</h1>
+<h2>Ćwiczenie 1b — Wybierz odpowiednie słowo</h2>
+<div class="chapter-info">Strona 207 podręcznika. Formy nieosobowe — Święto Niepodległości.</div>
+<div class="exercise-container">
+<p class="instruction">Wybierz właściwe słowo. (Ćw. 1b, str. 207)</p>
+<div class="dialog-block"><p style="line-height:2.4">W 1918 roku, po 123 latach zaborów, Polska znów była (<b>niepodległa</b>, neutralna, samodzielna)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>. Zaczęto więc się zastanawiać, kiedy <select class="answer-input"><option value="">—</option><option>obchodzić</option><option>wchodzić</option><option>wychodzić</option></select><sup>1</sup> Święto Niepodległości. Na początku zdecydowano, że będzie ono 3 maja – na pamiątkę dnia, w którym uchwalono <select class="answer-input"><option value="">—</option><option>pierwsza</option><option>pierwszą</option><option>pierwszej</option></select><sup>2</sup> polską konstytucję (w 1791 roku). Zwolennicy Józefa Piłsudskiego chcieli jednak upamiętnić jego zasługi i <select class="answer-input"><option value="">—</option><option>sprowadzić</option><option>wprowadzić</option><option>wyprowadzić</option></select><sup>4</sup> inną datę. Potem wybrano więc dzień 11 listopada, bo to wtedy (w 1918 roku) w Europie zakończono pierwszą wojnę światową, a w Polsce <select class="answer-input"><option value="">—</option><option>przekazano</option><option>pokazano</option><option>wysłano</option></select><sup>5</sup> władzę Józefowi Piłsudskiemu. W 1937 roku oficjalnie <select class="answer-input"><option value="">—</option><option>ogłoszona</option><option>ogłoszone</option><option>ogłoszono</option></select><sup>6</sup>, że to właśnie ten dzień jest Narodowym Świętem Niepodległości.</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="../index.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex2.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["obchodzić", "pierwszą", "wprowadzić", "przekazano", "ogłoszono"];
+    checkExercise(answers);
+}</script></body></html>

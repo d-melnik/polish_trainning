@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7b — Co robimy w wolnym czasie?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 7b — Co robimy w wolnym czasie?</h2>
+<div class="chapter-info">Strona 53 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Co robimy w wolnym czasie? Uzupełnij tekst. (Ćwiczenie 7b, str. 53)</p>
+<div class="word-bank">
+    <span>nudzić się</span><span>ćwiczyć</span><span>leżeć</span><span>jeździć</span><span>chodzić</span>
+    <span>wychodzić</span><span>woleć</span><span>musieć</span><span>oglądać</span>
+    <span>odpoczywać</span><span>pływać</span><span>grać</span><span>prosić</span>
+</div>
+<p style="line-height:2.5">
+Co <span style="font-weight:bold;color:#27ae60">robimy</span><sub>0</sub> w wolnym czasie?
+Czasem jesteśmy bardzo aktywni –
+<input type="text" class="answer-input" placeholder="(ćwiczyć)₁" style="width:120px"> na siłowni albo
+<input type="text" class="answer-input" placeholder="(jeździć)₂" style="width:110px"> na rowerze (a zimą – na sankach, nartach lub łyżwach). Innym razem
+<input type="text" class="answer-input" placeholder="(woleć)₃" style="width:100px"> siedzieć na ławce w parku, a czasem nawet nie
+<input type="text" class="answer-input" placeholder="(wychodzić)₄" style="width:130px"> z domu – po prostu
+<input type="text" class="answer-input" placeholder="(leżeć)₅" style="width:100px"> w łóżku pod ciepłym kocem i
+<input type="text" class="answer-input" placeholder="(prosić)₆" style="width:110px"> o święty spokój.
+Co jednak zrobić, gdy
+<input type="text" class="answer-input" placeholder="(się nudzić)₇" style="width:130px">, a wolny czas wcale nie przynosi nam radości? Koniecznie
+<input type="text" class="answer-input" placeholder="(musieć)₈" style="width:110px"> mieć jakieś hobby, bo bez niego życie traci smak!
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex7a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex7c.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'robimy',
+        'ćwiczymy',
+        'jeździmy',
+        'wolimy',
+        'wychodzimy',
+        'leżymy',
+        'prosimy',
+        'się nudzimy',
+        'musimy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

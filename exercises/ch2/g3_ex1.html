@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1 — Quiz: forma dokonana</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 1 — Quiz: Co chcą zrobić? (Grupa III)</h2>
+<div class="chapter-info">Strona 71 podręcznika. Nieregularne formy dokonane.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwą odpowiedź. (Ćwiczenie 1, str. 71)</p>
+<table style="border-collapse:collapse;width:100%">
+<tr><td style="padding:6px 10px"><b>0.</b> On chce <b>wziąć</b>:</td><td style="padding:6px 10px"><b>prysznic</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przykład</td></tr>
+<tr><td style="padding:6px 10px"><b>1.</b> Ona chce <b>założyć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>klapki</option><option>szpilki</option><option>tenisówki</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>2.</b> On chce <b>rozłożyć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>koc</option><option>namiot</option><option>parasol</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>3.</b> Ona chce <b>wsiąść</b> do:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>pociągu</option><option>wagonu</option><option>balonu</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>4.</b> On chce <b>wysiąść</b> z:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>łódki</option><option>kajaka</option><option>motorówki</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>5.</b> On chce <b>znaleźć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>kamyk</option><option>muszlę</option><option>bursztyn</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>6.</b> Ona chce <b>zobaczyć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>tęczę</option><option>ulewę</option><option>błyskawicę</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>7.</b> On chce <b>odpowiedzieć</b> na:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>list</option><option>pytanie</option><option>zaproszenie</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>8.</b> Ona chce <b>obejrzeć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>obrazki</option><option>znaczki</option><option>zdjęcia</option></select></td></tr>
+<tr><td style="padding:6px 10px"><b>9.</b> On chce jej <b>powiedzieć</b>:</td><td style="padding:6px 10px"><select class="answer-input"><option value="">—</option><option>"Lubię cię!"</option><option>"Kocham cię!"</option><option>"Pamiętam cię!"</option></select></td></tr>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g2_ex8b.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g3_ex3a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["tenisówki", "koc", "balonu", "kajaka", "bursztyn", "tęczę", "pytanie", "zdjęcia", "\"Kocham cię!\""];
+    checkExercise(answers);
+}
+</script>
+</body></html>

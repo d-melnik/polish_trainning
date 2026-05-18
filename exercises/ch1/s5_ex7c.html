@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7c — Jak odpoczywamy?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 7c — Jak odpoczywamy?</h2>
+<div class="chapter-info">Strona 53 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Jak odpoczywamy? Uzupełnij tekst. (Ćwiczenie 7c, str. 53)</p>
+<div class="word-bank">
+    <span>ograniczać</span><span>biegać</span><span>włączać</span><span>siadać</span><span>uprawiać</span>
+    <span>grać</span><span>oglądać</span><span>pływać</span>
+</div>
+<p style="line-height:2.5">
+Jak <span style="font-weight:bold;color:#27ae60">odpoczywamy</span><sub>0</sub>?
+Przy odpoczynku biernym
+<input type="text" class="answer-input" placeholder="(ograniczać)₁" style="width:140px"> naszą aktywność. Po prostu
+<input type="text" class="answer-input" placeholder="(siadać)₂" style="width:110px"> na kanapie,
+<input type="text" class="answer-input" placeholder="(włączać)₃" style="width:120px"> telewizor lub komputer i przez długi czas
+<input type="text" class="answer-input" placeholder="(oglądać)₄" style="width:120px"> filmy i seriale.
+Przy odpoczynku aktywnym
+<input type="text" class="answer-input" placeholder="(uprawiać)₅" style="width:130px"> sport –
+<input type="text" class="answer-input" placeholder="(biegać)₆" style="width:110px"> po parku,
+<input type="text" class="answer-input" placeholder="(grać)₇" style="width:90px"> w piłkę albo
+<input type="text" class="answer-input" placeholder="(pływać)₈" style="width:110px"> na basenie.
+Różne formy odpoczynku są ważne i trzeba o nich pamiętać!
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex7b.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex8a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'odpoczywamy',
+        'ograniczamy',
+        'siadamy',
+        'włączamy',
+        'oglądamy',
+        'uprawiamy',
+        'biegamy',
+        'gramy',
+        'pływamy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

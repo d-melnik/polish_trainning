@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 2 — Uzupełnij tabelkę pytaniami</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział I: Skąd jesteś?</h1>
+    <h2>Ćwiczenie 2 — Uzupełnij tabelkę pytaniami z ramki</h2>
+    
+    <div class="chapter-info">
+        Strona 7 podręcznika. Pytanie „Skąd...?" w różnych formach osobowych.
+    </div>
+
+    <div class="no-answers-warning">
+        ⚠️ Для этого упражнения нет ответов в ключе учебника. Ответы составлены на основе грамматических правил, а не из официального ключа.
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij tabelkę pytaniami z ramki. Dopasuj formę pytania do osoby i sytuacji (oficjalnie / nieoficjalnie).</p>
+        
+        <div class="word-bank">
+            <span>Skąd jesteś?</span>
+            <span>Skąd jesteście?</span>
+            <span>Skąd pani jest?</span>
+            <span>Skąd pan jest?</span>
+            <span>Skąd państwo są?</span>
+            <span>Skąd panowie są?</span>
+            <span>Skąd panie są?</span>
+        </div>
+
+        <table class="fill-table">
+            <tr>
+                <th></th>
+                <th>Nieoficjalnie</th>
+                <th>Oficjalnie</th>
+            </tr>
+            <tr>
+                <td><strong>ty / Pan / Pani</strong></td>
+                <td>
+                    <span class="given">0. Skąd jesteś?</span><br>
+                    → Jestem z Polski.
+                </td>
+                <td>
+                    1. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?"><br>
+                    → Jestem z Polski.<br><br>
+                    2. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?"><br>
+                    → Jestem z Ukrainy.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>wy / Państwo / Panowie / Panie</strong></td>
+                <td>
+                    3. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?"><br>
+                    → Jesteśmy z Polski i z Ukrainy.
+                </td>
+                <td>
+                    4. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?"><br>
+                    → Jesteśmy z Polski i z Ukrainy.<br><br>
+                    5. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?"><br><br>
+                    6. <input type="text" class="answer-input" style="width:200px;" placeholder="Skąd...?">
+                </td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s0_ex1.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s0_ex3.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        function checkAnswers() {
+            // Ответы составлены на основе грамматики (не из ключа учебника):
+            // 1: oficjalnie, singular masculine -> Skąd pan jest?
+            // 2: oficjalnie, singular feminine -> Skąd pani jest?
+            // 3: nieoficjalnie, plural -> Skąd jesteście?
+            // 4: oficjalnie, plural mixed -> Skąd państwo są?
+            // 5: oficjalnie, plural masculine -> Skąd panowie są?
+            // 6: oficjalnie, plural feminine -> Skąd panie są?
+            const answers = [
+                ['Skąd pan jest?', 'Skąd pani jest?'],  // 1 - оба варианта допустимы
+                ['Skąd pani jest?', 'Skąd pan jest?'],  // 2 - оба варианта допустимы
+                'Skąd jesteście?',                       // 3
+                'Skąd państwo są?',                      // 4
+                ['Skąd panowie są?', 'Skąd panie są?'], // 5 - оба варианта допустимы
+                ['Skąd panie są?', 'Skąd panowie są?']  // 6 - оба варианта допустимы
+            ];
+            checkExercise(answers);
+        }
+    </script>
+</body>
+</html>

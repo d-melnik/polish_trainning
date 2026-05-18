@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1 — Zaznacz właściwą odpowiedź (wiedzieć, jeść, umieć)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Czy to wiesz?</h1>
+<h2>Ćwiczenie 1 — Zaznacz właściwą odpowiedź (wiedzieć, jeść, umieć)</h2>
+<div class="chapter-info">Strona 44 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Zaznacz właściwą odpowiedź. (Ćwiczenie 1, str. 44)</p>
+<p class="no-answers-warning" style="background:#fff3cd;padding:10px;border-radius:4px">
+ℹ️ Ćwiczenie oparte na obrazkach z podręcznika. Zaznacz odpowiedź zgodnie z kluczem.</p>
+<table class="fill-table">
+    <tr><th>#</th><th>Pytanie</th><th>Odpowiedź</th></tr>
+    <tr><td>0</td><td>On je...</td>
+        <td><span class="given">b) rosół</span></td></tr>
+    <tr><td>1</td><td>Oni jedzą...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) pierogi</option><option>b) ciasto</option><option>c) pieczywo</option>
+        </select></td></tr>
+    <tr><td>2</td><td>Ona nie wie, gdzie jest...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) pałac</option><option>b) zamek</option><option>c) dworzec</option>
+        </select></td></tr>
+    <tr><td>3</td><td>Oni nie wiedzą, gdzie jest...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) Gdańsk</option><option>b) Lublin</option><option>c) Szczecin</option>
+        </select></td></tr>
+    <tr><td>4</td><td>Ona umie...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) rysować</option><option>b) malować</option><option>c) drukować</option>
+        </select></td></tr>
+    <tr><td>5</td><td>Oni umieją grać w...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) piłkę</option><option>b) siatkówkę</option><option>c) koszykówkę</option>
+        </select></td></tr>
+    <tr><td>6</td><td>On nie rozumie...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) nauki</option><option>b) greki</option><option>c) łaciny</option>
+        </select></td></tr>
+    <tr><td>7</td><td>Oni nie rozumieją...</td>
+        <td><select class="answer-input">
+            <option value="">—</option>
+            <option>a) obrazu</option><option>b) spektaklu</option><option>c) wystawy</option>
+        </select></td></tr>
+</table>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex20.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s4_ex2.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'b) ciasto',
+        'a) pałac',
+        'c) Szczecin',
+        'a) rysować',
+        'b) siatkówkę',
+        'c) łaciny',
+        'b) spektaklu'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

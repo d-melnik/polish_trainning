@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 16 — Podróżujemy!</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 16 — Podróżujemy!</h2>
+<div class="chapter-info">Strona 18 podręcznika. Koniugacja I. 1. osoba liczby mnogiej.</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij tekst zgodnie z podanym przykładem. (Ćwiczenie 16, str. 18)</p>
+        <div class="word-bank">
+            <span>móc</span><span>brać</span><span>chcieć</span><span>jechać</span><span>poszukiwać</span>
+            <span>pokonywać</span><span>wpisywać</span><span>wydawać</span><span>startować</span><span>lądować</span>
+            <span>wynajmować</span><span>gotować</span><span>publikować</span><span>fotografować</span><span>nocować</span><span>kupować</span>
+        </div>
+        <p style="line-height:2.5">
+            Już od dzieciństwa <span style="font-weight:bold;color:#27ae60">chcemy</span><sub>0</sub> poznawać nowe miejsca.
+            Czasem podróżujemy wirtualnie –
+            <input type="text" class="answer-input" placeholder="(wpisywać)₁" style="width:140px"> do Internetu nazwy różnych krajów i
+            <input type="text" class="answer-input" placeholder="(poszukiwać)₂" style="width:150px"> informacji na ich temat, pięknych fotografii oraz ciekawych filmów. Ale to nie to samo, co prawdziwa podróż, kiedy wszystko
+            <input type="text" class="answer-input" placeholder="(móc)₃" style="width:100px"> zobaczyć na własne oczy. Wtedy to my
+            <input type="text" class="answer-input" placeholder="(fotografować)₄" style="width:150px"> znane zabytki oraz niezwykłe krajobrazy i to swoje zdjęcia
+            <input type="text" class="answer-input" placeholder="(publikować)₅" style="width:140px"> w Internecie.
+            Podróże są małe i duże. Czasem
+            <input type="text" class="answer-input" placeholder="(brać)₆" style="width:100px"> ze sobą niewielkie plecaki i
+            <input type="text" class="answer-input" placeholder="(jechać)₇" style="width:100px"> na krótką wycieczkę. A innym razem
+            <input type="text" class="answer-input" placeholder="(kupować)₈" style="width:110px"> bilety na samolot i w krótkim czasie
+            <input type="text" class="answer-input" placeholder="(pokonywać)₉" style="width:140px"> wielkie odległości –
+            <input type="text" class="answer-input" placeholder="(startować)₁₀" style="width:130px"> z jednego kontynentu, a
+            <input type="text" class="answer-input" placeholder="(lądować)₁₁" style="width:120px"> na drugim.
+            A gdzie <input type="text" class="answer-input" placeholder="(nocować)₁₂" style="width:120px">?
+            Różnie! Czasem pod namiotem i sami
+            <input type="text" class="answer-input" placeholder="(gotować)₁₃" style="width:110px"> jedzenie na ognisku, a innym razem
+            <input type="text" class="answer-input" placeholder="(wydawać)₁₄" style="width:110px"> dużo pieniędzy i
+            <input type="text" class="answer-input" placeholder="(wynajmować)₁₅" style="width:140px"> elegancki apartament w drogim hotelu.
+        </p>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_ex15a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex19a.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = [
+        'chcemy','wpisujemy','poszukujemy','możemy','fotografujemy',
+        'publikujemy','bierzemy','jedziemy','kupujemy','pokonujemy',
+        'startujemy','lądujemy','nocujemy','gotujemy','wydajemy','wynajmujemy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7a — Jak pracujemy?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 7a — Jak pracujemy?</h2>
+<div class="chapter-info">Strona 53 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Jak pracujemy? Uzupełnij tekst. (Ćwiczenie 7a, str. 53)</p>
+<div class="word-bank">
+    <span>potrzebować</span><span>pracować</span><span>kłaść się</span><span>brać się</span>
+    <span>wstawać</span><span>czuć</span><span>iść</span><span>chcieć</span><span>móc</span>
+</div>
+<p style="line-height:2.5">
+Jak <span style="font-weight:bold;color:#27ae60">pracujemy</span><sub>0</sub>?
+Praca zajmuje bardzo ważne miejsce w naszym życiu. Czasem pracujemy tak dużo, że
+<input type="text" class="answer-input" placeholder="(kłaść się)₁" style="width:140px"> późno (przed północą),
+<input type="text" class="answer-input" placeholder="(wstawać)₂" style="width:120px"> wcześnie rano (przed siódmą), szybko
+<input type="text" class="answer-input" placeholder="(brać się)₃" style="width:120px"> pod prysznic i znów
+<input type="text" class="answer-input" placeholder="(iść)₄" style="width:90px"> do roboty. Nie zawsze tego
+<input type="text" class="answer-input" placeholder="(chcieć)₅" style="width:110px">, ale przecież nie
+<input type="text" class="answer-input" placeholder="(móc)₆" style="width:90px"> zaniedbywać swoich obowiązków. To jednak niedobrze, gdy pracujemy za dużo i przez cały dzień
+<input type="text" class="answer-input" placeholder="(czuć)₇" style="width:100px"> zmęczenie. To znak, że
+<input type="text" class="answer-input" placeholder="(potrzebować)₈" style="width:140px"> snu i odpoczynku.
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex3a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex7b.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'pracujemy',
+        'kładziemy się',
+        'wstajemy',
+        'bierzemy się',
+        'idziemy',
+        'chcemy',
+        'możemy',
+        'czujemy',
+        'potrzebujemy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

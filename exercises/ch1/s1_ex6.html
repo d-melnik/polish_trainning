@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział I: Czym się zajmujesz?</h1>
+    <h2>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</h2>
+    <div class="chapter-info">Strona 11 podręcznika. Koniugacja I. Formy 2. osoby liczby mnogiej.</div>
+    <div class="exercise-container">
+        <p class="instruction">Połącz pytania (forma 'wy') z odpowiedziami. Kliknij pytanie po lewej, potem odpowiedź po prawej.</p>
+        <div id="matching-container"></div>
+        <div class="buttons">
+            <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+            <a href="s1_ex5.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex9.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['– Czym się interesujecie?', '– Co chcecie studiować?', '– Kiedy się denerwujecie?', '– Kiedy zdajecie egzaminy?', '– Czego teraz potrzebujecie?', '– Dokąd jedziecie na wakacje?', '– A czym podróżujecie?', '– Gdzie nocujecie?', '– Co bierzecie ze sobą?'],
+    ['– Odpoczynku.', '– W maju i w czerwcu.', '– Pod namiotem.', '– Sztuką.', '– Pociągiem.', '– Przed egzaminami.', '– Nad jezioro.', '– Architekturę.', '– Torby i plecaki.'],
+    {0: 3, 1: 8, 2: 5, 3: 1, 4: 0, 5: 2, 6: 4, 7: 6, 8: 7},
+    {0: 3}
+);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 4 — Co on/ona robi? (zawody)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 4 — Co on/ona robi? (zawody)</h2>
+<div class="chapter-info">Strona 22 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Co on/ona robi? Połącz zawód z opisem czynności. Kliknij zawód po lewej, potem opis po prawej.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s2_ex3.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex5.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['lekarz / lekarka', 'pacjent / pacjentka', 'kelner / kelnerka', 'klient / klientka', 'nauczyciel / nauczycielka', 'uczeń / uczennica', 'narciarz / narciarka', 'łyżwiarz / łyżwiarka', 'słuchacz / słuchaczka', 'listonosz / listonoszka', 'władca / władczyni', 'mistrz / mistrzyni', 'pieszy / piesza'],
+    ['nosi tacę, przynosi dania i rachunek', 'uczy, stoi przy tablicy, siedzi za biurkiem', 'lubi zimę, nosi kask, jeździ po śniegu', 'leczy, nosi fartuch, robi zastrzyki', 'nosi koronę, siedzi na tronie, rządzi', 'chodzi do sklepu, robi zakupy, płaci kartą', 'lubi zimę, jeździ po lodowisku, czasem i tańczy', 'chodzi na różne kursy i wykłady', 'stoi na podium, cieszy się z pierwszego miejsca', 'niczym nie jeździ, chodzi po ulicy', 'uczy się, siedzi w ławce, myśli nad zadaniami', 'leczy się, leży w łóżku, mierzy temperaturę', 'nosi dużą torbę, dzwoni do drzwi / domofonu'],
+    {0: 3, 1: 11, 2: 0, 3: 5, 4: 1, 5: 10, 6: 2, 7: 6, 8: 7, 9: 12, 10: 4, 11: 8, 12: 9},
+    {0: 3}
+);
+</script>
+</body></html>

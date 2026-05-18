@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 8a — Połącz pary aspektowe</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 8a — Połącz pary aspektowe z dopełnieniami (Grupa I)</h2>
+<div class="chapter-info">Strona 64 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz parę aspektową (0–10) z odpowiednim dopełnieniem (A–K). Kliknij parę po lewej, potem dopełnienie po prawej. (Ćwiczenie 8a, str. 64)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="g1_ex7.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g1_ex8b.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["pisać / napisać", "uczyć się / nauczyć się", "strzyc się / ostrzyc się", "kosić / skosić", "pakować / spakować", "gasić / zgasić", "dbać / zadbać", "dzwonić / zadzwonić", "skanować / zeskanować", "czytać / przeczytać", "tłumaczyć / przetłumaczyć"],
+    ["wiersza na pamięć", "u dobrego fryzjera", "do kolegi / do koleżanki", "wiersz na angielski", "książkę na głos", "starą fotografię", "małą walizkę", "o dobrą formę", "trawę przed domem", "kartkę z życzeniami", "światło w garażu"],
+    {"0": 9, "1": 0, "2": 1, "3": 8, "4": 6, "5": 10, "6": 7, "7": 2, "8": 5, "9": 4, "10": 3},
+    {"0": 9}
+);
+</script>
+</body></html>

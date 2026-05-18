@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1b — Zaznacz odpowiednie słowo</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział X: I strona bierna zostanie przez nas zrobiona!</h1>
+<h2>Ćwiczenie 1b — Zaznacz odpowiednie słowo</h2>
+<div class="chapter-info">Strona 203 podręcznika. Strona bierna.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwe słowo. (Ćw. 1b, str. 203)</p>
+<div class="dialog-block"><p style="line-height:2.4">Muszę przyznać, że urodziny mamy zostały (<b>przez</b>, ponad, za)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> nas świetnie zorganizowane. Mama była bardzo szczęśliwa i wiele razy dziękowała za kwiaty i prezenty, które <select class="answer-input"><option value="">—</option><option>były</option><option>bili</option><option>były</option></select><sup>1</sup> po kolei przez wszystkich wręczane. <select class="answer-input"><option value="">—</option><option>Najbardziej</option><option>Najwięcej</option><option>Najmniej</option></select><sup>2</sup> się wzruszyła, gdy zobaczyła laurkę, która została <select class="answer-input"><option value="">—</option><option>ułożona</option><option>narysowana</option><option>rozwiązana</option></select><sup>3</sup> przez małą Zosię. Nawet piękny pierścionek, <select class="answer-input"><option value="">—</option><option>co</option><option>jaki</option><option>który</option></select><sup>4</sup> został kupiony przez tatę, nie był tak długo oglądanym prezentem! A dla mnie najlepszą rzeczą były <select class="answer-input"><option value="">—</option><option>ciasta</option><option>pączki</option><option>pierogi</option></select><sup>5</sup>, które zostały zrobione przez babcię i dziadka. Szkoda tylko, że cała ta <select class="answer-input"><option value="">—</option><option>wystawa</option><option>impreza</option><option>podróż</option></select><sup>6</sup> już dawno się skończyła. A co po <select class="answer-input"><option value="">—</option><option>jej</option><option>nią</option><option>niej</option></select><sup>7</sup> zostało? Oczywiście, nasze piękne wspomnienia i zrobione przeze <select class="answer-input"><option value="">—</option><option>mi</option><option>mną</option><option>mnie</option></select><sup>8</sup> zdjęcia!</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["były", "Najbardziej", "narysowana", "który", "ciasta", "impreza", "niej", "mnie"];
+    checkExercise(answers);
+}</script></body></html>

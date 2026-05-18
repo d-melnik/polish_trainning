@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1 — Mianownik czy narzędnik?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział XII: Czasowniki oraz ich (dobrzy) sąsiedzi</h1>
+<h2>Ćwiczenie 1 — Mianownik czy narzędnik?</h2>
+<div class="chapter-info">Strona 213 podręcznika. Mianownik i narzędnik z „być".</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwą formę. (Ćw. 1, str. 213)</p>
+<div class="dialog-block"><p style="line-height:2.6">Rodzice czasem narzekają, że jestem (<b>leniwy</b>, leniwym)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>, choć pani wychowawczyni mówi, że <select class="answer-input"><option value="">—</option><option>niezły</option><option>niezłym</option></select><sup>1</sup> uczniem. Może i nie jestem <select class="answer-input"><option value="">—</option><option>najlepszy</option><option>najlepszym</option></select><sup>2</sup> w klasie, ale przecież nie muszę mieć samych piątek czy szóstek. Jestem po prostu <select class="answer-input"><option value="">—</option><option>zwykły</option><option>zwykłym</option></select><sup>3</sup> chłopakiem, który dostaje lepsze i gorsze oceny. Rodzice czasem mają do mnie pretensje, że nie jestem <select class="answer-input"><option value="">—</option><option>ambitny</option><option>ambitnym</option></select><sup>4</sup>, a ja po prostu uczę się tego, co jest dla mnie <select class="answer-input"><option value="">—</option><option>ciekawe</option><option>ciekawym</option></select><sup>5</sup> i lubię mieć dużo wolnego czasu. Stopnie nie są dla mnie bardzo <select class="answer-input"><option value="">—</option><option>ważne</option><option>ważnymi</option></select><sup>6</sup>. Chcę być po prostu <select class="answer-input"><option value="">—</option><option>szczęśliwy</option><option>szczęśliwym</option></select><sup>7</sup> człowiekiem, który robi to, co lubi!</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="../index.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["niezłym", "najlepszy", "zwykłym", "ambitny", "ciekawe", "ważne", "szczęśliwym"];
+    checkExercise(answers);
+}</script></body></html>

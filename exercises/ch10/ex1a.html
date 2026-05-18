@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1a — Przez kogo to zostało zrobione?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział X: I strona bierna zostanie przez nas zrobiona!</h1>
+<h2>Ćwiczenie 1a — Przez kogo to zostało zrobione?</h2>
+<div class="chapter-info">Strona 203 podręcznika. Strona bierna — urodziny mamy.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz czynność z jej wykonawcą. (Ćw. 1a, str. 203)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="../index.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex1b.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["Laurka została narysowana", "Stół został nakryty", "Tort został zrobiony", "Sernik został upieczony", "Największy bukiet został wręczony", "Zdjęcia były robione"],
+    ["przeze mnie", "przez dziadka", "przez tatę", "przez babcię", "przez starszą siostrę", "przez młodszą siostrę"],
+    {"0": 5, "1": 4, "2": 3, "3": 1, "4": 2, "5": 0},
+    {"0": 5}
+);
+</script>
+</body></html>

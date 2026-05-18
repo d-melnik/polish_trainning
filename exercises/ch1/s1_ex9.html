@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 9 — Czym się zajmujesz? (grafik dnia)</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 9 — Czym się zajmujesz? (grafik dnia)</h2>
+<div class="chapter-info">Strona 14 podręcznika. Koniugacja I. Co robisz o danej godzinie?</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Na podstawie słów z ramki napisz, co robisz o tej godzinie. (Ćwiczenie 9, str. 14)</p>
+        <div class="word-bank">
+            <span>pić herbatę</span>
+            <span>wstawać</span>
+            <span>gotować obiad</span>
+            <span>piec pizzę</span>
+            <span>pracować przy biurku</span>
+            <span>pisać test</span>
+            <span>jechać autobusem</span>
+            <span>iść na zakupy</span>
+        </div>
+        <table class="fill-table">
+            <tr><th>Godzina</th><th>Czynność</th></tr>
+            <tr><td>O siódmej</td><td><span class="given">wstaję</span></td></tr>
+            <tr><td>O ósmej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O dziesiątej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O jedenastej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O drugiej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O trzeciej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O czwartej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+            <tr><td>O szóstej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:220px"></td></tr>
+        </table>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_ex1b.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex10.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = [
+        'piję herbatę',
+        'jadę autobusem',
+        'piszę test',
+        'idę na zakupy',
+        'gotuję obiad',
+        'pracuję przy biurku',
+        'piekę pizzę'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

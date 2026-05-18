@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1b — Zaznacz odpowiednie słowo (Co robisz?)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 1b — Zaznacz odpowiednie słowo (Co robisz?)</h2>
+<div class="chapter-info">Strona 21 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Moje życie codzienne. Zaznacz odpowiednie słowo. (Ćwiczenie 1b, str. 21)</p>
+<p style="line-height:2.4">
+Rano budzę się o (pierwszej, <b>siódmej</b>, jedenastej)<sup>0</sup>, ale jeszcze przez chwilę leżę w
+(<select class="answer-input"><option value="">—</option><option>łóżku</option><option>fotelu</option><option>biurku</option></select>)<sup>1</sup>,
+bo bardzo lubię spać. Na śniadanie często
+(<select class="answer-input"><option value="">—</option><option>marzę</option><option>smażę</option><option>wożę</option></select>)<sup>2</sup>
+jajecznicę, kroję chleb i robię sobie kanapki z
+(<select class="answer-input"><option value="">—</option><option>piłką</option><option>bułką</option><option>szynką</option></select>)<sup>3</sup>.
+Przed ósmą wychodzę z domu, a potem stoję na
+(<select class="answer-input"><option value="">—</option><option>rynku</option><option>dworcu</option><option>przystanku</option></select>)<sup>4</sup>.
+Na zajęcia jeżdżę tramwajem, bo wtedy nie muszę stać w
+(<select class="answer-input"><option value="">—</option><option>korku</option><option>kubku</option><option>garnku</option></select>)<sup>5</sup>.
+Po południu robię zakupy i spieszę się na obiad. Zimą lubię siedzieć przy
+(<select class="answer-input"><option value="">—</option><option>biurku</option><option>łóżku</option><option>kominku</option></select>)<sup>6</sup>,
+gdzie pali się mały ogień. Wiosną często siedzę przed domem i
+(<select class="answer-input"><option value="">—</option><option>patrzę</option><option>widzę</option><option>myślę</option></select>)<sup>7</sup>,
+jak przyroda budzi się do życia. A wieczorami uczę się
+(<select class="answer-input"><option value="">—</option><option>polski</option><option>polskiego</option><option>polskiemu</option></select>)<sup>8</sup>
+i ćwiczę gramatykę. Cieszę się, że już dobrze mówię po polsku i
+(<select class="answer-input"><option value="">—</option><option>marzę</option><option>wierzę</option><option>uczę</option></select>)<sup>9</sup>
+o tym, żeby nie robić
+(<select class="answer-input"><option value="">—</option><option>każdych</option><option>nijakich</option><option>żadnych</option></select>)<sup>10</sup>
+błędów.
+</p>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s1_ex20.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'łóżku',
+        'smażę',
+        'szynką',
+        'przystanku',
+        'korku',
+        'kominku',
+        'patrzę',
+        'polskiego',
+        'marzę',
+        'żadnych'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

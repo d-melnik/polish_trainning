@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 19a — Mail z Mazur</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 19a — Mail z Mazur</h2>
+<div class="chapter-info">Strona 19 podręcznika. Koniugacja I. Różne osoby i formy.</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij mail zgodnie z podanym przykładem. (Ćwiczenie 19a, str. 19)</p>
+        <div class="dialog-block">
+            <h3>📧 Tomek → Ania</h3>
+            <p>Cześć, Aniu!</p>
+            <p>Co u Ciebie? Jak <span style="font-weight:bold;color:#27ae60">się czujesz</span> (Ty-czuć się)<sub>0</sub>?
+            Mam nadzieję, że już nie <input type="text" class="answer-input" placeholder="(Ty-chorować)₁" style="width:130px"> i wszystko jest w porządku.</p>
+            <p>A co u mnie? Jestem teraz z kolegami na Mazurach. Gdy jest słońce, to
+            <input type="text" class="answer-input" placeholder="(my-skakać)₂" style="width:130px"> do wody i
+            <input type="text" class="answer-input" placeholder="(my-kąpać się)₃" style="width:130px"> w jeziorze albo
+            <input type="text" class="answer-input" placeholder="(my-wynajmować)₄" style="width:150px"> kajaki i
+            <input type="text" class="answer-input" placeholder="(my-płynąć)₅" style="width:120px"> na drugi brzeg. To świetny relaks!</p>
+            <p><input type="text" class="answer-input" placeholder="(My-Żyć)₆" style="width:110px"> skromnie, bez żadnych luksusów.
+            <input type="text" class="answer-input" placeholder="(My-Nocować)₇" style="width:130px"> pod namiotem, więc jest trochę niewygodnie. Mrówki nas
+            <input type="text" class="answer-input" placeholder="(gryźć)₈" style="width:100px">, komary
+            <input type="text" class="answer-input" placeholder="(kłuć)₉" style="width:100px">, ale
+            <input type="text" class="answer-input" placeholder="(my-dawać)₁₀" style="width:110px"> sobie radę! Najważniejsze, że nie
+            <input type="text" class="answer-input" placeholder="(my-marznąć)₁₁" style="width:130px"> i nie
+            <input type="text" class="answer-input" placeholder="(my-moknąć)₁₂" style="width:130px">.</p>
+            <p><input type="text" class="answer-input" placeholder="(My-Gotować)₁₃" style="width:130px"> na ognisku i często
+            <input type="text" class="answer-input" placeholder="(my-piec)₁₄" style="width:120px"> ziemniaki –
+            <input type="text" class="answer-input" placeholder="(one-smakować)₁₅" style="width:120px"> naprawdę wspaniale, a poza tym ładnie
+            <input type="text" class="answer-input" placeholder="(pachnąć)₁₆" style="width:110px"> dymem.</p>
+            <p>Nie <input type="text" class="answer-input" placeholder="(ja-potrzebować)₁₇" style="width:140px"> wiele do szczęścia.
+            <input type="text" class="answer-input" placeholder="(Ja-Żałować)₁₈" style="width:120px"> tylko, że czas tak szybko
+            <input type="text" class="answer-input" placeholder="(biegnąć)₁₉" style="width:110px">. Dni
+            <input type="text" class="answer-input" placeholder="(stawać się)₂₀" style="width:130px"> coraz krótsze, pogoda już trochę
+            <input type="text" class="answer-input" placeholder="(psuć się)₂₁" style="width:120px"> i czuć, że
+            <input type="text" class="answer-input" placeholder="(iść)₂₂" style="width:100px"> jesień.</p>
+            <p><input type="text" class="answer-input" placeholder="(Ja-Całować)₂₃" style="width:120px"> Cię mocno!</p>
+            <p><em>Tomek</em></p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_ex16.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex20.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = [
+        'się czujesz','chorujesz','skaczemy','kąpiemy się','wynajmujemy',
+        'płyniemy','Żyjemy','Nocujemy','gryzą','kłują',
+        'dajemy','marzniemy','mokniemy','Gotujemy','pieczemy',
+        'smakują','pachną','potrzebuję','Żałuję','biegnie',
+        'się stają','się psuje','idzie','Całuję'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

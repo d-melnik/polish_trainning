@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 15a — Wrocławskie krasnale</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 15a — Wrocławskie krasnale</h2>
+<div class="chapter-info">Strona 17 podręcznika. Koniugacja I. 3. osoba liczby pojedynczej — krasnale Wrocławia.</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Czym one się zajmują? Uzupełnij teksty zgodnie z podanym przykładem. Wrocławskie krasnale! (Ćwiczenie 15a, str. 17)</p>
+
+        <div class="dialog-block">
+            <h3>0. Krasnal Programista</h3>
+            <p>nie <span style="font-weight:bold;color:#27ae60">rozstaje się</span> z komputerem. Często
+            <input type="text" class="answer-input" placeholder="(instalować)₁" style="width:130px"> nowe programy i
+            <input type="text" class="answer-input" placeholder="(kasować)₂" style="width:110px"> stare. W wolnym czasie
+            <input type="text" class="answer-input" placeholder="(pisać)₃" style="width:100px"> maile do znajomych i
+            <input type="text" class="answer-input" placeholder="(chatować)₄" style="width:110px">.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>1. Motocyklista</h3>
+            <p>dostojnie <input type="text" class="answer-input" placeholder="(jechać)₅" style="width:100px"> swoim chopperem i nigdy nie
+            <input type="text" class="answer-input" placeholder="(łamać)₆" style="width:100px"> przepisów. Nikogo ze sobą nie
+            <input type="text" class="answer-input" placeholder="(wieźć)₇" style="width:100px">, ale jest towarzyski i
+            <input type="text" class="answer-input" placeholder="(pokazywać)₈" style="width:130px"> przyjazne gesty.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>2. Krasnal Piernikarz</h3>
+            <p>jest wyjątkowo słodki –
+            <input type="text" class="answer-input" placeholder="(piec)₉" style="width:100px"> smaczne pierniki, a potem
+            <input type="text" class="answer-input" placeholder="(kłaść)₁₀" style="width:100px"> je na tacę i
+            <input type="text" class="answer-input" placeholder="(częstować)₁₁" style="width:120px"> nimi przechodniów. Ale czy ktoś je
+            <input type="text" class="answer-input" placeholder="(brać)₁₂" style="width:100px">?</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>3. Ciężarowiec</h3>
+            <p>ciągle <input type="text" class="answer-input" placeholder="(trenować)₁₃" style="width:110px">,
+            <input type="text" class="answer-input" placeholder="(bić)₁₄" style="width:90px"> kolejne rekordy i
+            <input type="text" class="answer-input" placeholder="(chcieć)₁₅" style="width:100px"> być jeszcze silniejszy. To prawdziwy sportowiec, który nie
+            <input type="text" class="answer-input" placeholder="(poddawać się)₁₆" style="width:140px"> bez walki.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>4. Krasnal Vincent</h3>
+            <p><input type="text" class="answer-input" placeholder="(posługiwać się)₁₇" style="width:160px"> farbami i pędzlem. Bez przerwy coś
+            <input type="text" class="answer-input" placeholder="(malować)₁₈" style="width:110px">, ale swoich obrazów nie
+            <input type="text" class="answer-input" placeholder="(sprzedawać)₁₉" style="width:130px">.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>5. Pracz</h3>
+            <p><input type="text" class="answer-input" placeholder="(znajdować się)₂₀" style="width:150px"> nad Odrą, gdzie
+            <input type="text" class="answer-input" placeholder="(prać)₂₁" style="width:100px"> swoje ubrania. Przy okazji
+            <input type="text" class="answer-input" placeholder="(obserwować)₂₂" style="width:130px"> poziom rzeki.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>6. Krasnal Suwenirek</h3>
+            <p><input type="text" class="answer-input" placeholder="(kupować)₂₃" style="width:110px"> różne pamiątki i z uśmiechem
+            <input type="text" class="answer-input" placeholder="(dawać)₂₄" style="width:100px"> je w prezencie. Ciekawe, co
+            <input type="text" class="answer-input" placeholder="(kryć się)₂₅" style="width:110px"> w środku jego pudełka.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>7. Podróżnik</h3>
+            <p><input type="text" class="answer-input" placeholder="(iść)₂₆" style="width:90px"> powoli, bo
+            <input type="text" class="answer-input" placeholder="(nieść)₂₇" style="width:100px"> ciężką walizkę. Ciekawe, dokąd tym razem
+            <input type="text" class="answer-input" placeholder="(podróżować)₂₈" style="width:130px">?</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_ex12a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex16.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = [
+        'instaluje','kasuje','pisze','chatuje',
+        'jedzie','łamie','wiezie','pokazuje',
+        'piecze','kładzie','częstuje','bierze',
+        'trenuje','bije','chce','poddaje się',
+        'posługuje się','maluje','sprzedaje',
+        'znajduje się','pierze','obserwuje',
+        'kupuje','daje','kryje się','idzie','niesie','podróżuje'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

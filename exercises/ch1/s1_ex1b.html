@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1b — Zaznacz odpowiednie słowo</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 1b — Zaznacz odpowiednie słowo</h2>
+<div class="chapter-info">Strona 9 podręcznika. Koniugacja I (-ę, -esz). Wybierz właściwy wyraz.</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Moje życie codzienne. Zaznacz odpowiednie słowo. (Ćwiczenie 1b, str. 9)</p>
+        <p style="line-height:2.2">Rano wstaję o (pierwszej, <b>siódmej</b>, jedenastej)<sup>0</sup> i idę do łazienki. Tam biorę szybki
+(<select class="answer-input"><option value="">—</option><option>prysznic</option><option>ręcznik</option><option>grzebień</option></select>)<sup>1</sup>,
+a potem myję zęby i czeszę się przed
+(<select class="answer-input"><option value="">—</option><option>lustrem</option><option>łóżkiem</option><option>biurkiem</option></select>)<sup>2</sup>.
+Po śniadaniu biegnę na
+(<select class="answer-input"><option value="">—</option><option>dworzec</option><option>peron</option><option>przystanek</option></select>)<sup>3</sup>,
+a potem jadę autobusem na uniwersytet. Tam przez kilka godzin zajmuję się
+(<select class="answer-input"><option value="">—</option><option>nauką</option><option>sztuką</option><option>piłką</option></select>)<sup>4</sup>,
+a po zajęciach idę do
+(<select class="answer-input"><option value="">—</option><option>sklepu</option><option>pokoju</option><option>magazynu</option></select>)<sup>5</sup>
+na małe zakupy. Po południu pracuję przy
+(<select class="answer-input"><option value="">—</option><option>biurku</option><option>łóżku</option><option>lusterku</option></select>)<sup>6</sup>,
+bo projektuję
+(<select class="answer-input"><option value="">—</option><option>strony</option><option>karty</option><option>teksty</option></select>)<sup>7</sup>
+internetowe. Ale nie żyję tylko w wirtualnym
+(<select class="answer-input"><option value="">—</option><option>gabinecie</option><option>mieście</option><option>świecie</option></select>)<sup>8</sup>
+i nie zaniedbuję domowych
+(<select class="answer-input"><option value="">—</option><option>porządków</option><option>warunków</option><option>obowiązków</option></select>)<sup>9</sup>.
+Często gotuję, piekę, piorę, prasuję, a kiedy jest
+(<select class="answer-input"><option value="">—</option><option>piękna</option><option>brzydka</option><option>zła</option></select>)<sup>10</sup>
+pogoda, to pracuję w ogrodzie. I wcale nie żartuję ani nie kłamię! Po prostu jestem bardzo aktywną osobą.</p>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_intro.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex3.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = ['prysznic','lustrem','przystanek','nauką','sklepu','biurku','strony','świecie','obowiązków','piękna'];
+    checkExercise(answers);
+}
+</script>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 10 — Uzupełnij tekst (mój zwykły dzień)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 10 — Uzupełnij tekst (mój zwykły dzień)</h2>
+<div class="chapter-info">Strona 37 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij tekst odpowiednim słowem. (Ćwiczenie 10, str. 37)</p>
+<div class="word-bank">
+    <span>wracać</span><span>korzystać</span><span>zakładać</span><span>zabierać</span><span>uprawiać</span>
+    <span>wyłączać</span><span>biegać</span><span>szukać</span><span>słuchać</span><span>włączać</span>
+    <span>czytać</span><span>uwielbiać</span><span>grać</span><span>oglądać</span><span>siadać</span>
+    <span>wsiadać</span><span>wybiegać</span><span>odpowiadać</span><span>czekać</span>
+</div>
+<p style="line-height:2.5">
+Mój zwykły dzień? Najpierw
+<span style="font-weight:bold;color:#27ae60">wyłączam</span><sub>0</sub> budzik,
+<input type="text" class="answer-input" placeholder="(korzystać)₁" style="width:130px"> z łazienki, szybko się ubieram, a potem
+<input type="text" class="answer-input" placeholder="(siadać)₂" style="width:100px"> do śniadania. O ósmej szybko
+<input type="text" class="answer-input" placeholder="(wybiegać)₃" style="width:120px"> z domu na przystanek i przez chwilę
+<input type="text" class="answer-input" placeholder="(czekać)₄" style="width:110px"> na autobus. Potem
+<input type="text" class="answer-input" placeholder="(wsiadać)₅" style="width:110px"> tylnymi drzwiami, a kiedy jest mało ludzi, to
+<input type="text" class="answer-input" placeholder="(szukać)₆" style="width:110px"> wolnego miejsca (najlepiej przy oknie).
+
+Na zajęciach uważnie
+<input type="text" class="answer-input" placeholder="(słuchać)₇" style="width:110px"> nauczycieli i chętnie
+<input type="text" class="answer-input" placeholder="(odpowiadać)₈" style="width:130px"> na ich pytania, bo jestem osobą aktywną i często
+<input type="text" class="answer-input" placeholder="(zabierać)₉" style="width:120px"> głos. Po południu
+<input type="text" class="answer-input" placeholder="(wracać)₁₀" style="width:110px"> do domu i mam trochę czasu dla siebie. Wtedy
+<input type="text" class="answer-input" placeholder="(włączać)₁₁" style="width:120px"> muzykę i sam trochę
+<input type="text" class="answer-input" placeholder="(grać)₁₂" style="width:90px"> na gitarze elektrycznej.
+
+A jak spędzam wieczory? Jesienią i zimą zwykle
+<input type="text" class="answer-input" placeholder="(czytać)₁₃" style="width:110px"> książki albo
+<input type="text" class="answer-input" placeholder="(oglądać)₁₄" style="width:120px"> filmy oraz seriale. Wiosną i latem często
+<input type="text" class="answer-input" placeholder="(uprawiać)₁₅" style="width:120px"> sport.
+<input type="text" class="answer-input" placeholder="(Zakładać)₁₆" style="width:120px"> koszulkę, szorty, wygodne buty i przez godzinę
+<input type="text" class="answer-input" placeholder="(biegać)₁₇" style="width:110px"> po parku.
+<input type="text" class="answer-input" placeholder="(Uwielbiać)₁₈" style="width:120px"> aktywnie odpoczywać, gdy jest ładna pogoda.
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex9.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex12a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'wyłączam',
+        'korzystam',
+        'siadam',
+        'wybiegam',
+        'czekam',
+        'wsiadam',
+        'szukam',
+        'słucham',
+        'odpowiadam',
+        'zabieram',
+        'wracam',
+        'włączam',
+        'gram',
+        'czytam',
+        'oglądam',
+        'uprawiam',
+        'Zakładam',
+        'biegam',
+        'Uwielbiam'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

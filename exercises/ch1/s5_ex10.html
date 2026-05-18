@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 10 — Jedziemy na wakacje!</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 10 — Jedziemy na wakacje!</h2>
+<div class="chapter-info">Strona 55 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Jedziemy na wakacje! Uzupełnij tekst. (Ćwiczenie 10, str. 55)</p>
+<div class="word-bank">
+    <span>słyszeć</span><span>jechać</span><span>lecieć</span><span>wiedzieć</span><span>myśleć</span>
+    <span>mieć</span><span>dawać</span><span>spacerować</span><span>leżeć</span><span>opalać się</span>
+    <span>lubić</span><span>biec (biegnąć)</span><span>kąpać się</span><span>pływać</span>
+    <span>jeździć</span><span>zdobywać</span><span>czuć się</span><span>woleć</span><span>chcieć</span>
+    <span>brać</span><span>wybierać</span><span>nadchodzić</span>
+</div>
+<p style="line-height:2.5">
+Gdy <span style="font-weight:bold;color:#27ae60">nadchodzi</span><sub>0</sub> lato, często
+<input type="text" class="answer-input" placeholder="(my-słyszeć)₁" style="width:130px"> pytania: „Dokąd
+<input type="text" class="answer-input" placeholder="(wy-jechać)₂" style="width:120px"> na wakacje?", „Dokąd
+<input type="text" class="answer-input" placeholder="(wy-lecieć)₃" style="width:120px"> na urlop?", ale nie zawsze
+<input type="text" class="answer-input" placeholder="(my-wiedzieć)₄" style="width:110px">, co odpowiedzieć, bo ciągle
+<input type="text" class="answer-input" placeholder="(my-myśleć)₅" style="width:120px">, co wybrać.
+
+Różne miejsca
+<input type="text" class="answer-input" placeholder="(mieć)₆" style="width:90px"> swoje zalety i
+<input type="text" class="answer-input" placeholder="(dawać)₇" style="width:100px"> możliwość ciekawych form odpoczynku. Nad morzem
+<input type="text" class="answer-input" placeholder="(my-spacerować)₈" style="width:160px"> po plaży albo
+<input type="text" class="answer-input" placeholder="(my-leżeć)₉" style="width:120px"> na niej i
+<input type="text" class="answer-input" placeholder="(my-opalać się)₁₀" style="width:150px">. Jeśli
+<input type="text" class="answer-input" placeholder="(my-lubić)₁₁" style="width:110px"> aktywność fizyczną, to
+<input type="text" class="answer-input" placeholder="(my-biec)₁₂" style="width:130px"> do wody,
+<input type="text" class="answer-input" placeholder="(my-kąpać się)₁₃" style="width:140px"> i
+<input type="text" class="answer-input" placeholder="(my-pływać)₁₄" style="width:120px">. Latem często też
+<input type="text" class="answer-input" placeholder="(my-jeździć)₁₅" style="width:120px"> w góry, a tam
+<input type="text" class="answer-input" placeholder="(my-zdobywać)₁₆" style="width:150px"> szczyty i
+<input type="text" class="answer-input" placeholder="(my-czuć się)₁₇" style="width:140px"> jak w niebie. Jeśli
+<input type="text" class="answer-input" placeholder="(my-woleć)₁₈" style="width:110px"> zwiedzać zabytki i
+<input type="text" class="answer-input" placeholder="(my-chcieć)₁₉" style="width:110px"> poznawać lokalną kulturę, to
+<input type="text" class="answer-input" placeholder="(my-brać)₂₀" style="width:110px"> ze sobą grube przewodniki i
+<input type="text" class="answer-input" placeholder="(my-wybierać)₂₁" style="width:150px"> wakacje w dużych miastach.
+
+A wy? Gdzie
+<input type="text" class="answer-input" placeholder="(wy-woleć)₂₂" style="width:120px"> spędzać lato? W domu, nad wodą, w górach czy znanych miastach?
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex9.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex11.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'nadchodzi',
+        'słyszymy',
+        'jedziecie',
+        'lecicie',
+        'wiemy',
+        'myślimy',
+        'mają',
+        'dają',
+        'spacerujemy',
+        'leżymy',
+        'się opalamy',
+        'lubimy',
+        'biegniemy',
+        'kąpiemy się',
+        'pływamy',
+        'jeździmy',
+        'zdobywamy',
+        'czujemy się',
+        'wolimy',
+        'chcemy',
+        'bierzemy',
+        'wybieramy',
+        'wolicie'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

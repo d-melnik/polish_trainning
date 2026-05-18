@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 12a — Co oni robią? (zawody)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 12a — Co oni robią? (zawody)</h2>
+<div class="chapter-info">Strona 27 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Co oni robią? Uzupełnij teksty zgodnie z podanym przykładem. (Ćwiczenie 12a, str. 27)</p>
+<div class="dialog-block">
+    <h3>Tomasz (kierowca)</h3>
+    <div class="word-bank"><span>tęsknić</span><span>wozić</span><span>musieć</span><span>jeździć</span><span>dzwonić</span></div>
+    <p>Jestem kierowcą.
+    <span style="font-weight:bold;color:#27ae60">Jeżdżę</span><sub>0</sub> ciężarówką i
+    <input type="text" class="answer-input" placeholder="(wozić)₁" style="width:100px"> różne towary za granicę.
+    Moja praca nie jest lekka. Cały czas
+    <input type="text" class="answer-input" placeholder="(musieć)₂" style="width:100px"> patrzeć na drogę, a poza tym bardzo
+    <input type="text" class="answer-input" placeholder="(tęsknić)₃" style="width:100px"> za rodziną. Często
+    <input type="text" class="answer-input" placeholder="(dzwonić)₄" style="width:100px"> do domu, żeby usłyszeć głos żony, córki i synka.</p>
+</div>
+<div class="dialog-block">
+    <h3>Katarzyna (pediatra)</h3>
+    <div class="word-bank"><span>cieszyć się</span><span>leczyć</span><span>martwić się</span><span>tłumaczyć</span></div>
+    <p>Jestem pediatrą –
+    <input type="text" class="answer-input" placeholder="(leczyć)₅" style="width:100px"> małe dzieci i
+    <input type="text" class="answer-input" placeholder="(tłumaczyć)₆" style="width:120px"> ich rodzicom, co muszą robić.
+    <input type="text" class="answer-input" placeholder="(Martwić się)₇" style="width:130px"> stanem zdrowia swoich pacjentów, ale
+    <input type="text" class="answer-input" placeholder="(cieszyć się)₈" style="width:130px">, że jestem przy nich i służę im swoją wiedzą.</p>
+</div>
+<div class="dialog-block">
+    <h3>Julia (uczennica szkoły muzycznej)</h3>
+    <div class="word-bank"><span>chodzić</span><span>ćwiczyć</span><span>uczyć się</span><span>marzyć</span></div>
+    <p>Od sześciu lat
+    <input type="text" class="answer-input" placeholder="(chodzić)₉" style="width:100px"> do szkoły muzycznej i
+    <input type="text" class="answer-input" placeholder="(uczyć się)₁₀" style="width:110px"> gry na pianinie. Ciągle
+    <input type="text" class="answer-input" placeholder="(marzyć)₁₁" style="width:100px"> o pracy w filharmonii, więc godzinami
+    <input type="text" class="answer-input" placeholder="(ćwiczyć)₁₂" style="width:100px"> swoją technikę. Praktyka czyni mistrza!</p>
+</div>
+<div class="dialog-block">
+    <h3>Jacek (pomocnik kucharza)</h3>
+    <div class="word-bank"><span>smażyć</span><span>czyścić</span><span>kroić</span><span>służyć</span></div>
+    <p>Co robię?
+    <input type="text" class="answer-input" placeholder="(kroić)₁₃" style="width:100px"> owoce i warzywa albo
+    <input type="text" class="answer-input" placeholder="(smażyć)₁₄" style="width:100px"> mięso na patelni. A pod koniec pracy
+    <input type="text" class="answer-input" placeholder="(czyścić)₁₅" style="width:100px"> sprzęty kuchenne. Zawsze
+    <input type="text" class="answer-input" placeholder="(służyć)₁₆" style="width:100px"> pomocą – taka moja rola.</p>
+</div>
+<div class="dialog-block">
+    <h3>Ryszard (emeryt)</h3>
+    <div class="word-bank"><span>znosić</span><span>siedzieć</span><span>robić</span><span>jeździć</span></div>
+    <p>Jestem już emerytem, ale to nie znaczy, że ciągle
+    <input type="text" class="answer-input" placeholder="(siedzieć)₁₇" style="width:100px"> w domu przed telewizorem. Nie
+    <input type="text" class="answer-input" placeholder="(znosić)₁₈" style="width:100px"> bezczynności! Często
+    <input type="text" class="answer-input" placeholder="(jeździć)₁₉" style="width:100px"> z żoną na wycieczki i
+    <input type="text" class="answer-input" placeholder="(robić)₂₀" style="width:100px"> zdjęcia – to moje nowe hobby.</p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex10.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex15a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'Jeżdżę',
+        'wożę',
+        'muszę',
+        'tęsknię',
+        'dzwonię',
+        'leczę',
+        'tłumaczę',
+        'Martwię się',
+        'cieszę się',
+        'chodzę',
+        'uczę się',
+        'marzę',
+        'ćwiczę',
+        'kroję',
+        'smażę',
+        'czyszczę',
+        'służę',
+        'siedzę',
+        'znoszę',
+        'jeżdżę',
+        'robię'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

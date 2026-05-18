@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</h2>
+<div class="chapter-info">Strona 23 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz pytania (0–8) z odpowiedziami (A–I). Forma 'wy'.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s2_ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex9.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['– Co musicie robić?', '– O której przychodzicie do szkoły?', '– O której kończycie lekcje?', '– Co robicie po południu?', '– A dokąd wychodzicie wieczorem?', '– Jakie filmy lubicie?', '– Najbardziej cenicie komedie?', '– A jak często chodzicie do kina?', '– Myślicie o karierze aktorskiej?'],
+    ['– Siedzimy w domu.', '– Na imprezę albo do kina.', '– Raz na tydzień.', '– Piętnaście po ósmej.', '– Ze szczęśliwym zakończeniem.', '– Chodzić do szkoły.', '– Zwykle o drugiej.', '– Nie, nawet o niej nie śnimy!', '– Tak, wolimy wesołe historie.'],
+    {0: 5, 1: 3, 2: 6, 3: 0, 4: 1, 5: 4, 6: 8, 7: 2, 8: 7},
+    {0: 5}
+);
+</script>
+</body></html>

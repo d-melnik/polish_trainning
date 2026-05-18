@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 6 — Czy to wiesz?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czy to wiesz? Czy to umiesz? Czy to rozumiesz?</h1>
+<h2>Ćwiczenie 6 — Uzupełnij dialogi i dopasuj do obrazków</h2>
+<div class="chapter-info">Strona 46 podręcznika. Koniugacja IV (-em, -esz): wiedzieć, jeść, umieć, rozumieć, śmieć.</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij dialogi zgodnie z podanym przykładem i dopasuj do nich obrazki. (Ćwiczenie 6, str. 46)</p>
+<div class="dialog-block">
+    <h3>Dialog A</h3>
+    <p>– Czy już wszystko <span style="font-weight:bold;color:#27ae60">wiecie</span><sub>0</sub> i
+    <input type="text" class="answer-input" placeholder="(wy-rozumieć)₁" style="width:140px">?<br>
+    – Tak! Już wszystko <input type="text" class="answer-input" placeholder="(my-wiedzieć)₂" style="width:110px"> i
+    <input type="text" class="answer-input" placeholder="(my-rozumieć)₃" style="width:130px">.<br>
+    – A ja <input type="text" class="answer-input" placeholder="(śmieć)₄" style="width:100px"> w to wątpić!
+    Nie ma ludzi, którzy wszystko <input type="text" class="answer-input" placeholder="(wiedzieć)₅" style="width:110px"> i wszystko
+    <input type="text" class="answer-input" placeholder="(rozumieć)₆" style="width:130px">.</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog B</h3>
+    <p>– Czy <input type="text" class="answer-input" placeholder="(ty-wiedzieć)₇" style="width:100px">, czyj to pomnik?<br>
+    – Ja tego nie <input type="text" class="answer-input" placeholder="(wiedzieć)₈" style="width:100px">, ale nasza nauczycielka na pewno to
+    <input type="text" class="answer-input" placeholder="(wiedzieć)₉" style="width:90px"> i zaraz nam
+    <input type="text" class="answer-input" placeholder="(powiedzieć)₁₀" style="width:110px">.</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog C</h3>
+    <p>– Co dziś <input type="text" class="answer-input" placeholder="(my-jeść)₁₁" style="width:90px"> na obiad?<br>
+    – A co <input type="text" class="answer-input" placeholder="(wy-umieć)₁₂" style="width:110px"> ugotować?<br>
+    – Nic. Ale <input type="text" class="answer-input" placeholder="(my-umieć)₁₃" style="width:110px"> zamówić pizzę!</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog D</h3>
+    <p>– Czy państwo <input type="text" class="answer-input" placeholder="(wiedzieć)₁₄" style="width:110px">, gdzie jest apteka?<br>
+    – Niestety, nie <input type="text" class="answer-input" placeholder="(wiedzieć)₁₅" style="width:100px">. Nie jesteśmy stąd.</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog E</h3>
+    <p>– To nieprawda! Jak pan <input type="text" class="answer-input" placeholder="(śmieć)₁₆" style="width:90px"> tak mówić?<br>
+    – A skąd pan <input type="text" class="answer-input" placeholder="(wiedzieć)₁₇" style="width:90px">, że to nieprawda?</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog F</h3>
+    <p>– Znowu <input type="text" class="answer-input" placeholder="(ty-jeść)₁₈" style="width:90px"> pączka?<br>
+    – Tak, <input type="text" class="answer-input" placeholder="(ja-jeść)₁₉" style="width:80px">. Dziś jest tłusty czwartek, więc wszyscy
+    <input type="text" class="answer-input" placeholder="(jeść)₂₀" style="width:90px"> smaczne pączki.<br>
+    – Tak, ale <input type="text" class="answer-input" placeholder="(ja-śmieć)₂₁" style="width:110px"> twierdzić, że nikt ich nie
+    <input type="text" class="answer-input" placeholder="(jeść)₂₂" style="width:80px"> tyle, co ty!<br>
+    – Bo ja jestem wyjątkowy!</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog G</h3>
+    <p>– Ja <input type="text" class="answer-input" placeholder="(umieć)₂₃" style="width:100px"> śpiewać, a ty
+    <input type="text" class="answer-input" placeholder="(umieć)₂₄" style="width:100px"> grać na gitarze. Fajnie!<br>
+    – A co <input type="text" class="answer-input" placeholder="(ty-powiedzieć)₂₅" style="width:120px"> na wspólny występ?</p>
+</div>
+<hr style="margin:20px 0">
+<h3>Dopasuj dialogi do obrazków (A–G)</h3>
+<p class="instruction">Dialog 0 jest przykładem (→ B). Kliknij dialog po lewej, potem obrazek po prawej.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź formy ✓</button>
+    <button class="btn btn-check" style="background:#8e44ad" onclick="matchExercise.check()">Sprawdź obrazki ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise(); matchExercise.clear()">Wyczyść ✕</button>
+    <a href="s4_ex2.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex3a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'wiecie','rozumiecie','wiemy','rozumiemy','śmiem','wiedzą',
+        'rozumieją','wiesz','wiem','wie','powie','jemy',
+        'umiecie','umiemy','wiedzą','wiemy','śmie','wie',
+        'jesz','jem','jedzą','śmiem','je','umiem','umiesz','powiesz'
+    ];
+    checkExercise(answers);
+}
+const matchExercise = new MatchingExercise(
+    'matching-container',
+    ['Dialog A','Dialog B','Dialog C','Dialog D','Dialog E','Dialog F','Dialog G'],
+    ['Obrazek A (śpiew i gitara)','Obrazek B (pomnik, pytanie)','Obrazek C (apteka, pytanie)','Obrazek D (tłusty czwartek, pączki)','Obrazek E (pizza, kolacja)','Obrazek F (kłótnia, twierdzenie)','Obrazek G (wiedza, szkoła)'],
+    {0:1, 1:6, 2:4, 3:5, 4:0, 5:3, 6:2},
+    {0:1}
+);
+</script>
+</body></html>

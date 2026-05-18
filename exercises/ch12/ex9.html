@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 9 — Połącz czasownik z dopełnieniem</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział XII: Czasowniki oraz ich (dobrzy) sąsiedzi</h1>
+<h2>Ćwiczenie 9 — Połącz czasownik z dopełnieniem</h2>
+<div class="chapter-info">Strona 219 podręcznika. Czasowniki + dopełniacz.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz czasownik z odpowiednim dopełnieniem w dopełniaczu. (Ćw. 9, str. 219)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="ex7.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex16.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["Używam", "Uczę się", "Życzę", "Próbuję", "Słucham", "Potrzebuję", "Zapominam", "Boję się / Unikam"],
+    ["zdrowia, szczęścia, pomyślności", "tekstu, długopisu, portfela, kluczy", "audiobooka, śpiewu, hejnału, muzyki", "matematyki, historii, języków obcych", "oscypka, bigosu, zupy, sałatki, ciasta", "ciemnych ulic, myszy, węży, pająków", "czasu do namysłu, odpoczynku, pomocy", "Internetu, GPS-u, komputera, komórki"],
+    {"0": 7, "1": 3, "2": 0, "3": 4, "4": 2, "5": 6, "6": 1, "7": 5},
+    {"0": 7}
+);
+</script>
+</body></html>

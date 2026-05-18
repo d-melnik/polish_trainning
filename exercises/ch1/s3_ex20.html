@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 20 — Uzupełnij dialogi (Jak spędzasz dzień?)</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 20 — Uzupełnij dialogi i dopasuj do obrazków</h2>
+<div class="chapter-info">Strona 43 podręcznika. Koniugacja III (-am, -asz). Różne formy osobowe.</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij dialogi i dopasuj do obrazków. (Ćwiczenie 20, str. 43)</p>
+<div class="dialog-block">
+    <h3>Dialog A</h3>
+    <p>– <span style="font-weight:bold;color:#27ae60">Przepraszam</span><sub>0</sub>, czy nie
+    <input type="text" class="answer-input" placeholder="(przeszkadzać)₁" style="width:140px">?<br>
+    – Ale skąd! Właśnie
+    <input type="text" class="answer-input" placeholder="(my-czekać)₂" style="width:130px"> na gości.
+    <input type="text" class="answer-input" placeholder="(My-Zapraszać)₃" style="width:140px"> do środka!</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog B</h3>
+    <p>– Co państwo <input type="text" class="answer-input" placeholder="(zamawiać)₄" style="width:130px">?<br>
+    – A co pan <input type="text" class="answer-input" placeholder="(polecać)₅" style="width:120px">?<br>
+    – <input type="text" class="answer-input" placeholder="(My-Mieć)₆" style="width:100px"> pyszne naleśniki z jabłkami.<br>
+    – O, to świetnie! <input type="text" class="answer-input" placeholder="(Ja-Uwielbiać)₇" style="width:130px"> je!</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog C</h3>
+    <p>– Na kogo <input type="text" class="answer-input" placeholder="(wy-czekać)₈" style="width:130px">?<br>
+    – Na Łukasza. Jak zwykle <input type="text" class="answer-input" placeholder="(spóźniać się)₉" style="width:130px"> i
+    <input type="text" class="answer-input" placeholder="(uważać)₁₀" style="width:110px">, że wszystko jest w porządku.</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog D</h3>
+    <p>– Na którym przystanku <input type="text" class="answer-input" placeholder="(my-wysiadać)₁₁" style="width:140px">?<br>
+    – Właśnie to <input type="text" class="answer-input" placeholder="(ja-sprawdzać)₁₂" style="width:140px"> w aplikacji.<br>
+    – I co?<br>
+    – I nic. Ta aplikacja znowu nie <input type="text" class="answer-input" placeholder="(działać)₁₃" style="width:120px">.<br>
+    – To po co z niej <input type="text" class="answer-input" placeholder="(ty-korzystać)₁₄" style="width:140px">?</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog E</h3>
+    <p>– Co za pogoda! Znowu <input type="text" class="answer-input" placeholder="(padać)₁₅" style="width:110px"> deszcz!<br>
+    – Wy ciągle <input type="text" class="answer-input" placeholder="(narzekać)₁₆" style="width:130px">, a ja
+    <input type="text" class="answer-input" placeholder="(podziwiać)₁₇" style="width:130px"> tęczę. Jest naprawdę piękna!</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog F</h3>
+    <p>– Świetnie pani <input type="text" class="answer-input" placeholder="(wyglądać)₁₈" style="width:130px"> w tych okularach!<br>
+    – Są bardzo ładne, ale za drogie!<br>
+    – Za drogie? <input type="text" class="answer-input" placeholder="(Ja-Zapewniać)₁₉" style="width:140px">, że ta cena to okazja!<br>
+    – Okazja? Co pan <input type="text" class="answer-input" placeholder="(opowiadać)₂₀" style="width:130px">?</p>
+</div>
+<div class="dialog-block">
+    <h3>Dialog G</h3>
+    <p>– Co oni <input type="text" class="answer-input" placeholder="(grać)₂₁" style="width:90px"> i
+    <input type="text" class="answer-input" placeholder="(śpiewać)₂₂" style="width:120px">?<br>
+    – „Hej, sokoły!" Nie <input type="text" class="answer-input" placeholder="(ty-znać)₂₃" style="width:110px"> tej piosenki?<br>
+    – Ach, tak! <input type="text" class="answer-input" placeholder="(Ja-Pamiętać)₂₄" style="width:130px"> ją z kursu języka polskiego.</p>
+</div>
+<hr style="margin:20px 0">
+<h3>Dopasuj dialogi do obrazków (A–G)</h3>
+<p class="instruction">Kliknij dialog po lewej, a potem odpowiadający obrazek po prawej. Dialog 0 jest przykładem (→ C).</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź formy ✓</button>
+    <button class="btn btn-check" style="background:#8e44ad" onclick="matchExercise.check()">Sprawdź obrazki ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise(); matchExercise.clear()">Wyczyść ✕</button>
+    <a href="s3_ex19a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s4_ex1b.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'Przepraszam','przeszkadzam','czekamy','Zapraszamy',
+        'zamawiają','poleca','Mamy','Uwielbiam',
+        'czekacie','się spóźnia','uważa','wysiadamy',
+        'sprawdzam','działa','korzystasz','pada',
+        'narzekacie','podziwiam','wygląda','Zapewniam',
+        'opowiada','grają','śpiewają','znasz','Pamiętam'
+    ];
+    checkExercise(answers);
+}
+const matchExercise = new MatchingExercise(
+    'matching-container',
+    ['Dialog A','Dialog B','Dialog C','Dialog D','Dialog E','Dialog F','Dialog G'],
+    ['Obrazek A (śpiew, folk)','Obrazek B (restauracja, kelner)','Obrazek C (zaproszenie do domu)','Obrazek D (autobus, aplikacja)','Obrazek E (tęcza, deszcz)','Obrazek F (sklep, okulary)','Obrazek G (spóźnienie, oczekiwanie)'],
+    {0:2, 1:5, 2:6, 3:1, 4:4, 5:3, 6:0},
+    {0:2}
+);
+</script>
+</body></html>

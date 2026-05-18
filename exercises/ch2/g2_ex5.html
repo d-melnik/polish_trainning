@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5 — Uzupełnij tekst formami dokonanymi</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 5 — Co trzeba zrobić? (Grupa II)</h2>
+<div class="chapter-info">Strona 68 podręcznika. Pary aspektowe.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij teksty formami dokonanymi. (Ćwiczenie 5, str. 68)</p>
+<div class="dialog-block">
+<p><b>Marcin (gotuje co dzień):</b> Codziennie kupuję warzywa, wybieram te najświeższe i obieram je przed gotowaniem.</p>
+<p><b>Marian (dziś):</b> Dziś chcę zrobić sałatkę. Muszę
+<b>kupić</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przykład warzywa,
+uważnie <input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> te, które są świeże i dobre,
+a potem <input class="answer-input" type="text" size="12" autocomplete="off"><sup>2</sup> je i pokroić.</p>
+</div>
+
+<div class="dialog-block">
+<p><b>Jarek (sprząta regularnie):</b> Regularnie odkurzam dywany, wyrzucam śmieci, wstawiam naczynia do zmywarki i włączam pralkę.</p>
+<p><b>Jacek (dziś):</b> Muszę dziś posprzątać mieszkanie. Najpierw muszę <input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> dywany, potem <input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> śmieci,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> naczynia do zmywarki i <input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> pralkę.</p>
+</div>
+
+<div class="dialog-block">
+<p><b>Magda (każdego dnia):</b> Każdego dnia sprawdzam e-maile, wysyłam wiadomości, pobieram pliki i uzupełniam raporty.</p>
+<p><b>Marta (dziś):</b> Mam dużo pracy przy komputerze. Muszę <input class="answer-input" type="text" size="12" autocomplete="off"><sup>7</sup> e-maile, <input class="answer-input" type="text" size="12" autocomplete="off"><sup>8</sup> ważną wiadomość szefowi,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>9</sup> niezbędne pliki i <input class="answer-input" type="text" size="12" autocomplete="off"><sup>10</sup> formularz rejestracyjny.</p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g1_ex10.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g2_ex7.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["wybrać", "obrać", "odkurzyć", "wyrzucić", "wstawić", "włączyć", "sprawdzić", "wysłać", "pobrać", "uzupełnić"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

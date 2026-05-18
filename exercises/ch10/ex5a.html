@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5a — Kraków</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział X: I strona bierna zostanie przez nas zrobiona!</h1>
+<h2>Ćwiczenie 5a — Kraków</h2>
+<div class="chapter-info">Strona 206 podręcznika. Strona bierna w tekście.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij tekst właściwymi formami strony biernej. (Ćw. 5a, str. 206)</p>
+<div class="dialog-block"><p style="line-height:2.4">Kraków – jak każde miasto – ma swoje tajemnice, które jeszcze przez nikogo nie <b>zostały odkryte</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span><sup>0a</sup> (odkryć), ale pewne fakty <b>są powtarzane</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span><sup>0b</sup> (powtarzać) chyba przez wszystkich nauczycieli polskiej historii. Każdy, kto się nią interesuje, pewnie słyszał o tym, że Akademia Krakowska, która teraz <input class="answer-input" type="text" size="14" autocomplete="off"><sup>1</sup> (znać) jako Uniwersytet Jagielloński, ma bardzo długą historię. Ta uczelnia <input class="answer-input" type="text" size="20" autocomplete="off"><sup>2</sup> (założyć) już w XIV wieku przez króla Kazimierza Wielkiego i do dziś <input class="answer-input" type="text" size="16" autocomplete="off"><sup>3</sup> (doceniać) przez ludzi nauki.<br><br>Chyba każdy uczeń polskiej szkoły wie, że w kościele Mariackim można podziwiać ołtarz, który <input class="answer-input" type="text" size="22" autocomplete="off"><sup>4</sup> (wyrzeźbić) w XV wieku przez Wita Stwosza. Wiadomo, że na wieży katedry wawelskiej wisi najsłynniejszy w Polsce dzwon, który w XVI wieku <input class="answer-input" type="text" size="22" autocomplete="off"><sup>5</sup> (ufundować) przez króla Zygmunta Starego. A chyba najbardziej znanym faktem jest to, że w Krakowie znajduje się „Dama z gronostajem" – obraz, który przed wiekami <input class="answer-input" type="text" size="22" autocomplete="off"><sup>6</sup> (namalować) przez Leonarda da Vinci i który dziś <input class="answer-input" type="text" size="16" autocomplete="off"><sup>7</sup> (oglądać) przez tysiące turystów.</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex4.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="../index.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["jest znana", "została założona", "jest doceniana", "został wyrzeźbiony", "został ufundowany", "został namalowany", "jest oglądany"];
+    checkExercise(answers);
+}</script></body></html>

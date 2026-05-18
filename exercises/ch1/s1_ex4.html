@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 4 — Czym się zajmuje? (zawody)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział I: Czym się zajmujesz?</h1>
+    <h2>Ćwiczenie 4 — Czym się zajmuje? (zawody)</h2>
+    <div class="chapter-info">Strona 10 podręcznika. Koniugacja I. Połącz zawód z opisem pracy.</div>
+    <div class="exercise-container">
+        <p class="instruction">Czym on(a) się zajmuje? Połącz zawód z odpowiednim opisem.</p>
+        <div id="matching-container"></div>
+        <div class="buttons">
+            <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+            <a href="s1_ex3.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex5.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['sprzedawca / sprzedawczyni', 'klient / klientka', 'student / studentka', 'fryzjer / fryzjerka', 'aktor / aktorka', 'urzędnik / urzędniczka', 'ratownik / ratowniczka', 'kucharz / kucharka', 'dziennikarz / dziennikarka', 'poeta / poetka', 'krawiec / krawcowa'],
+    ['posługuje się igłą i nożyczkami, szyje ubrania', 'gotuje i piecze, realizuje zamówienia', 'pracuje przy biurku, posługuje się pieczątką', 'pisze i publikuje wiersze', 'wydaje pieniądze, kupuje towary, bierze kredyty', 'przekazuje informacje, zadaje pytania, pisze artykuły', 'dostaje oceny, zdaje egzaminy, chce mieć dobry zawód', 'szybko reaguje, niesie pomoc, ratuje życie', 'pracuje w sklepie, obsługuje klientów, sprzedaje', 'udaje kogoś innego, występuje na ekranie i na scenie', 'posługuje się grzebieniem i nożyczkami, czesze i strzyże'],
+    {0: 8, 1: 4, 2: 6, 3: 10, 4: 9, 5: 2, 6: 7, 7: 1, 8: 5, 9: 3, 10: 0},
+    {0: 8}
+);
+</script>
+</body>
+</html>

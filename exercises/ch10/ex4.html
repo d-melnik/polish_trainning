@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 4 — Zamień na stronę bierną</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział X: I strona bierna zostanie przez nas zrobiona!</h1>
+<h2>Ćwiczenie 4 — Zamień na stronę bierną</h2>
+<div class="chapter-info">Strona 205 podręcznika. Strona bierna — wielcy Polacy.</div>
+<div class="exercise-container">
+<p class="instruction">Zamień zdania na stronę bierną. Wpisz formę bierną czasownika. (Ćw. 4, str. 205)</p>
+<table style="border-collapse:collapse;width:100%">
+<tr><th style="padding:4px 8px;text-align:left">Nr</th><th style="padding:4px 8px;text-align:left">Zdanie czynne</th><th style="padding:4px 8px;text-align:left">Zdanie bierne</th></tr>
+<tr><td style="padding:5px 8px"><b>0</b></td><td style="padding:5px 8px">Mikołaj Kopernik ogłosił teorię heliocentryczną.</td><td style="padding:5px 8px">Teoria heliocentryczna <b>została ogłoszona</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przez Mikołaja Kopernika.</td></tr>
+<tr><td style="padding:5px 8px"><b>1</b></td><td style="padding:5px 8px">Fryderyk Chopin skomponował &bdquo;Etiudę rewolucyjną&rdquo;.</td><td style="padding:5px 8px">&bdquo;Etiuda rewolucyjna&rdquo; <input class="answer-input" type="text" size="22" autocomplete="off"> przez Fryderyka Chopina.</td></tr>
+<tr><td style="padding:5px 8px"><b>2</b></td><td style="padding:5px 8px">Ignacy Łukasiewicz wynalazł lampę naftową.</td><td style="padding:5px 8px">Lampa naftowa <input class="answer-input" type="text" size="22" autocomplete="off"> przez Ignacego Łukasiewicza.</td></tr>
+<tr><td style="padding:5px 8px"><b>3</b></td><td style="padding:5px 8px">Henryk Sienkiewicz napisał powieść &bdquo;Quo vadis&rdquo;.</td><td style="padding:5px 8px">Powieść &bdquo;Quo vadis&rdquo; <input class="answer-input" type="text" size="22" autocomplete="off"> przez Henryka Sienkiewicza.</td></tr>
+<tr><td style="padding:5px 8px"><b>4</b></td><td style="padding:5px 8px">Maria Skłodowska-Curie i Piotr Curie odkryli polon i rad.</td><td style="padding:5px 8px">Polon i rad <input class="answer-input" type="text" size="22" autocomplete="off"> przez Marię Skłodowską-Curie i Piotra Curie.</td></tr>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex3.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex5a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["została skomponowana", "została wynaleziona", "została napisana", "zostały odkryte"];
+    checkExercise(answers);
+}</script></body></html>

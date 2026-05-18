@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 12 — Jak młodzież spędza wolny czas?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 12 — Jak młodzież spędza wolny czas?</h2>
+<div class="chapter-info">Strona 57 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Jak młodzież spędza wolny czas? Uzupełnij tekst. (Ćwiczenie 12, str. 57)</p>
+<p style="line-height:2.5">
+Jak młodzież <span style="font-weight:bold;color:#27ae60">spędza</span><sub>0</sub> wolny czas? Dobrze
+<input type="text" class="answer-input" placeholder="(my-wiedzieć)₁" style="width:110px">, że łatwy dostęp do Internetu nie
+<input type="text" class="answer-input" placeholder="(służyć)₂" style="width:100px"> aktywności fizycznej. Bywa, że młodzi ludzie ciągle
+<input type="text" class="answer-input" placeholder="(siedzieć)₃" style="width:110px"> przed komputerem,
+<input type="text" class="answer-input" placeholder="(oglądać)₄" style="width:120px"> filmy i
+<input type="text" class="answer-input" placeholder="(jeść)₅" style="width:90px"> niezdrowe chipsy, ale na szczęście nie wszyscy (i nie zawsze) tak
+<input type="text" class="answer-input" placeholder="(postępować)₆" style="width:130px">.
+
+Młodzi ludzie wcale nie
+<input type="text" class="answer-input" placeholder="(zapominać)₇" style="width:140px"> o aktywności fizycznej i
+<input type="text" class="answer-input" placeholder="(dbać)₈" style="width:100px"> o dobrą kondycję. Często
+<input type="text" class="answer-input" placeholder="(chodzić)₉" style="width:110px"> na basen,
+<input type="text" class="answer-input" placeholder="(ćwiczyć)₁₀" style="width:110px"> na siłowni,
+<input type="text" class="answer-input" placeholder="(biegać)₁₁" style="width:110px"> po parku i
+<input type="text" class="answer-input" placeholder="(jeździć)₁₂" style="width:110px"> na wycieczki rowerowe.
+
+Młodzież chętnie
+<input type="text" class="answer-input" placeholder="(wybierać)₁₃" style="width:120px"> też zajęcia, które
+<input type="text" class="answer-input" placeholder="(rozwijać)₁₄" style="width:130px"> umysł. Popularnością
+<input type="text" class="answer-input" placeholder="(cieszyć się)₁₅" style="width:140px"> kursy języków obcych, zajęcia muzyczne, taneczne i plastyczne, a także kółka teatralne. Młodzi ludzie wiele
+<input type="text" class="answer-input" placeholder="(umieć)₁₆" style="width:100px">, dużo
+<input type="text" class="answer-input" placeholder="(wiedzieć)₁₇" style="width:110px"> i
+<input type="text" class="answer-input" placeholder="(chcieć)₁₈" style="width:100px"> rozwijać swoje zainteresowania. I tak trzymać!
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex11.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="../index.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'spędza',
+        'wiemy',
+        'służy',
+        'siedzą',
+        'oglądają',
+        'jedzą',
+        'postępują',
+        'zapominają',
+        'dbają',
+        'chodzą',
+        'ćwiczą',
+        'biegają',
+        'jeżdżą',
+        'wybiera',
+        'rozwijają',
+        'cieszą się',
+        'umieją',
+        'wiedzą',
+        'chcą'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

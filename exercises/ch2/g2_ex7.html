@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7 — Ale tu nieporządek!</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 7 — Ale tu nieporządek! (Grupa II)</h2>
+<div class="chapter-info">Strona 69 podręcznika. Formy dokonane.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij listę zadań odpowiednimi formami dokonanymi. (Ćwiczenie 7, str. 69)</p>
+<p class="word-bank">Banka słów: <b>zakręcić / zamknąć / wyłączyć / naprawić / wyrzucić / odsłonić / podlać / wstawić</b></p>
+<div class="dialog-block">
+<p><b>Ale tu nieporządek! Trzeba:</b></p>
+<ul>
+<li>– <b>zakręcić</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przykład kran,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> piekarnik,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>2</sup> światło,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> szafkę,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> śmieci,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> rolety,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> kwiaty,</li>
+<li>– <input class="answer-input" type="text" size="12" autocomplete="off"><sup>7</sup> naczynia i sztućce do zmywarki.</li>
+</ul>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g2_ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g2_ex8a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["zamknąć", "wyłączyć", "naprawić", "wyrzucić", "odsłonić", "podlać", "wstawić"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

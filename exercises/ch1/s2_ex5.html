@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5 — Czym się posługujemy?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 5 — Czym się posługujemy?</h2>
+<div class="chapter-info">Strona 23 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Czym się posługujemy? Połącz czynność z narzędziem/środkiem.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s2_ex4.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex6.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['jeździmy', 'lecimy', 'płacimy', 'świecimy', 'kręcimy', 'kroimy', 'słodzimy', 'łowimy', 'palimy', 'gasimy', 'czyścimy buty', 'robimy zdjęcia', 'mierzymy długość'],
+    ['nożem', 'balonem', 'samochodem', 'linijką', 'latarką', 'kierownicą', 'drewnem albo węglem', 'telefonem albo aparatem', 'cukrem albo miodem', 'wędką albo siecią', 'szczotką i pastą', 'kartą albo gotówką', 'wodą i piaskiem'],
+    {0: 2, 1: 1, 2: 11, 3: 4, 4: 5, 5: 0, 6: 8, 7: 9, 8: 6, 9: 12, 10: 10, 11: 7, 12: 3},
+    {0: 2}
+);
+</script>
+</body></html>

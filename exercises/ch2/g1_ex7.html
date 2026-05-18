@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7 — Tekst Mirka</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 7 — Co musi zrobić Mirek? (Grupa I)</h2>
+<div class="chapter-info">Strona 63 podręcznika. Forma dokonana w kontekście.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij tekst formami dokonanymi. (Ćwiczenie 7, str. 63)</p>
+<div class="dialog-block">
+<p><b>Irek:</b> Co ty robisz? Co dzień gotujesz, smażysz, myjesz, kroisz, robisz, pieczesz, zmywasz i sprzątasz!</p>
+<p><b>Mirek:</b> To prawda, że dużo gotuję. Jutro po pracy muszę
+<b>ugotować</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przykład
+obiad dla gości. Poza tym muszę
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> jajecznicę,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>2</sup> naczynia,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> warzywa na sałatkę,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> surówkę,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> szarlotkę,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> resztę naczyń
+i <input class="answer-input" type="text" size="12" autocomplete="off"><sup>7</sup> mieszkanie.</p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g1_ex6.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g1_ex8a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["usmażyć", "umyć", "pokroić", "zrobić", "upiec", "pozmywać", "posprzątać"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

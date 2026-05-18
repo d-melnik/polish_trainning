@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 19a — Mail z Tatr</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 19a — Mail z Tatr</h2>
+<div class="chapter-info">Strona 31 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij mail zgodnie z podanym przykładem. (Ćwiczenie 19a, str. 31)</p>
+<div class="dialog-block">
+    <h3>📧 Ania → Tomek</h3>
+    <p>Cześć, Tomek!</p>
+    <p>Co u Ciebie? Co <span style="font-weight:bold;color:#27ae60">robisz</span><sub>0</sub> w ferie? Ja i Beata jesteśmy w Tatrach i
+    <input type="text" class="answer-input" placeholder="(my-uczyć się)₁" style="width:140px"> jeździć na nartach! Z dnia na dzień
+    <input type="text" class="answer-input" placeholder="(my-czynić)₂" style="width:120px"> duże postępy. Instruktorka często nas
+    <input type="text" class="answer-input" placeholder="(chwalić)₃" style="width:110px"> i bardzo nas to
+    <input type="text" class="answer-input" placeholder="(cieszyć)₄" style="width:110px">.</p>
+    <p>Trochę szkoda, że dni są takie krótkie i słońce tak szybko
+    <input type="text" class="answer-input" placeholder="(zachodzić)₅" style="width:120px">, ale w długie, zimowe wieczory wcale się nie
+    <input type="text" class="answer-input" placeholder="(my-nudzić)₆" style="width:120px">. Jeśli jest ładna pogoda, to
+    <input type="text" class="answer-input" placeholder="(my-chodzić)₇" style="width:120px"> na spacery, a gdy jest silny wiatr i mróz, to
+    <input type="text" class="answer-input" placeholder="(my-siedzieć)₈" style="width:120px"> w przytulnej restauracji,
+    <input type="text" class="answer-input" placeholder="(my-patrzeć)₉" style="width:120px"> na ogień, który wesoło
+    <input type="text" class="answer-input" placeholder="(tańczyć)₁₀" style="width:110px"> w kominku,
+    <input type="text" class="answer-input" placeholder="(my-prosić)₁₁" style="width:120px"> kelnera o gorące dania i już wcale nie
+    <input type="text" class="answer-input" placeholder="(my-myśleć)₁₂" style="width:120px"> o zimnie.</p>
+    <p>Bardzo <input type="text" class="answer-input" placeholder="(ja-lubić)₁₃" style="width:100px"> ferie w górach. Wszędzie
+    <input type="text" class="answer-input" placeholder="(leżeć)₁₄" style="width:100px"> śnieg, który przyjemnie
+    <input type="text" class="answer-input" placeholder="(skrzypieć)₁₅" style="width:120px"> pod ciężkimi butami. Dzieci często
+    <input type="text" class="answer-input" placeholder="(lepić)₁₆" style="width:100px"> bałwana,
+    <input type="text" class="answer-input" placeholder="(jeździć)₁₇" style="width:110px"> na sankach, łyżwach i nartach, a czasem
+    <input type="text" class="answer-input" placeholder="(bawić się)₁₈" style="width:120px"> śnieżkami. A dorośli często
+    <input type="text" class="answer-input" placeholder="(marudzić)₁₉" style="width:120px">, że jest zimno i
+    <input type="text" class="answer-input" placeholder="(skarżyć się)₂₀" style="width:130px">, że jest ślisko, ale chyba też
+    <input type="text" class="answer-input" placeholder="(lubić)₂₁" style="width:100px"> zimę, choć głośno tego nie
+    <input type="text" class="answer-input" placeholder="(mówić)₂₂" style="width:100px">.</p>
+    <p>A Ty? Czy <input type="text" class="answer-input" placeholder="(tęsknić)₂₃" style="width:110px"> za wiosną? A może jednak
+    <input type="text" class="answer-input" placeholder="(Ty-woleć)₂₄" style="width:100px"> zimę?</p>
+    <p>Buziaki! <em>Ania</em></p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex16.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex20.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'robisz',
+        'uczymy się',
+        'czynimy',
+        'chwali',
+        'cieszy',
+        'zachodzi',
+        'nudzimy',
+        'chodzimy',
+        'siedzimy',
+        'patrzymy',
+        'tańczy',
+        'prosimy',
+        'myślimy',
+        'lubię',
+        'leży',
+        'skrzypi',
+        'lepią',
+        'jeżdżą',
+        'bawią się',
+        'marudzą',
+        'skarżą się',
+        'lubią',
+        'mówią',
+        'tęsknisz',
+        'wolisz'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

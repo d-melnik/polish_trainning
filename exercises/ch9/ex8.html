@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 8 — Uzupełnij tekst o świętach</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 8 — Uzupełnij tekst o świętach</h2>
+<div class="chapter-info">Strona 201 podręcznika. Imiesłowy przymiotnikowe bierne.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij tekst odpowiednimi imiesłowami. (Ćw. 8, str. 201)</p>
+<div class="dialog-block"><p style="line-height:2.2">Uwielbiam święta <b>spędzane</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> z całą rodziną. Wtedy już nie jesteśmy tacy <input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> (zająć) nauką czy pracą. Robimy tylko to, co lubimy, więc nie czujemy się ani <input class="answer-input" type="text" size="14" autocomplete="off"><sup>2</sup> (zestresować się), ani <input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> (zmęczyć). Lubię zwłaszcza te chwile, kiedy są <input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> (składać) życzenia i kiedy są <input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> (wręczać) pięknie <input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> (zapakować) prezenty. Wtedy wszyscy są <input class="answer-input" type="text" size="14" autocomplete="off"><sup>7</sup> (uśmiechnąć się) i elegancko <input class="answer-input" type="text" size="10" autocomplete="off"><sup>8</sup> (ubrać się), a stół jest <input class="answer-input" type="text" size="10" autocomplete="off"><sup>9</sup> (nakryć) białym obrusem, na którym stoją pięknie <input class="answer-input" type="text" size="10" autocomplete="off"><sup>10</sup> (podać) potrawy. Potem wszyscy są ciągle <input class="answer-input" type="text" size="14" autocomplete="off"><sup>11</sup> (zachęcać) do tego, żeby próbować kolejnych dań i nawet jeśli ktoś mówi, że jest <input class="answer-input" type="text" size="12" autocomplete="off"><sup>12</sup> (najeść się), to i tak musi wszystkiego spróbować.</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex7.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex9.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["zajęci", "zestresowani", "zmęczeni", "składane", "wręczane", "zapakowane", "uśmiechnięci", "ubrani", "nakryty", "podane", "zachęcani", "najedzony"];
+    checkExercise(answers);
+}</script></body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 12a — Na czym polega ich praca?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 12a — Na czym polega ich praca?</h2>
+<div class="chapter-info">Strona 38 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+
+<p class="instruction">Na czym polega ich praca? Uzupełnij teksty zgodnie z podanym przykładem. (Ćwiczenie 12a, str. 38)</p>
+<div class="dialog-block">
+    <h3>Anna (bibliotekarka)</h3>
+    <div class="word-bank"><span>udzielać</span><span>narzekać</span><span>uwielbiać</span><span>wypożyczać</span><span>zachęcać</span></div>
+    <p>Jestem bibliotekarką.
+    <span style="font-weight:bold;color:#27ae60">Wypożyczam</span><sub>0</sub> książki i
+    <input type="text" class="answer-input" placeholder="(udzielać)₁" style="width:120px"> informacji na ich temat. Od dzieciństwa
+    <input type="text" class="answer-input" placeholder="(uwielbiać)₂" style="width:120px"> literaturę i gorąco
+    <input type="text" class="answer-input" placeholder="(zachęcać)₃" style="width:120px"> do jej czytania. A teraz często
+    <input type="text" class="answer-input" placeholder="(narzekać)₄" style="width:120px">, że ludzie oglądają filmy, słuchają audiobooków, a coraz mniej czytają.</p>
+</div>
+<div class="dialog-block">
+    <h3>Michał (lekarz)</h3>
+    <div class="word-bag"><span>pytać</span><span>badać</span><span>mieć</span><span>rozmawiać</span></div>
+    <div class="word-bank"><span>pytać</span><span>badać</span><span>mieć</span><span>rozmawiać</span></div>
+    <p>Jestem lekarzem i
+    <input type="text" class="answer-input" placeholder="(mieć)₅" style="width:90px"> swój prywatny gabinet. Tam
+    <input type="text" class="answer-input" placeholder="(rozmawiać)₆" style="width:120px"> z pacjentami,
+    <input type="text" class="answer-input" placeholder="(pytać)₇" style="width:100px">, co im dolega, a potem ich
+    <input type="text" class="answer-input" placeholder="(badać)₈" style="width:100px">. Każdemu staram się pomagać, choć nie zawsze jest to łatwe.</p>
+</div>
+<div class="dialog-block">
+    <h3>Renata (koszykarka)</h3>
+    <div class="word-bank"><span>zdobywać</span><span>uprawiać</span><span>rzucać</span><span>biegać</span></div>
+    <p>Od kilku lat
+    <input type="text" class="answer-input" placeholder="(uprawiać)₉" style="width:120px"> koszykówkę. Szybko
+    <input type="text" class="answer-input" placeholder="(biegać)₁₀" style="width:110px"> po parkiecie i często
+    <input type="text" class="answer-input" placeholder="(rzucać)₁₁" style="width:110px"> do kosza. Oczywiście, nie zawsze trafiam, ale i tak
+    <input type="text" class="answer-input" placeholder="(zdobywać)₁₂" style="width:120px"> dużo punktów dla swojej drużyny.</p>
+</div>
+<div class="dialog-block">
+    <h3>Maciej (dietetyk)</h3>
+    <div class="word-bank"><span>unikać</span><span>dbać</span><span>spędzać</span><span>wybierać</span></div>
+    <p>Jako dietetyk bardzo
+    <input type="text" class="answer-input" placeholder="(dbać)₁₃" style="width:100px"> o siebie i o swoich pacjentów. Zawsze
+    <input type="text" class="answer-input" placeholder="(wybierać)₁₄" style="width:120px"> świeże produkty,
+    <input type="text" class="answer-input" placeholder="(unikać)₁₅" style="width:120px"> sztucznych konserwantów i często
+    <input type="text" class="answer-input" placeholder="(spędzać)₁₆" style="width:120px"> czas na siłowni.</p>
+</div>
+<div class="dialog-block">
+    <h3>Julia (przewodniczka)</h3>
+    <div class="word-bank"><span>zabierać</span><span>opowiadać</span><span>znać</span><span>odpowiadać</span></div>
+    <p>Jestem przewodniczką –
+    <input type="text" class="answer-input" placeholder="(zabierać)₁₇" style="width:120px"> turystów na niezwykły spacer śladami historii. Najpierw dużo
+    <input type="text" class="answer-input" placeholder="(opowiadać)₁₈" style="width:130px"> o różnych miejscach i zabytkach, a potem
+    <input type="text" class="answer-input" placeholder="(odpowiadać)₁₉" style="width:130px"> na pytania. Ale nie na wszystko
+    <input type="text" class="answer-input" placeholder="(znać)₂₀" style="width:100px"> odpowiedź. Każde miasto ma swoje tajemnice!</p>
+</div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex10.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex15a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'Wypożyczam',
+        'udzielam',
+        'uwielbiam',
+        'zachęcam',
+        'narzekam',
+        'mam',
+        'rozmawiam',
+        'pytam',
+        'badam',
+        'uprawiam',
+        'biegam',
+        'rzucam',
+        'zdobywam',
+        'dbam',
+        'wybieram',
+        'unikam',
+        'spędzam',
+        'zabieram',
+        'opowiadam',
+        'odpowiadam',
+        'znam'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

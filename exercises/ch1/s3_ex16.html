@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 16 — Uwielbiamy majówkę!</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 16 — Uwielbiamy majówkę!</h2>
+<div class="chapter-info">Strona 41 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij tekst zgodnie z podanym przykładem. (Ćwiczenie 16, str. 41)</p>
+<div class="word-bank">
+    <span>zdobywać</span><span>zapraszać</span><span>wspominać</span><span>czekać</span><span>odpoczywać</span>
+    <span>przyglądać się</span><span>podziwiać</span><span>wracać</span><span>opowiadać</span><span>grać</span>
+    <span>wyjeżdżać</span><span>rozmawiać</span><span>nazywać</span><span>pływać</span><span>zakładać</span>
+</div>
+<p style="line-height:2.5">
+Uwielbiamy majówkę!<br>
+Na początku maja są dni wolne od nauki i pracy. Ten wyjątkowy czas
+<span style="font-weight:bold;color:#27ae60">nazywamy</span><sub>0</sub> majówką i urządzamy wtedy różne imprezy oraz wycieczki. Często
+<input type="text" class="answer-input" placeholder="(wyjeżdżać)₁" style="width:140px"> za miasto (rowerem, samochodem, autobusem lub pociągiem) i
+<input type="text" class="answer-input" placeholder="(odpoczywać)₂" style="width:140px"> nad wodą (rzeką, jeziorem, zalewem, morzem). Ale jeszcze nie
+<input type="text" class="answer-input" placeholder="(pływać)₃" style="width:120px">, bo woda jest za zimna!
+
+Świetnym pomysłem jest też wyjazd w góry –
+<input type="text" class="answer-input" placeholder="(zakładać)₄" style="width:130px"> wygodne buty i
+<input type="text" class="answer-input" placeholder="(zdobywać)₅" style="width:130px"> różne szczyty, a stamtąd
+<input type="text" class="answer-input" placeholder="(podziwiać)₆" style="width:130px"> piękne widoki.
+
+Majówka to także imprezy na świeżym powietrzu. Często
+<input type="text" class="answer-input" placeholder="(zapraszać)₇" style="width:140px"> swoich znajomych na grilla i
+<input type="text" class="answer-input" placeholder="(rozmawiać)₈" style="width:140px"> z nimi na różne tematy –
+<input type="text" class="answer-input" placeholder="(wspominać)₉" style="width:130px"> dawne czasy albo
+<input type="text" class="answer-input" placeholder="(opowiadać)₁₀" style="width:140px"> o naszych planach na wakacje. Potem dla zabawy i dla zdrowia
+<input type="text" class="answer-input" placeholder="(grać)₁₁" style="width:90px"> w badmintona, siatkówkę, piłkę nożną, a jeśli nie mamy siły, to
+<input type="text" class="answer-input" placeholder="(przyglądać się)₁₂" style="width:160px">, jak grają inni.
+
+Niestety, majówka szybko mija, więc po paru dniach tej świątecznej przerwy
+<input type="text" class="answer-input" placeholder="(wracać)₁₃" style="width:120px"> do codziennych obowiązków i z niecierpliwością
+<input type="text" class="answer-input" placeholder="(czekać)₁₄" style="width:110px"> na lato.
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex15a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex19a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'nazywamy',
+        'wyjeżdżamy',
+        'odpoczywamy',
+        'pływamy',
+        'zakładamy',
+        'zdobywamy',
+        'podziwiamy',
+        'zapraszamy',
+        'rozmawiamy',
+        'wspominamy',
+        'opowiadamy',
+        'gramy',
+        'przyglądamy się',
+        'wracamy',
+        'czekamy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

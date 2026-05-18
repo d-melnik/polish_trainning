@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 6 — Połącz pytania i odpowiedzi (wy)</h2>
+<div class="chapter-info">Strona 35 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+<p class="instruction">Połącz pytania (0–5) z odpowiedziami (A–F). Forma 'wy'.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s3_ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex9.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['– Jak odpoczywacie?', '– Uprawiacie sport?', '– I to nazywacie aktywnym odpoczynkiem?', '– Pewnie, że nie macie racji.', '– A gracie w prawdziwą piłkę?', '– Czy pamiętacie, jak ona wygląda?'],
+    ['– Tak. Gramy w piłkę na konsoli.', '– A my uważamy inaczej.', '– Aktywnie!', '– Nie, nawet jej nie mamy.', '– Tak samo jak na ekranie.', '– Tak, a nie mamy racji?'],
+    {0: 2, 1: 0, 2: 5, 3: 1, 4: 3, 5: 4},
+    {0: 2}
+);
+</script>
+</body></html>

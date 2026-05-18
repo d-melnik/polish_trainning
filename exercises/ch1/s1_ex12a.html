@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 12a — Czym on/ona się zajmuje?</title><link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 12a — Czym on/ona się zajmuje?</h2>
+<div class="chapter-info">Strona 15 podręcznika. Koniugacja I. 3. osoba liczby pojedynczej.</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Czym on/ona się zajmuje? Uzupełnij teksty zgodnie z podanym przykładem. (Ćwiczenie 12a, str. 15)</p>
+
+        <div class="dialog-block">
+            <h3>Michał (cukiernik)</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>czuć się</span><span>piec</span><span>nieść</span><span>pracować</span><span>dekorować</span>
+            </div>
+            <p><span style="font-weight:bold">Pracuję</span> jako cukiernik.
+            <input type="text" class="answer-input" placeholder="(piec)₁" style="width:110px"> torty na zamówienie,
+            <input type="text" class="answer-input" placeholder="(dekorować)₂" style="width:120px"> je różnymi życzeniami, a potem ostrożnie
+            <input type="text" class="answer-input" placeholder="(nieść)₃" style="width:100px"> do lodówki.
+            <input type="text" class="answer-input" placeholder="(czuć się)₄" style="width:110px"> trochę jak artysta, bo moje ciasta to takie małe dzieła sztuki!</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Barbara (dziennikarka)</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>oczekiwać</span><span>występować</span><span>zadawać</span><span>otrzymywać</span>
+            </div>
+            <p>Jestem dziennikarką i często
+            <input type="text" class="answer-input" placeholder="(występować)₅" style="width:130px"> przed kamerą. Jestem bardzo poważna – nieraz
+            <input type="text" class="answer-input" placeholder="(zadawać)₆" style="width:110px"> trudne pytania i
+            <input type="text" class="answer-input" placeholder="(oczekiwać)₇" style="width:120px"> mądrych odpowiedzi, ale nie zawsze je
+            <input type="text" class="answer-input" placeholder="(otrzymywać)₈" style="width:130px">.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Adam (malarz)</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>pokazywać</span><span>sprzedawać</span><span>brać</span><span>malować</span>
+            </div>
+            <p>Moja praca? Rano
+            <input type="text" class="answer-input" placeholder="(brać)₉" style="width:100px"> pędzel i farby, a potem godzinami
+            <input type="text" class="answer-input" placeholder="(malować)₁₀" style="width:110px"> obrazy. Kiedy są już gotowe, to
+            <input type="text" class="answer-input" placeholder="(pokazywać)₁₁" style="width:120px"> je w Internecie i
+            <input type="text" class="answer-input" placeholder="(sprzedawać)₁₂" style="width:120px"> za rozsądną cenę.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Elżbieta (studentka prawa)</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>dostawać</span><span>studiować</span><span>zdawać</span><span>chcieć</span>
+            </div>
+            <p>Od dwóch lat
+            <input type="text" class="answer-input" placeholder="(studiować)₁₃" style="width:120px"> prawo. Nie jest lekko, ale na szczęście
+            <input type="text" class="answer-input" placeholder="(zdawać)₁₄" style="width:110px"> wszystkie egzaminy i
+            <input type="text" class="answer-input" placeholder="(dostawać)₁₅" style="width:120px"> dobre oceny. A kim
+            <input type="text" class="answer-input" placeholder="(chcieć)₁₆" style="width:110px"> być po studiach? Panią sędzią!</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Magdalena (urzędniczka)</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>móc</span><span>podejmować</span><span>pić</span><span>jechać</span>
+            </div>
+            <p>Właśnie
+            <input type="text" class="answer-input" placeholder="(jechać)₁₇" style="width:100px"> do pracy. A kim jestem? Urzędniczką. Moja praca jest bardzo odpowiedzialna, bo codziennie
+            <input type="text" class="answer-input" placeholder="(podejmować)₁₈" style="width:130px"> ważne decyzje. To nie jest tak, że tylko
+            <input type="text" class="answer-input" placeholder="(pić)₁₉" style="width:100px"> kawę przed komputerem, choć rzeczywiście nie
+            <input type="text" class="answer-input" placeholder="(móc)₂₀" style="width:100px"> bez niej żyć.</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s1_ex10.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s1_ex15a.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = [
+        'Piecę', 'dekoruję', 'niosę', 'Czuję się',
+        'występuję', 'zadaję', 'oczekuję', 'otrzymuję',
+        'biorę', 'maluję', 'pokazuję', 'sprzedaję',
+        'studiuję', 'zdaję', 'dostaję', 'chcę',
+        'jadę', 'podejmuję', 'pić', 'mogę'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

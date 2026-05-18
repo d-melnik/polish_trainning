@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 2 — Które słowo nie pasuje?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 2 — Które słowo nie pasuje? (Grupa I)</h2>
+<div class="chapter-info">Strona 62 podręcznika. Kuchnia.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz wyraz, który <b>nie pasuje</b> do danego czasownika. (Ćwiczenie 2, str. 62)</p>
+<p><b>Przykład:</b> (po)smarować: miodem, dżemem, sokiem, masłem &mdash; <i>wszystkie pasują!</i></p>
+<table style="border-collapse:collapse;width:100%">
+<tr><th style="text-align:left;padding:4px 8px">Czasownik</th><th style="text-align:left;padding:4px 8px">Wybierz wyraz, który nie pasuje</th></tr>
+<tr><td style="padding:5px 8px"><b>1. (po)kroić</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>cebulę</option><option>paprykę</option><option>cytrynę</option><option>sałatkę</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>2. (po)mieszać</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>sos</option><option>zupę</option><option>łyżkę</option><option>herbatę</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>3. (po)zmywać</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>kubki</option><option>talerze</option><option>szklanki</option><option>dania</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>4. (po)sprzątać</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>pokój</option><option>kuchnię</option><option>okno</option><option>mieszkanie</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>5. (u)gotować</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>frytki</option><option>ziemniaki</option><option>parówki</option><option>pierogi</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>6. (u)smażyć</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>placki</option><option>przyprawy</option><option>naleśniki</option><option>kotlety</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>7. (u)piec</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>sernik</option><option>rosół</option><option>pizzę</option><option>szarlotkę</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>8. (u)lepić</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>cebulę</option><option>śnieżkę</option><option>bałwana</option><option>pierogi</option></select></td></tr>
+<tr><td style="padding:5px 8px"><b>9. (u)myć</b></td><td style="padding:5px 8px"><select class="answer-input"><option value="">—</option><option>kubek</option><option>talerz</option><option>garnek</option><option>ciasto</option></select></td></tr>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="../index.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g1_ex5.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["sałatkę", "łyżkę", "dania", "okno", "frytki", "przyprawy", "rosół", "cebulę", "ciasto"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

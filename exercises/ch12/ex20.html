@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 20 — O czym czy o co?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział XII: Czasowniki oraz ich (dobrzy) sąsiedzi</h1>
+<h2>Ćwiczenie 20 — O czym czy o co?</h2>
+<div class="chapter-info">Strona 224 podręcznika. Przyimek „o" + biernik lub miejscownik.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwą formę. (Ćw. 20, str. 224)</p>
+<div class="dialog-block"><p style="line-height:2.6">Dziś opowiem wam o (<b>swoim bracie</b>, swojego brata)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>. Jego pasją jest sport, więc bardzo dba o <select class="answer-input"><option value="">—</option><option>swoją kondycję</option><option>swojej kondycji</option></select><sup>1</sup> i codziennie biega albo pływa. Kiedy go pytam o <select class="answer-input"><option value="">—</option><option>plany</option><option>planach</option></select><sup>2</sup> na przyszłość, to mówi, że marzy o <select class="answer-input"><option value="">—</option><option>karierę</option><option>karierze</option></select><sup>3</sup> sportowej. Nie wiem, czy to dobrze. Każdy sportowiec walczy o <select class="answer-input"><option value="">—</option><option>złoty medal</option><option>złotym medalu</option></select><sup>4</sup>, ale przecież nie każdy go zdobywa. Mój brat jest jednak bardzo ambitny i uparty. Teraz stara się o <select class="answer-input"><option value="">—</option><option>miejsce</option><option>miejscu</option></select><sup>5</sup> w drużynie juniorów i prosi trenera o <select class="answer-input"><option value="">—</option><option>przyjęcie</option><option>przyjęciu</option></select><sup>6</sup> go do składu. Kto wie? Może mu się uda i już niedługo napiszę wam o <select class="answer-input"><option value="">—</option><option>sukcesy</option><option>sukcesach</option></select><sup>7</sup> mojego brata?</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex17.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="../index.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["swoją kondycję", "plany", "karierze", "złoty medal", "miejsce", "przyjęcie", "sukcesach"];
+    checkExercise(answers);
+}</script></body></html>

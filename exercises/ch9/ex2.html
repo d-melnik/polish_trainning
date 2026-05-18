@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 2 — Połącz opisy ze słowami</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 2 — Połącz opisy ze słowami</h2>
+<div class="chapter-info">Strona 198 podręcznika. Imiesłowy przymiotnikowe bierne.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz opis z odpowiednim słowem. (Ćw. 2–3, str. 198)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["nucona i śpiewana na dobranoc", "podawana i jedzona wieczorem", "prana, prasowana, wkładana, zapinana", "włączona, wyciszona, zajęta, rozładowana", "kupowana na poczcie, zamykana i otwierana", "wkładana, zdejmowana, noszona przez władców"],
+    ["kolacja", "kołysanka", "komórka", "koperta", "korona", "koszula"],
+    {"0": 1, "1": 0, "2": 3, "3": 4, "4": 5, "5": 2},
+    {"0": 1}
+);
+</script>
+</body></html>

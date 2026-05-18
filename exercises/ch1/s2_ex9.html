@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 9 — Co robisz o tej godzinie?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 9 — Co robisz o tej godzinie?</h2>
+<div class="chapter-info">Strona 26 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Na podstawie słów z ramki napisz, co robisz o tej godzinie. (Ćwiczenie 9, str. 26)</p>
+<div class="word-bank">
+    <span>robić zakupy</span><span>budzić się</span><span>ćwiczyć na siłowni</span>
+    <span>smażyć jajecznicę</span><span>jeździć rowerem</span>
+    <span>uczyć się polskiego</span><span>kroić warzywa na sałatkę</span>
+</div>
+<table class="fill-table">
+    <tr><th>Godzina</th><th>Czynność</th></tr>
+    <tr><td>O siódmej</td><td><span class="given">budzę się</span></td></tr>
+    <tr><td>O ósmej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+    <tr><td>Od dziewiątej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+    <tr><td>O pierwszej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+    <tr><td>O drugiej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+    <tr><td>O trzeciej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+    <tr><td>O piątej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:240px"></td></tr>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex6.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex10.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'smażę jajecznicę',
+        'uczę się polskiego',
+        'robię zakupy',
+        'kroję warzywa na sałatkę',
+        'jeżdżę rowerem',
+        'ćwiczę na siłowni'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

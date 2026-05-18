@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 8a — Połącz pary aspektowe</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 8a — Połącz pary aspektowe z dopełnieniami (Grupa II)</h2>
+<div class="chapter-info">Strona 70 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz parę aspektową (0–8) z odpowiednim dopełnieniem (A–I). Kliknij parę po lewej, potem dopełnienie po prawej. (Ćwiczenie 8a, str. 70)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="g2_ex7.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g2_ex8b.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["spędzać / spędzić", "odkrywać / odkryć", "urządzać / urządzić", "zwiedzać / zwiedzić", "odwiedzać / odwiedzić", "opalać się / opalić się", "wstawać / wstać", "zdobywać / zdobyć", "spotykać się / spotkać się"],
+    ["wysoki szczyt", "czas wolny", "babcię i dziadka", "imprezę", "nowe miejsca", "kolejne muzea", "nad rzeką", "z przyjaciółmi", "wcześnie rano"],
+    {"0": 1, "1": 4, "2": 3, "3": 5, "4": 2, "5": 6, "6": 8, "7": 0, "8": 7},
+    {"0": 1}
+);
+</script>
+</body></html>

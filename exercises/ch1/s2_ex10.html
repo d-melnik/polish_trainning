@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 10 — Uzupełnij tekst (mój dzień)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 10 — Uzupełnij tekst (mój dzień)</h2>
+<div class="chapter-info">Strona 26 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij tekst odpowiednim słowem. (Ćwiczenie 10, str. 26)</p>
+<p style="line-height:2.5">
+Mój zwykły dzień?
+<span style="font-weight:bold;color:#27ae60">Budzę się</span><sub>0</sub>
+dość wcześnie rano, ale jeszcze przez chwilę
+<input type="text" class="answer-input" placeholder="(leżeć)₁" style="width:100px"> w łóżku, bo nie lubię się spieszyć.
+W końcu się podnoszę, bo mój kot głośno mruczy i miauczy mi do ucha. On ciągle życzy sobie czegoś do jedzenia, a ja
+<input type="text" class="answer-input" placeholder="(musieć)₂" style="width:100px"> go ciągle karmić.
+Sam też jestem głodny, więc na śniadanie
+<input type="text" class="answer-input" placeholder="(robić)₃" style="width:100px"> sobie pyszne kanapki.
+Ostrożnie
+<input type="text" class="answer-input" placeholder="(kroić)₄" style="width:100px"> chleb, ser, szynkę, pomidory i – gotowe! Potem parzę czarną herbatę i
+<input type="text" class="answer-input" placeholder="(słodzić)₅" style="width:110px"> ją łyżeczką cukru albo miodu. Po śniadaniu jeszcze przez chwilę
+<input type="text" class="answer-input" placeholder="(siedzieć)₆" style="width:110px"> przy stole (bo nie lubię się spieszyć) i około ósmej
+<input type="text" class="answer-input" placeholder="(wychodzić)₇" style="width:120px"> z domu.
+Na uniwersytet zwykle
+<input type="text" class="answer-input" placeholder="(jeździć)₈" style="width:100px"> tramwajem, bo wtedy nigdy nie
+<input type="text" class="answer-input" placeholder="(stać)₉" style="width:90px"> w korku. Po południu
+<input type="text" class="answer-input" placeholder="(kończyć)₁₀" style="width:110px"> zajęcia na uczelni i już jestem wolny. Wieczorami
+<input type="text" class="answer-input" placeholder="(chodzić)₁₁" style="width:100px"> jeszcze z kolegami na siłownię, ale nie
+<input type="text" class="answer-input" placeholder="(ćwiczyć)₁₂" style="width:100px"> dużo, bo szybko
+<input type="text" class="answer-input" placeholder="(męczyć się)₁₃" style="width:120px">. Lubię sport, ale bez przesady! Zdecydowanie
+<input type="text" class="answer-input" placeholder="(woleć)₁₄" style="width:100px"> siedzieć przy kominku albo leżeć na kanapie. Często
+<input type="text" class="answer-input" placeholder="(mówić)₁₅" style="width:100px">, że jestem podobny do swojego kota i on chyba też to widzi. Dużo nas łączy!
+</p>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex9.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex12a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'Budzę się',
+        'leżę',
+        'muszę',
+        'robię',
+        'kroję',
+        'słodzę',
+        'siedzę',
+        'wychodzę',
+        'jeżdżę',
+        'stoję',
+        'kończę',
+        'chodzę',
+        'ćwiczę',
+        'się męczę',
+        'wolę',
+        'mówię'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

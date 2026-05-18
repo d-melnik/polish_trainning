@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 4 — Listy zadań Elwiry i Jacka</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 4 — Co chcą zrobić? (Grupa III)</h2>
+<div class="chapter-info">Strona 74 podręcznika. Forma dokonana.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij listy form dokonanych. (Ćwiczenie 4, str. 74)</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div style="background:#e8f5e9;border-radius:6px;padding:12px 16px">
+<h3 style="margin:0 0 8px 0;color:#2c3e50">Elwira – chce:</h3>
+<ul>
+<li><b>przeczytać</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>  biografię Jana Matejki i dobrze <b>poznać</b><sup>0</sup> jego życie</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> kolejny film dokumentalny o malarzu</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>2</sup> książki z biblioteki na ten temat</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> Dom Jana Matejki przy ulicy Floriańskiej</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> sobie nową pamiątkę na Starym Mieście</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> udział w grze miejskiej "Śladami Matejki"</li>
+</ul>
+</div>
+
+<div style="background:#e3f2fd;border-radius:6px;padding:12px 16px">
+<h3 style="margin:0 0 8px 0;color:#2c3e50">Jacek – chce:</h3>
+<ul>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> swój wygląd na czas spektaklu</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>7</sup> historyczny kostium rycerza</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>8</sup> tekstu swojej roli na pamięć</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>9</sup> na scenie amatorskiego teatru</li>
+<li><input class="answer-input" type="text" size="12" autocomplete="off"><sup>10</sup> wielkie brawa od publiczności</li>
+</ul>
+</div>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g3_ex3b.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="../index.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["obejrzeć", "wypożyczyć", "zwiedzić", "kupić", "wziąć", "zmienić", "przymierzyć", "nauczyć się", "zagrać", "dostać"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

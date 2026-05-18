@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 19a — Mail z majówki</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 19a — Mail z majówki</h2>
+<div class="chapter-info">Strona 42 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij mail zgodnie z podanym przykładem. (Ćwiczenie 19a, str. 42)</p>
+<div class="dialog-block">
+    <h3>📧 Karolina → Michał</h3>
+    <p>Cześć, co u Ciebie? Jak
+    <span style="font-weight:bold;color:#27ae60">spędzasz</span><sub>0</sub> majówkę?
+    <input type="text" class="answer-input" placeholder="(Ja-Mieć)₁" style="width:90px"> nadzieję, że też
+    <input type="text" class="answer-input" placeholder="(Ty-korzystać)₂" style="width:130px"> z pięknej pogody!</p>
+    <p>A ja teraz
+    <input type="text" class="answer-input" placeholder="(odpoczywać)₃" style="width:130px"> na wsi. Jest cudownie! Ptaki bez przerwy
+    <input type="text" class="answer-input" placeholder="(śpiewać)₄" style="width:120px">, ale mnie to nie
+    <input type="text" class="answer-input" placeholder="(przeszkadzać)₅" style="width:140px">. Gdy
+    <input type="text" class="answer-input" placeholder="(ja-słuchać)₆" style="width:120px"> tego koncertu, to
+    <input type="text" class="answer-input" placeholder="(ja-zapominać)₇" style="width:130px"> o codziennych problemach i od razu
+    <input type="text" class="answer-input" placeholder="(poprawiać)₈" style="width:120px"> mi się humor. Taka muzyka najlepiej
+    <input type="text" class="answer-input" placeholder="(wpływać)₉" style="width:120px"> na mój nastrój!</p>
+    <p>Poza tym
+    <input type="text" class="answer-input" placeholder="(ja-dbać)₁₀" style="width:100px"> o swoją formę fizyczną. Jeśli nie
+    <input type="text" class="answer-input" placeholder="(padać)₁₁" style="width:100px">, to
+    <input type="text" class="answer-input" placeholder="(ja-biegać)₁₂" style="width:120px"> po lesie albo
+    <input type="text" class="answer-input" placeholder="(ja-wsiadać)₁₃" style="width:120px"> na swój stary rower, który wciąż świetnie
+    <input type="text" class="answer-input" placeholder="(wyglądać)₁₄" style="width:120px"> i
+    <input type="text" class="answer-input" placeholder="(mieć)₁₅" style="width:80px"> swój styl!</p>
+    <p>Wieczorem też jest miło, bo
+    <input type="text" class="answer-input" placeholder="(ja-urządzać)₁₆" style="width:130px"> kolację przy grillu i
+    <input type="text" class="answer-input" placeholder="(ja-zapraszać)₁₇" style="width:140px"> na nią swoje koleżanki i swoich kolegów. Często
+    <input type="text" class="answer-input" placeholder="(my-spotykać się)₁₈" style="width:160px"> ze sobą i dużo
+    <input type="text" class="answer-input" placeholder="(my-rozmawiać)₁₉" style="width:150px"> na aktualne tematy albo
+    <input type="text" class="answer-input" placeholder="(my-wspominać)₂₀" style="width:150px"> dawne czasy. Kiedy
+    <input type="text" class="answer-input" placeholder="(ja-oglądać)₂₁" style="width:130px"> stare fotografie, to trochę
+    <input type="text" class="answer-input" placeholder="(ja-narzekać)₂₂" style="width:130px">, że czas tak szybko
+    <input type="text" class="answer-input" placeholder="(mijać)₂₃" style="width:100px">. Ale piękne wspomnienia ciągle
+    <input type="text" class="answer-input" placeholder="(trwać)₂₄" style="width:100px">!</p>
+    <p><input type="text" class="answer-input" placeholder="(Ja-Pozdrawiać)₂₅" style="width:140px"> Cię gorąco i niecierpliwie
+    <input type="text" class="answer-input" placeholder="(czekać)₂₆" style="width:110px"> na Twój mail!</p>
+    <p><em>Karolina</em></p>
+</div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex16.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex20.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'spędzasz',
+        'Mam',
+        'korzystasz',
+        'odpoczywam',
+        'śpiewają',
+        'przeszkadza',
+        'słucham',
+        'zapominam',
+        'poprawia',
+        'wpływa',
+        'dbam',
+        'pada',
+        'biegam',
+        'wsiadam',
+        'wygląda',
+        'ma',
+        'urządzam',
+        'zapraszam',
+        'spotykamy się',
+        'rozmawiamy',
+        'wspominamy',
+        'oglądam',
+        'narzekam',
+        'mija',
+        'trwają',
+        'Pozdrawiam',
+        'czekam'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

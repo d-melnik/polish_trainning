@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5 — Połącz zdania</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 5 — Połącz sytuacje z radami (Grupa I)</h2>
+<div class="chapter-info">Strona 62 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz sytuacje (0–10) z radami (A–K). Kliknij sytuację po lewej, potem radę po prawej. (Ćwiczenie 5, str. 62)</p>
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="g1_ex2.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g1_ex6.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ["Ale ta dynia jest wielka i ciężka!", "Masz ochotę na naleśniki?", "To kawa z cukrem i mlekiem.", "Ta herbata jest bardzo gorzka.", "Ten kubek wcale nie jest czysty.", "Jak oni robią tak pyszny sernik?", "Ale wielki tort!", "Te ziemniaki nie mają smaku.", "Kot znowu jest głodny.", "Widzisz ten bałagan?", "Widzisz te brudne naczynia?"],
+    ["Musimy to wszystko posprzątać!", "Trzeba go nakarmić.", "Trzeba go dokładnie umyć.", "Można go pokroić na sto porcji.", "Trzeba ją pomieszać.", "Aż trudno ją zważyć!", "Warto ją posłodzić miodem.", "Warto ich poprosić o przepis!", "Musimy je pozmywać.", "Można je łatwo usmażyć.", "Trzeba je trochę posolić."],
+    {"0": 5, "1": 9, "2": 4, "3": 6, "4": 2, "5": 7, "6": 3, "7": 10, "8": 1, "9": 0, "10": 8},
+    {"0": 5}
+);
+</script>
+</body></html>

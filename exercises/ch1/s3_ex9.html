@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 9 — Jak spędzasz swój dzień? (grafik)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 9 — Jak spędzasz swój dzień? (grafik)</h2>
+<div class="chapter-info">Strona 37 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+
+<p class="instruction">Na podstawie słów z ramki napisz, jak spędzasz swój dzień. (Ćwiczenie 9, str. 37)</p>
+<div class="word-bank">
+    <span>sprzątać i odkurzać pokój</span><span>zaczynać nowy dzień</span>
+    <span>mieć lekcje</span><span>podlewać kwiaty</span>
+    <span>wracać do domu</span><span>odpoczywać</span>
+    <span>grać w koszykówkę</span>
+</div>
+<table class="fill-table">
+    <tr><th>Godzina</th><th>Czynność</th></tr>
+    <tr><td>O siódmej</td><td><span class="given">zaczynam nowy dzień</span></td></tr>
+    <tr><td>Od ósmej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+    <tr><td>O dwunastej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+    <tr><td>O pierwszej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+    <tr><td>O trzeciej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+    <tr><td>O piątej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+    <tr><td>O szóstej</td><td><input type="text" class="answer-input" placeholder="...?" style="width:260px"></td></tr>
+</table>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s3_ex6.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex10.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'mam lekcje',
+        'gram w koszykówkę',
+        'wracam do domu',
+        'odpoczywam',
+        'sprzątam i odkurzam pokój',
+        'podlewam kwiaty'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 8a — Domowe obowiązki</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 8a — Domowe obowiązki</h2>
+<div class="chapter-info">Strona 54 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Domowe obowiązki. Uzupełnij tekst. (Ćwiczenie 8a, str. 54)</p>
+<div class="word-bank">
+    <span>móc</span><span>chcieć</span><span>czuć się</span><span>wykonywać</span><span>pracować</span>
+    <span>ścielić</span><span>wynosić</span><span>musieć</span><span>dbać</span><span>zmywać</span>
+    <span>odpoczywać</span><span>odkurzać</span><span>sprzątać</span>
+</div>
+<p style="line-height:2.5">
+W domu nie tylko
+<span style="font-weight:bold;color:#27ae60">odpoczywamy</span><sub>0</sub>, ale i
+<input type="text" class="answer-input" placeholder="(pracować)₁" style="width:120px">. Już od dzieciństwa
+<input type="text" class="answer-input" placeholder="(wykonywać)₂" style="width:140px"> drobne obowiązki domowe. Rano –
+<input type="text" class="answer-input" placeholder="(ścielić)₃" style="width:110px"> łóżko, po posiłkach –
+<input type="text" class="answer-input" placeholder="(zmywać)₄" style="width:110px"> naczynia, a kiedy jest bałagan –
+<input type="text" class="answer-input" placeholder="(sprzątać)₅" style="width:120px"> mieszkanie,
+<input type="text" class="answer-input" placeholder="(odkurzać)₆" style="width:130px"> dywany i
+<input type="text" class="answer-input" placeholder="(wynosić)₇" style="width:120px"> śmieci.
+Jeśli <input type="text" class="answer-input" placeholder="(dbać)₈" style="width:100px"> o nasz dom, to dobrze w nim
+<input type="text" class="answer-input" placeholder="(czuć się)₉" style="width:120px">. Nie
+<input type="text" class="answer-input" placeholder="(móc)₁₀" style="width:90px"> więc zapominać o domowych obowiązkach i
+<input type="text" class="answer-input" placeholder="(musieć)₁₁" style="width:110px"> je codziennie wykonywać (choć nie zawsze tego
+<input type="text" class="answer-input" placeholder="(chcieć)₁₂" style="width:110px">).
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex7c.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex9.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'odpoczywamy',
+        'pracujemy',
+        'wykonujemy',
+        'ścielimy',
+        'zmywamy',
+        'sprzątamy',
+        'odkurzamy',
+        'wynosimy',
+        'dbamy',
+        'się czujemy',
+        'możemy',
+        'musimy',
+        'chcemy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

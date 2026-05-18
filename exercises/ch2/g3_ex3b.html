@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3b — Teksty Doroty i Mileny</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 3b — Co chcą zrobić Dorota i Milena? (Grupa III)</h2>
+<div class="chapter-info">Strona 72 podręcznika.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij teksty nieregularnymi formami dokonanymi. (Ćwiczenie 3b, str. 72)</p>
+<div class="dialog-block">
+<p><b>Janek (przykład):</b> Jutro mam wolne i chcę odpocząć na świeżym powietrzu.
+Chcę <b>założyć</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>  wygodne buty,
+<b>wziąć</b><sup>1*</sup> nieduży plecak, a potem
+<b>wsiąść</b><sup>2*</sup> na rower,
+<b>znaleźć</b><sup>3*</sup> spokojne miejsce nad jeziorem,
+<b>rozłożyć</b><sup>4*</sup> koc pod wielkim drzewem i
+<b>położyć</b><sup>5*</sup> się w jego cieniu.</p>
+
+<p><b>Dorota:</b> Ja też chcę tak odpocząć! Chcę <b>założyć</b><sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>  sportowe buty,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup> nieduży plecak, a potem <input class="answer-input" type="text" size="12" autocomplete="off"><sup>2</sup> na rower,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>3</sup> spokojne miejsce nad jeziorem,
+<input class="answer-input" type="text" size="12" autocomplete="off"><sup>4</sup> koc pod wielkim drzewem i <input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup> się w jego cieniu.</p>
+</div>
+
+<div class="dialog-block">
+<p><b>Piotrek (przykład):</b> Co wieczór oglądam jakiś film.
+Dzisiaj już wiem, co chcę <b>obejrzeć</b><sup>8*</sup> – to będzie polska komedia romantyczna.</p>
+
+<p><b>Milena:</b> Jak chcę spędzić ten wieczór? Nie umiem szybko <input class="answer-input" type="text" size="12" autocomplete="off"><sup>6</sup> na to pytanie, bo jeszcze nie mam planów.
+Co więc mogę <input class="answer-input" type="text" size="12" autocomplete="off"><sup>7</sup>? Już wiem! Chcę <input class="answer-input" type="text" size="12" autocomplete="off"><sup>8</sup> jakąś polską komedię romantyczną.</p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g3_ex3a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g3_ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["wziąć", "wsiąść", "znaleźć", "rozłożyć", "położyć", "odpowiedzieć", "powiedzieć", "obejrzeć"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

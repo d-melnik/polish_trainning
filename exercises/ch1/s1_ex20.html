@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 20 — Uzupełnij dialogi i dopasuj obrazki</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział I: Czym się zajmujesz?</h1>
+<h2>Ćwiczenie 20 — Uzupełnij dialogi i dopasuj do obrazków</h2>
+<div class="chapter-info">Strona 20 podręcznika. Koniugacja I. Różne formy osobowe.</div>
+<div class="exercise-container">
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij dialogi formami czasowników, a następnie dopasuj je do obrazków A–G. (Ćwiczenie 20, str. 20)</p>
+
+        <div class="dialog-block">
+            <h3>Dialog A</h3>
+            <p>– Czy <span style="font-weight:bold;color:#27ae60">chcesz</span> (ty-chcieć)<sub>0</sub> jechać w góry?<br>
+            – Pewnie, że <input type="text" class="answer-input" placeholder="(ja-chcieć)₁" style="width:100px">, ale nie <input type="text" class="answer-input" placeholder="(ja-móc)₂" style="width:90px">.<br>
+            – To szkoda!<br>
+            – Też <input type="text" class="answer-input" placeholder="(ja-żałować)₃" style="width:110px">.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog B</h3>
+            <p>– Cześć. Dokąd <input type="text" class="answer-input" placeholder="(ty-iść)₄" style="width:110px">?<br>
+            – <input type="text" class="answer-input" placeholder="(Ja-Iść)₅" style="width:90px"> do babci.<br>
+            – A co jej <input type="text" class="answer-input" placeholder="(ty-nieść)₆" style="width:110px">?<br>
+            – <input type="text" class="answer-input" placeholder="(Ja-Nieść)₇" style="width:100px"> koszyk z zakupami.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog C</h3>
+            <p>– Dzień dobry. Dokąd pan <input type="text" class="answer-input" placeholder="(jechać)₈" style="width:100px">?<br>
+            – <input type="text" class="answer-input" placeholder="(Ja-Jechać)₉" style="width:90px"> do Warszawy.<br>
+            – A co pan <input type="text" class="answer-input" placeholder="(wieźć)₁₀" style="width:100px">?<br>
+            – <input type="text" class="answer-input" placeholder="(Ja-Wieźć)₁₁" style="width:100px"> tylko rzeczy osobiste.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog D</h3>
+            <p>– Co <input type="text" class="answer-input" placeholder="(my-brać)₁₂" style="width:120px"> do picia?<br>
+            – Może espresso?<br>
+            – O tej porze już nie <input type="text" class="answer-input" placeholder="(ja-pić)₁₃" style="width:90px"> kawy.<br>
+            – W takim razie <input type="text" class="answer-input" placeholder="(ja-proponować)₁₄" style="width:140px"> herbatę.</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog E</h3>
+            <p>– Au! Moja noga! Nie <input type="text" class="answer-input" placeholder="(ja-móc)₁₅" style="width:100px"> wstać!<br>
+            – No tak. Najpierw <input type="text" class="answer-input" placeholder="(ty-skakać)₁₆" style="width:120px">, a potem <input type="text" class="answer-input" placeholder="(ty-płakać)₁₇" style="width:120px">.<br>
+            – A ty tylko <input type="text" class="answer-input" placeholder="(śmiać się)₁₈" style="width:140px">. Co za ludzie!</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog F</h3>
+            <p>– Co tak ładnie <input type="text" class="answer-input" placeholder="(pachnąć)₁₉" style="width:120px">?<br>
+            – Właśnie <input type="text" class="answer-input" placeholder="(ja-piec)₂₀" style="width:100px"> sernik.<br>
+            – Już <input type="text" class="answer-input" placeholder="(ja-czuć)₂₁" style="width:100px">, że jest pyszny!</p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Dialog G</h3>
+            <p>– Czas na porządki! Ja <input type="text" class="answer-input" placeholder="(prać)₂₂" style="width:100px"> firanki, a ty <input type="text" class="answer-input" placeholder="(myć)₂₃" style="width:100px"> okna.<br>
+            – Przecież wszystko jest czyste!<br>
+            – Chyba <input type="text" class="answer-input" placeholder="(żartować)₂₄" style="width:120px">. No już! <input type="text" class="answer-input" placeholder="(My-Brać się)₂₅" style="width:140px"> do roboty!</p>
+        </div>
+
+        <hr style="margin:20px 0">
+        <h3>Dopasuj dialogi do obrazków (A–G)</h3>
+        <p class="instruction">Kliknij dialog po lewej, a potem odpowiadający obrazek po prawej. Dialog 0 jest przykładem.</p>
+        <div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź formy ✓</button>
+    <button class="btn btn-check" style="background:#8e44ad" onclick="matchExercise.check()">Sprawdź obrazki ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise(); matchExercise.clear()">Wyczyść ✕</button>
+    <a href="s1_ex19a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="../ch2/s1_ex1.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'chcesz','chcę','mogę','żałuję',
+        'idziesz','Idę','niesiesz','Niosę',
+        'jedzie','Jadę','wiezie','wiozę',
+        'bierzemy','piję','proponuję','mogę',
+        'skaczesz','płaczesz','się śmiejesz',
+        'pachnie','piekę','czuję','piorę',
+        'myjesz','żartujesz','Bierzemy się'
+    ];
+    checkExercise(answers);
+}
+
+const matchExercise = new MatchingExercise(
+    'matching-container',
+    ['Dialog A','Dialog B','Dialog C','Dialog D','Dialog E','Dialog F','Dialog G'],
+    ['Obrazek A (spacer, kobieta niesie koszyk)','Obrazek B (kajaki, jezioro)','Obrazek C (pociąg/peron, mężczyzna z walizką)','Obrazek D (kawiarnia, kawa)','Obrazek E (skakanie, płakanie)','Obrazek F (zapach z kuchni, sernik)','Obrazek G (sprzątanie, firanki)'],
+    {0:3, 1:0, 2:2, 3:1, 4:4, 5:5, 6:6},
+    {0:3}
+);
+</script>
+</body></html>

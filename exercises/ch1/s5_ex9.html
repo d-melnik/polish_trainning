@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 9 — Wakacje w domu?</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 9 — Wakacje w domu?</h2>
+<div class="chapter-info">Strona 55 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Wakacje w domu? Uzupełnij tekst. (Ćwiczenie 9, str. 55)</p>
+<div class="word-bank">
+    <span>brać</span><span>jechać</span><span>czuć się</span><span>zostawać</span><span>lubić</span>
+    <span>musieć</span><span>patrzeć</span><span>spać</span><span>mieć</span><span>nastawiać</span><span>jeść</span>
+</div>
+<p style="line-height:2.5">
+Chyba wszyscy <span style="font-weight:bold;color:#27ae60">lubimy</span><sub>0</sub> wakacje – czas letniego odpoczynku. Nawet jeśli nie
+<input type="text" class="answer-input" placeholder="(jechać)₁" style="width:110px"> w góry czy nad morze, a po prostu
+<input type="text" class="answer-input" placeholder="(zostawać)₂" style="width:130px"> w domu, to i tak jest miło, bo nie
+<input type="text" class="answer-input" placeholder="(musieć)₃" style="width:110px"> chodzić do szkoły czy do pracy. Nie
+<input type="text" class="answer-input" placeholder="(nastawiać)₄" style="width:140px"> już budzika na siódmą rano,
+<input type="text" class="answer-input" placeholder="(spać)₅" style="width:90px"> dłużej niż zwykle,
+<input type="text" class="answer-input" placeholder="(jeść)₆" style="width:90px"> późne śniadanie i nawet nie
+<input type="text" class="answer-input" placeholder="(patrzeć)₇" style="width:110px"> na zegarek. Codziennie
+<input type="text" class="answer-input" placeholder="(mieć)₈" style="width:90px"> czas, żeby czytać książki albo oglądać filmy i seriale. A wieczorem, przed snem,
+<input type="text" class="answer-input" placeholder="(brać)₉" style="width:100px"> długą kąpiel i
+<input type="text" class="answer-input" placeholder="(czuć się)₁₀" style="width:120px"> jak w SPA. Wakacje w domu też mogą być udane!
+</p>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s5_ex8a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex10.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'lubimy',
+        'jedziemy',
+        'zostajemy',
+        'musimy',
+        'nastawiamy',
+        'śpimy',
+        'jemy',
+        'patrzymy',
+        'mamy',
+        'bierzemy',
+        'czujemy się'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

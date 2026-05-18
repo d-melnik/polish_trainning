@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 2 — Prawda czy fałsz? (tekst o Dimie)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Czy to wiesz?</h1>
+<h2>Ćwiczenie 2 — Prawda czy fałsz? (tekst o Dimie)</h2>
+<div class="chapter-info">Strona 44 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Przeczytaj tekst i zdecyduj, które zdania są prawdziwe (P), a które fałszywe (F). (Ćwiczenie 2, str. 44)</p>
+<div class="dialog-block">
+    <p>Cześć, jestem Dima. Czy umiem mówić po polsku? Nie wiem. I tak, i nie. Dużo rozumiem, ale
+    nie zawsze umiem powiedzieć to, co chcę. Zamiast powiedzieć, że on jeszcze <em>je</em>, to mówię, że on jeszcze
+    <em>jest</em> albo że on jeszcze <em>jedzie</em>. A zamiast powiedzieć, że oni <em>jedzą</em>, to mówię, że oni <em>jadą</em>. Inni nie zawsze
+    mnie rozumieją i nie zawsze wiedzą, co chcę powiedzieć. A ja wiem, że coś mówię źle, ale nie umiem
+    tego powiedzieć dobrze. Czy mnie rozumiecie? Jestem pesymistą, więc
+    śmiem w to wątpić. Ale może przynajmniej jedna osoba mnie rozumie
+    i wie, co ja czuję, kiedy nie wiem tego, co inni wiedzą i kiedy nie rozumiem
+    tego, co inni rozumieją. Śmiem twierdzić, że to koszmar!</p>
+</div>
+<table class="fill-table">
+    <tr><th>#</th><th>Zdanie</th><th>P/F</th></tr>
+    <tr><td>0</td><td>Dima wie, że rozumie więcej niż umie powiedzieć.</td>
+        <td><span class="given">P</span></td></tr>
+    <tr><td>1</td><td>Dima nie zawsze wie, jak powiedzieć po polsku, że ktoś je.</td>
+        <td><select class="answer-input"><option value="">—</option><option>P</option><option>F</option></select></td></tr>
+    <tr><td>2</td><td>Dima wie, że nie wszyscy go rozumieją.</td>
+        <td><select class="answer-input"><option value="">—</option><option>P</option><option>F</option></select></td></tr>
+    <tr><td>3</td><td>Dima umie świetnie mówić po polsku.</td>
+        <td><select class="answer-input"><option value="">—</option><option>P</option><option>F</option></select></td></tr>
+    <tr><td>4</td><td>Dima śmie wątpić, że każdy rozumie jego sytuację.</td>
+        <td><select class="answer-input"><option value="">—</option><option>P</option><option>F</option></select></td></tr>
+</table>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s4_ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s4_ex6.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'P',
+        'P',
+        'F',
+        'P'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

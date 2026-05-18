@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3 — Krzyżówka: co to jest?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 3 — Krzyżówka: co to jest?</h2>
+<div class="chapter-info">Strona 198 podręcznika. Imiesłowy przymiotnikowe bierne.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij krzyżówkę — wpisz właściwe słowo. (Ćw. 3, str. 198)</p>
+<table style="border-collapse:collapse;width:100%">
+<tr><th style="text-align:left;padding:4px 8px">Nr</th><th style="text-align:left;padding:4px 8px">Opis</th><th style="text-align:left;padding:4px 8px">Odpowiedź</th></tr>
+<tr><td style="padding:5px 8px"><b>0</b></td><td style="padding:5px 8px">brukowana, oświetlona, nazwana</td><td style="padding:5px 8px"><b>ulica</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span></td></tr>
+<tr><td style="padding:5px 8px"><b>1</b></td><td style="padding:5px 8px">często stawiany znany ludziom (czasem też burzony)</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>2</b></td><td style="padding:5px 8px">kupowana, wypożyczana, czytana, trzymana na półce</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>3</b></td><td style="padding:5px 8px">pięknie napisany i recytowany, czasem rymowany</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>4</b></td><td style="padding:5px 8px">oglądana w sklepie, w galerii, w muzeum</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>5</b></td><td style="padding:5px 8px">ulepiony ze śniegu, czasem uśmiechnięty</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>6</b></td><td style="padding:5px 8px">nucona, śpiewana, słuchana, czasami znana na pamięć</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>7</b></td><td style="padding:5px 8px">czytana, zwykle podzielona na tomy, często filmowana</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>8</b></td><td style="padding:5px 8px">zmieniana za pomocą grzebienia i nożyczek</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>9</b></td><td style="padding:5px 8px">trzymany za ucho, czasem kupowany na prezent</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>10</b></td><td style="padding:5px 8px">zapalana i gaszona, często stawiana na torcie</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>11</b></td><td style="padding:5px 8px">grany na scenie, oglądany przez widzów</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>12</b></td><td style="padding:5px 8px">malowany, wieszany na ścianie, podziwiany</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>13</b></td><td style="padding:5px 8px">smażone, gotowane, pieczone, elegancko podawane</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+<tr><td style="padding:5px 8px"><b>14</b></td><td style="padding:5px 8px">zrobiona z drewna lub kamienia (albo z lodu)</td><td style="padding:5px 8px"><input class="answer-input" type="text" size="16" autocomplete="off"></td></tr>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex2.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["pomnik", "książka", "wiersz", "wystawa", "bałwan", "piosenka", "powieść", "fryzura", "kubek", "świeczka", "spektakl", "obraz", "danie", "rzeźba"];
+    checkExercise(answers);
+}</script></body></html>

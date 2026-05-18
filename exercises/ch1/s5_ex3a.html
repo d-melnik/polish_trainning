@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3a — Moje miejsce pracy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Miksujemy, ćwiczymy i powtarzamy!</h1>
+<h2>Ćwiczenie 3a — Moje miejsce pracy</h2>
+<div class="chapter-info">Strona 51 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Moje miejsce pracy to... Uzupełnij teksty zgodnie z podanym przykładem. (Ćwiczenie 3a, str. 51)</p>
+<div class="dialog-block">
+    <h3>Jacek (biuro)</h3>
+    <div class="word-bank"><span>pić</span><span>brać</span><span>obsługiwać</span><span>odpisywać</span><span>wykonywać</span></div>
+    <p>Moje miejsce pracy to biuro.
+    <span style="font-weight:bold;color:#27ae60">Wykonuję</span><sub>0</sub> tu różne obowiązki –
+    <input type="text" class="answer-input" placeholder="(brać)₁" style="width:100px"> udział w ważnych spotkaniach,
+    <input type="text" class="answer-input" placeholder="(obsługiwać)₂" style="width:130px"> klientów,
+    <input type="text" class="answer-input" placeholder="(odpisywać)₃" style="width:130px"> na ich maile, a podczas przerwy
+    <input type="text" class="answer-input" placeholder="(pić)₄" style="width:90px"> małą kawę.</p>
+</div>
+<div class="dialog-block">
+    <h3>Wojciech (kuchnia)</h3>
+    <div class="word-bank"><span>piec</span><span>podawać</span><span>gotować</span><span>przyjmować</span></div>
+    <p>Moje miejsce pracy to kuchnia. To tutaj
+    <input type="text" class="answer-input" placeholder="(przyjmować)₅" style="width:140px"> zamówienia od kelnerów,
+    <input type="text" class="answer-input" placeholder="(gotować)₆" style="width:120px"> smaczne dania, a także
+    <input type="text" class="answer-input" placeholder="(piec)₇" style="width:100px"> ciasta. Na końcu wszystko pięknie
+    <input type="text" class="answer-input" placeholder="(podawać)₈" style="width:120px">, bo ważny jest nie tylko smak, ale i wygląd.</p>
+</div>
+<div class="dialog-block">
+    <h3>Anna (sala szkolna)</h3>
+    <div class="word-bank"><span>stać</span><span>chodzić</span><span>siedzieć</span><span>patrzeć</span></div>
+    <p>Moje miejsce pracy to sala szkolna. Zwykle
+    <input type="text" class="answer-input" placeholder="(siedzieć)₉" style="width:110px"> za biurkiem albo
+    <input type="text" class="answer-input" placeholder="(stać)₁₀" style="width:90px"> przy tablicy, a czasem
+    <input type="text" class="answer-input" placeholder="(chodzić)₁₁" style="width:110px"> między ławkami i
+    <input type="text" class="answer-input" placeholder="(patrzeć)₁₂" style="width:110px">, jak uczniowie radzą sobie z zadaniami.</p>
+</div>
+<div class="dialog-block">
+    <h3>Tomasz (kancelaria adwokacka)</h3>
+    <div class="word-bank"><span>bronić</span><span>bać się</span><span>wierzyć</span><span>służyć</span></div>
+    <p>Moje miejsce pracy to kancelaria adwokacka. Zawsze
+    <input type="text" class="answer-input" placeholder="(bronić)₁₃" style="width:110px"> swoich klientów i
+    <input type="text" class="answer-input" placeholder="(służyć)₁₄" style="width:110px"> im swoimi radami. Jestem optymistą – mocno
+    <input type="text" class="answer-input" placeholder="(wierzyć)₁₅" style="width:110px"> w końcowy sukces i nie
+    <input type="text" class="answer-input" placeholder="(bać się)₁₆" style="width:110px"> trudnych spraw.</p>
+</div>
+<div class="dialog-block">
+    <h3>Helena (gabinet lekarski)</h3>
+    <div class="word-bank"><span>rozmawiać</span><span>słuchać</span><span>badać</span><span>pytać</span></div>
+    <p>Moje miejsce pracy to gabinet lekarski. Najpierw
+    <input type="text" class="answer-input" placeholder="(rozmawiać)₁₇" style="width:140px"> ze swoimi pacjentami –
+    <input type="text" class="answer-input" placeholder="(pytać)₁₈" style="width:110px">, co im dolega, uważnie
+    <input type="text" class="answer-input" placeholder="(słuchać)₁₉" style="width:120px"> ich odpowiedzi, a potem każdego
+    <input type="text" class="answer-input" placeholder="(badać)₂₀" style="width:110px"> i stawiam diagnozę.</p>
+</div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s4_ex6.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s5_ex7a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'Wykonuję',
+        'biorę',
+        'obsługuję',
+        'odpisuję',
+        'piję',
+        'przyjmuję',
+        'gotuję',
+        'piekę',
+        'podaję',
+        'siedzę',
+        'stoję',
+        'chodzę',
+        'patrzę',
+        'bronię',
+        'służę',
+        'wierzę',
+        'boję się',
+        'rozmawiam',
+        'pytam',
+        'słucham',
+        'badam'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 16 — Lubimy zimę!</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Co robisz?</h1>
+<h2>Ćwiczenie 16 — Lubimy zimę!</h2>
+<div class="chapter-info">Strona 30 podręcznika.</div>
+<div class="exercise-container">
+
+<p class="instruction">Uzupełnij tekst zgodnie z podanym przykładem. (Ćwiczenie 16, str. 30)</p>
+<div class="word-bank">
+    <span>robić</span><span>bawić się</span><span>lepić</span><span>jeździć</span><span>chodzić</span>
+    <span>obchodzić</span><span>tęsknić</span><span>dzielić się</span><span>kłócić się</span>
+    <span>widzieć</span><span>patrzeć</span><span>siedzieć</span><span>woleć</span><span>musieć</span><span>życzyć</span>
+</div>
+<p style="line-height:2.5">
+Lubimy zimę!<br>
+Zwykle <span style="font-weight:bold;color:#27ae60">wolimy</span><sub>0</sub> lato niż zimę i trudno się temu dziwić. Ale zima też jest piękna! Często
+cieszymy się jak dzieci, gdy za oknem
+<input type="text" class="answer-input" placeholder="(widzieć)₁" style="width:100px"> pierwszy śnieg. Kiedy jest go dużo, to
+<input type="text" class="answer-input" placeholder="(lepić)₂" style="width:100px"> wielkiego bałwana i
+<input type="text" class="answer-input" placeholder="(robić)₃" style="width:100px"> sobie z nim zdjęcia, którymi potem się chwalimy w Internecie.
+
+To właśnie zimą Święty Mikołaj przynosi nam prezenty i to zimą
+<input type="text" class="answer-input" placeholder="(obchodzić)₄" style="width:130px"> Wigilię. W tym wyjątkowym dniu, pełnym ciepła i miłości, nigdy nie
+<input type="text" class="answer-input" placeholder="(kłócić się)₅" style="width:130px"> ze sobą. A gdy na niebie świeci się pierwsza gwiazda, gromadzimy się przy stole.
+Na początku wspólnie się modlimy,
+<input type="text" class="answer-input" placeholder="(dzielić się)₆" style="width:130px"> opłatkiem,
+<input type="text" class="answer-input" placeholder="(życzyć)₇" style="width:110px"> sobie wszystkiego najlepszego, a po kolacji nucimy znane kolędy.
+
+Tydzień później (w ostatnią noc roku)
+<input type="text" class="answer-input" placeholder="(chodzić)₈" style="width:110px"> na imprezy sylwestrowe i
+<input type="text" class="answer-input" placeholder="(bawić się)₉" style="width:120px"> dosłownie wszędzie. Zawsze, gdy nadchodzi Nowy Rok, z optymizmem i nadzieją
+<input type="text" class="answer-input" placeholder="(patrzeć)₁₀" style="width:110px"> w przyszłość.
+
+Ale to jeszcze nie wszystko, bo zimą są też ferie. Wtedy nie
+<input type="text" class="answer-input" placeholder="(musieć)₁₁" style="width:100px"> chodzić na zajęcia. A co robimy? Często
+<input type="text" class="answer-input" placeholder="(jeździć)₁₂" style="width:100px"> na nartach czy łyżwach albo po prostu
+<input type="text" class="answer-input" placeholder="(siedzieć)₁₃" style="width:110px"> w domu, leżymy pod ciepłym kocem i czasem trochę
+<input type="text" class="answer-input" placeholder="(tęsknić)₁₄" style="width:110px"> za lekcjami języka polskiego.
+</p>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="s2_ex15a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s2_ex19a.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [
+        'wolimy',
+        'widzimy',
+        'lepimy',
+        'robimy',
+        'obchodzimy',
+        'kłócimy się',
+        'dzielimy się',
+        'życzymy',
+        'chodzimy',
+        'bawimy się',
+        'patrzymy',
+        'musimy',
+        'jeździmy',
+        'siedzimy',
+        'tęsknimy'
+    ];
+    checkExercise(answers);
+}
+</script>
+</body></html>

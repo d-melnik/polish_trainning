@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7 — Uzupełnij tekst</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 7 — Uzupełnij tekst</h2>
+<div class="chapter-info">Strona 200 podręcznika. Imiesłowy w tekście.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij tekst odpowiednimi imiesłowami. (Ćw. 7, str. 200)</p>
+<div class="dialog-block"><p style="line-height:2.2">Co najbardziej lubiłam w dzieciństwie? Oczywiście, uwielbiałam bajki <b>czytane</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> przez rodziców, a także filmy <input class="answer-input" type="text" size="14" autocomplete="off"><sup>1</sup> (animować), które i dziś czasami oglądam. Miałam też swoją <input class="answer-input" type="text" size="18" autocomplete="off"><sup>2</sup> (nie zapomnieć) maskotkę – takiego dużego misia Uszatka. Bardzo też lubiłam <input class="answer-input" type="text" size="14" autocomplete="off"><sup>3</sup> (nadziewać) czekoladę i <input class="answer-input" type="text" size="14" autocomplete="off"><sup>4</sup> (piec) jabłka. A czego nie znosiłam? Zapachu <input class="answer-input" type="text" size="14" autocomplete="off"><sup>5</sup> (kroić) cebuli!</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex8.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["animowane", "niezapomnianą", "nadziewaną", "pieczone", "krojonej"];
+    checkExercise(answers);
+}</script></body></html>

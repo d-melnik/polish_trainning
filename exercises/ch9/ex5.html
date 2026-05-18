@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5 — Uzupełnij rymowany wierszyk</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 5 — Uzupełnij rymowany wierszyk</h2>
+<div class="chapter-info">Strona 199 podręcznika. Imiesłowy przymiotnikowe bierne.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij wierszyk słowami z ramki. (Ćw. 5, str. 199)</p>
+<div class="word-bank" style="background:#f5f5f5;border:1px solid #ddd;padding:8px 14px;margin-bottom:12px;border-radius:4px"><b>Słowniczek:</b> zrobiony &nbsp;&nbsp; zrobione &nbsp;&nbsp; zaśpiewanych &nbsp;&nbsp; wynalezione &nbsp;&nbsp; odkryte &nbsp;&nbsp; napisanych &nbsp;&nbsp; zdobyte</div>
+<div class="dialog-block" style="font-style:italic;line-height:2.2">
+<p>Co tu zrobić, by być <b>znaŋm</b>,<br>
+uwielbianym, podziwianym?<br>
+Wszystko przecież jest <b>zrobione</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>:</p>
+<p>koło jest <input class="answer-input" type="text" size="16" autocomplete="off"><sup>1</sup>,<br>
+piękne wyspy są <input class="answer-input" type="text" size="16" autocomplete="off"><sup>2</sup>,<br>
+wielkie góry są <input class="answer-input" type="text" size="16" autocomplete="off"><sup>3</sup>,<br>
+wiele książek <input class="answer-input" type="text" size="16" autocomplete="off"><sup>4</sup>,<br>
+i piosenek <input class="answer-input" type="text" size="16" autocomplete="off"><sup>5</sup>.</p>
+<p>Siedzę i tak o tym myślę,<br>
+ale koniec tych przemyśleń,<br>
+bo dobiega mnie głos żony:<br>
+– A czy obiad już <input class="answer-input" type="text" size="14" autocomplete="off"><sup>6</sup>?</p>
+</div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex4.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex7.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["wynalezione", "odkryte", "zdobyte", "napisanych", "zaśpiewanych", "zrobiony"];
+    checkExercise(answers);
+}</script></body></html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3 — Być czy zostać?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział X: I strona bierna zostanie przez nas zrobiona!</h1>
+<h2>Ćwiczenie 3 — Być czy zostać?</h2>
+<div class="chapter-info">Strona 205 podręcznika. Aspekt a strona bierna.</div>
+<div class="exercise-container">
+<p class="instruction">Wybierz właściwą formę. (Ćw. 3, str. 205)</p>
+<div class="dialog-block"><p style="line-height:2.4">– Czy wiesz, w jakich latach (<b>był</b>, został)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> budowany Teatr Wielki w Warszawie?<br>– Nie pamiętam dokładnych dat, ale wiem, że teatr <select class="answer-input"><option value="">—</option><option>był</option><option>został</option></select><sup>1</sup> zaprojektowany przez włoskiego architekta – Antonio Corazziego i <select class="answer-input"><option value="">—</option><option>był</option><option>został</option></select><sup>2</sup> zbudowany w pierwszej połowie XIX wieku.<br>– To i tak dużo wiesz!<br>– No, pewnie! W szkole często <select class="answer-input"><option value="">—</option><option>byłem</option><option>zostałem</option></select><sup>3</sup> chwalony przez swoje nauczycielki.<br>– A czy <select class="answer-input"><option value="">—</option><option>byłeś</option><option>zostałeś</option></select><sup>4</sup> przez nie zapraszany do udziału w konkursach i olimpiadach?<br>– Tak, ale się nie zgłaszałem, bo to dla mnie za duży stres.</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1b.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["został", "został", "byłem", "byłeś"];
+    checkExercise(answers);
+}</script></body></html>

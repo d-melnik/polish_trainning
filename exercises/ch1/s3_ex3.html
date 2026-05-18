@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3 — Połącz pytania i odpowiedzi</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 3 — Połącz pytania i odpowiedzi</h2>
+<div class="chapter-info">Strona 34 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+<p class="instruction">Połącz pytania (0–10) z odpowiedziami (A–K). Koniugacja III.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s3_ex1b.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['– Jaki sport uprawiasz?', '– Jak często pływasz?', '– Jakiej muzyki słuchasz?', '– Z czego codziennie korzystasz?', '– Co często czytasz?', '– O co dbasz?', '– Na co często narzekasz?', '– Jakie programy oglądasz?', '– Jakie znasz języki obce?', '– Jakie pamiątki zbierasz?', '– Na czym grasz?'],
+    ['– Z Internetu.', '– Różnej! Klasycznej i rockowej.', '– Teleturnieje.', '– Książki historyczne.', '– Magnesy na lodówkę.', '– Angielski, włoski i hiszpański.', '– Siatkówkę, koszykówkę i pływanie.', '– O dobrą formę.', '– Na pianinie i gitarze.', '– Raz na tydzień.', '– Na pogodę. Ciągle pada i pada.'],
+    {0: 6, 1: 9, 2: 1, 3: 0, 4: 3, 5: 7, 6: 10, 7: 2, 8: 5, 9: 4, 10: 8},
+    {0: 6}
+);
+</script>
+</body></html>

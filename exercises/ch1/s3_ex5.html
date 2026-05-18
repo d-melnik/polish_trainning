@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 5 — Połącz kolumny (czym się posługujemy?)</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział I: Jak spędzasz dzień?</h1>
+<h2>Ćwiczenie 5 — Połącz kolumny (czym się posługujemy?)</h2>
+<div class="chapter-info">Strona 35 podręcznika. Koniugacja III (-am, -asz).</div>
+<div class="exercise-container">
+<p class="instruction">Połącz czynność z narzędziem/środkiem. Kliknij lewą kolumnę, potem prawą.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="s3_ex4.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="s3_ex6.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['latamy', 'pływamy', 'klikamy', 'nagrywamy', 'wysyłamy', 'otwieramy', 'rzucamy', 'uderzamy', 'obieramy', 'mieszamy', 'polewamy', 'doprawiamy', 'zmieniamy kanały'],
+    ['sosem', 'mailem', 'pilotem', 'kluczem', 'samolotem', 'nożykiem', 'statkiem', 'młotkiem', 'piłką', 'łyżką', 'kamerą', 'myszką', 'solą i pieprzem'],
+    {0: 4, 1: 6, 2: 11, 3: 10, 4: 1, 5: 3, 6: 8, 7: 7, 8: 5, 9: 9, 10: 0, 11: 12, 12: 2},
+    {0: 4}
+);
+</script>
+</body></html>

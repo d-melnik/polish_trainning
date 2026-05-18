@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 7 — Biernik czy dopełniacz?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział XII: Czasowniki oraz ich (dobrzy) sąsiedzi</h1>
+<h2>Ćwiczenie 7 — Biernik czy dopełniacz?</h2>
+<div class="chapter-info">Strona 218 podręcznika. Dopełniacz po negacji.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwą formę. (Ćw. 7, str. 218)</p>
+<div class="dialog-block"><p style="line-height:2.6">Gdy wyjeżdżam na wakacje, nie zabieram ze sobą (<b>dużej walizki</b>)<sup>0</sup> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>, bo wolę nosić <select class="answer-input"><option value="">—</option><option>niewielki plecak</option><option>niewielkiego plecaka</option></select><sup>1</sup>. Pakuję do niego lekkie buty, ubrania i kosmetyczkę. Nie zabieram ze sobą <select class="answer-input"><option value="">—</option><option>złotą biżuterię</option><option>złotej biżuterii</option></select><sup>2</sup>, bo się boję, że ją zgubię. Nie biorę też <select class="answer-input"><option value="">—</option><option>drogie perfumy</option><option>drogich perfum</option></select><sup>3</sup>, bo się boję, że je stłukę. Żałuję, że nie mogę zabrać <select class="answer-input"><option value="">—</option><option>swoją gitarę</option><option>swojej gitary</option></select><sup>4</sup>, bo bardzo <select class="answer-input"><option value="">—</option><option>ją</option><option>jej</option></select><sup>5</sup> lubię, ale jest trochę ciężka, więc nie chcę <select class="answer-input"><option value="">—</option><option>ją</option><option>jej</option></select><sup>6</sup> nosić. Szkoda, że nie mogę spakować <select class="answer-input"><option value="">—</option><option>ją</option><option>jej</option></select><sup>7</sup> do plecaka!</p></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex3a.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex9.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["niewielki plecak", "złotej biżuterii", "drogich perfum", "swojej gitary", "ją", "jej", "jej"];
+    checkExercise(answers);
+}</script></body></html>

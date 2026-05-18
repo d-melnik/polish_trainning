@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 1 — Co ten napis oznacza?</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<h1>Rozdział IX: Często używane imiesłowy</h1>
+<h2>Ćwiczenie 1 — Co ten napis oznacza?</h2>
+<div class="chapter-info">Strona 197 podręcznika. Imiesłowy przymiotnikowe bierne w napisach.</div>
+<div class="exercise-container">
+<p class="instruction">Zaznacz właściwą odpowiedź. Napisy — w podręczniku. (Ćw. 1, str. 197)</p>
+<p><b>0.</b> Ten napis oznacza, że <b>to miejsce jest pod obserwacją</b>. <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span></p>
+<p><b>1.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) nie można tam teraz wejść</option><option value="b">b) trzeba chwilę poczekać</option><option value="c">c) trzeba zadzwonić później</option></select><sup>1</sup></p>
+<p><b>2.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) można tam wejść</option><option value="b">b) nie wolno tam wchodzić</option><option value="c">c) za wstęp trzeba zapłacić</option></select><sup>2</sup></p>
+<p><b>3.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) warto tego spróbować</option><option value="b">b) lepiej tego nie dotykać</option><option value="c">c) warto to kupić albo zamówić</option></select><sup>3</sup></p>
+<p><b>4.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) światła są zepsute</option><option value="b">b) sygnalizacja działa</option><option value="c">c) droga jest zamknięta</option></select><sup>4</sup></p>
+<p><b>5.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) trzeba zapłacić za wstęp</option><option value="b">b) dla każdego znajdzie się miejsce</option><option value="c">c) nie wszyscy chętni mogą być przyjęci</option></select><sup>5</sup></p>
+<p><b>6.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) pociąg będzie za 15 minut</option><option value="b">b) pociąg nie przyjedzie punktualnie</option><option value="c">c) pociąg odjedzie za kwadrans</option></select><sup>6</sup></p>
+<p><b>7.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) mecz zaraz się zacznie</option><option value="b">b) mecz został przerwany</option><option value="c">c) mecz odbędzie się w innym terminie</option></select><sup>7</sup></p>
+<p><b>8.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) tego spektaklu nie będzie</option><option value="b">b) ten spektakl już się zaczął</option><option value="c">c) ten spektakl zdobył nagrodę</option></select><sup>8</sup></p>
+<p><b>9.</b> Ten napis oznacza, że <select class="answer-input"><option value="">—</option><option value="a">a) można już kupować bilety</option><option value="b">b) skończyła się już sprzedaż biletów</option><option value="c">c) można kupić bilety po niższej cenie</option></select><sup>9</sup></p>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="../index.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex2.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["a", "b", "b", "a", "c", "b", "c", "a", "b"];
+    checkExercise(answers);
+}</script></body></html>
