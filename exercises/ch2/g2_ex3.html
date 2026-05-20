@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 3 — Uzupełnij brakujące litery</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 3 — Uzupełnij brakujące litery (Grupa II)</h2>
+<div class="chapter-info">Strona 67 podręcznika. Pary aspektowe — różnica w końcówce.</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij brakujące litery, aby uzyskać formę niedokonaną i dokonaną. (Ćwiczenie 3, str. 67)</p>
+<table style="border-collapse:collapse;width:100%;margin:10px 0">
+<thead>
+<tr style="background:#e3f2fd">
+  <th style="padding:6px 10px;text-align:center">#</th>
+  <th style="padding:6px 10px;text-align:left">niedokonany</th>
+  <th style="padding:6px 4px"></th>
+  <th style="padding:6px 10px;text-align:left">dokonany</th>
+  <th style="padding:6px 10px;text-align:left">co?</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#e8f5e9">
+  <td style="padding:6px 10px;text-align:center">0</td>
+  <td style="padding:6px 10px">odkręc<b>a</b>ć <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓</span></td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">odkręc<b>i</b>ć <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓</span></td>
+  <td style="padding:6px 10px">wodę</td>
+</tr>
+<tr>
+  <td style="padding:6px 10px;text-align:center">1</td>
+  <td style="padding:6px 10px">sprawdz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">sprawdz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 10px">pocztę</td>
+</tr>
+<tr style="background:#f5f5f5">
+  <td style="padding:6px 10px;text-align:center">2</td>
+  <td style="padding:6px 10px">odkurz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">odkurz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 10px">dywan</td>
+</tr>
+<tr>
+  <td style="padding:6px 10px;text-align:center">3</td>
+  <td style="padding:6px 10px">podłącz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">podłącz<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 10px">ładowarkę</td>
+</tr>
+<tr style="background:#f5f5f5">
+  <td style="padding:6px 10px;text-align:center">4</td>
+  <td style="padding:6px 10px">zawie<input class="answer-input" type="text" size="5" autocomplete="off">ć</td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">zawie<input class="answer-input" type="text" size="4" autocomplete="off">ć</td>
+  <td style="padding:6px 10px">obraz</td>
+</tr>
+<tr>
+  <td style="padding:6px 10px;text-align:center">5</td>
+  <td style="padding:6px 10px">zamyk<input class="answer-input" type="text" size="3" autocomplete="off">ć</td>
+  <td style="padding:6px 4px">/</td>
+  <td style="padding:6px 10px">zamk<input class="answer-input" type="text" size="4" autocomplete="off">ć</td>
+  <td style="padding:6px 10px">bramę</td>
+</tr>
+</tbody>
+</table>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="g1_ex10.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g2_ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["a", "i", "a", "y", "a", "y", "sza", "si", "a", "ną"];
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>

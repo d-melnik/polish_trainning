@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ćwiczenie 4 — Połącz zdania z reakcjami</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Rozdział II: Tego trzeba się (na)uczyć – pary aspektowe</h1>
+<h2>Ćwiczenie 4 — Połącz zdania z reakcjami (Grupa II)</h2>
+<div class="chapter-info">Strona 68 podręcznika. Formy dokonane — reakcja na sytuację.</div>
+<div class="exercise-container">
+<p class="instruction">Połącz zdania (0–8) z odpowiednimi reakcjami (A–I). Kliknij zdanie po lewej, potem reakcję po prawej.</p>
+
+<div id="matching-container"></div>
+
+<div class="buttons">
+    <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+    <a href="g2_ex3.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="g2_ex5.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+
+<script src="../script.js"></script>
+<script>
+    const leftItems = [
+        'Trochę tu duszno!',
+        'Dobrze, że jesteś taki wysoki.',
+        'Wujek ma dziś urodziny.',
+        'Ten rower jest zepsuty.',
+        'Ta drukarka nie działa.',
+        'Ten rosół jest zimny.',
+        'Trochę tu ciemno!',
+        'Te kwiaty mają sucho.',
+        'Brama jest otwarta.'
+    ];
+
+    const rightItems = [
+        'Możesz łatwo zawiesić firanki.',    // A (0)
+        'Trzeba go podgrzać.',                // B (1)
+        'Umiesz go naprawić?',                // C (2)
+        'Musimy wysłać mu życzenia.',         // D (3)
+        'Trzeba ją natychmiast zamknąć.',     // E (4)
+        'Trzeba ją podłączyć do komputera.', // F (5)
+        'Trzeba je szybko podlać.',           // G (6)
+        'Warto otworzyć okno.',               // H (7)
+        'Warto odsłonić roletę.'              // I (8)
+    ];
+
+    const correctAnswers = {
+        0: 7,   // H
+        1: 0,   // A
+        2: 3,   // D
+        3: 2,   // C
+        4: 5,   // F
+        5: 1,   // B
+        6: 8,   // I
+        7: 6,   // G
+        8: 4    // E
+    };
+
+    const prefilledPairs = { 0: 7 };
+
+    const exercise = new MatchingExercise(
+        'matching-container',
+        leftItems,
+        rightItems,
+        correctAnswers,
+        prefilledPairs
+    );
+</script>
+</body>
+</html>
