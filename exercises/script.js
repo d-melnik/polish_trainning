@@ -49,13 +49,13 @@ function showResult(correct, total) {
     
     if (percentage === 100) {
         resultDiv.classList.add('result-good');
-        resultDiv.textContent = `Отлично! Все правильно: ${correct}/${total} (${percentage}%)`;
+        resultDiv.textContent = `Doskonale! Wszystko poprawnie: ${correct}/${total} (${percentage}%)`;
     } else if (percentage >= 60) {
         resultDiv.classList.add('result-partial');
-        resultDiv.textContent = `Неплохо! Правильных ответов: ${correct}/${total} (${percentage}%)`;
+        resultDiv.textContent = `Nieźle! Poprawnych odpowiedzi: ${correct}/${total} (${percentage}%)`;
     } else {
         resultDiv.classList.add('result-bad');
-        resultDiv.textContent = `Нужно повторить. Правильных ответов: ${correct}/${total} (${percentage}%)`;
+        resultDiv.textContent = `Trzeba powtórzyć. Poprawnych odpowiedzi: ${correct}/${total} (${percentage}%)`;
     }
 }
 
@@ -99,7 +99,7 @@ class MatchingExercise {
         
         const instruction = document.createElement('p');
         instruction.className = 'matching-instruction';
-        instruction.textContent = 'Кликните на элемент слева, затем на соответствующий элемент справа, чтобы создать связь.';
+        instruction.textContent = 'Kliknij element po lewej, następnie pasujący element po prawej, aby połączyć je w parę.';
         this.container.appendChild(instruction);
         
         const grid = document.createElement('div');
@@ -237,7 +237,7 @@ class MatchingExercise {
                     ? String.fromCharCode(65 + this.pairs[li]) 
                     : '—';
                 const correctLetter = String.fromCharCode(65 + correctRightIdx);
-                errors.push(`<strong>${li}:</strong> ваш ответ «${userLetter}» → правильно «${correctLetter}»`);
+                errors.push(`<strong>${li}:</strong> twoja odpowiedź «${userLetter}» → poprawnie «${correctLetter}»`);
             }
         }
 
@@ -245,7 +245,7 @@ class MatchingExercise {
         if (errors.length > 0) {
             const correctionsDiv = document.createElement('div');
             correctionsDiv.className = 'matching-corrections';
-            correctionsDiv.innerHTML = '<strong>Ошибки:</strong><br>' + errors.join('<br>');
+            correctionsDiv.innerHTML = '<strong>Błędy:</strong><br>' + errors.join('<br>');
             this.container.parentNode.insertBefore(correctionsDiv, this.container.nextSibling);
         }
 
