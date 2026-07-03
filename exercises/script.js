@@ -1,3 +1,290 @@
+/* ===== PDF Download — exercise results ===== */
+
+/**
+ * Dynamically load html2pdf.js from CDN (once).
+ * Returns a Promise that resolves when the library is ready.
+ */
+function loadHtml2Pdf() {
+    if (window.html2pdf) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js';
+        script.onload = resolve;
+        script.onerror = () => reject(new Error('Nie udało się załadować biblioteki PDF.'));
+        document.head.appendChild(script);
+    });
+}
+
+/** Generate a filename from the page title. */
+function pdfFilename() {
+    return (document.title || 'cwiczenie')
+        .replace(/[^\w\s\u00C0-\u024F-]/g, '')
+        .replace(/\s+/g, '_')
+        .substring(0, 60);
+}
+
+/** Escape HTML entities. */
+function escHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+/**
+ * Build a self-contained HTML element for the PDF.
+ * Includes its own inline styles so html2pdf renders it correctly.
+ */
+function buildPdfContent(answers, matchingObj) {
+    const chapterTitle = document.querySelector('h1')?.textContent || '';
+    const exTitle = document.querySelector('h2')?.textContent || document.title;
+    const chapterInfo = document.querySelector('.chapter-info')?.textContent || '';
+
+    const pdfStyles = `
+        <style>
+            .pdf-page {
+                font-family: 'Segoe UI', Arial, sans-serif;
+                color: #222;
+                line-height: 1.7;
+            }
+            .pdf-header {
+                border-bottom: 3px solid #c0392b;
+                padding-bottom: 10px;
+                margin-bottom: 14px;
+            }
+            .pdf-header h1 { font-size: 15px; color: #c0392b; margin: 0 0 4px 0; }
+            .pdf-header h2 { font-size: 19px; color: #2c3e50; margin: 0 0 6px 0; }
+            .pdf-header .pdf-info { font-size: 12px; color: #777; margin: 0; }
+            .pdf-instruction {
+                font-style: italic; color: #555;
+                margin-bottom: 12px; font-size: 14px;
+            }
+            .pdf-body { font-size: 14px; }
+            .pdf-body p { margin: 4px 0; }
+            .pdf-answer {
+                display: inline;
+                background: #d5f5e3;
+                color: #1a7a3a;
+                font-weight: bold;
+                padding: 1px 5px;
+                border-radius: 3px;
+                border-bottom: 2px solid #27ae60;
+            }
+            .pdf-dialog-block {
+                background: #f9f9f9;
+                border-left: 4px solid #3498db;
+                border-radius: 0 5px 5px 0;
+                padding: 10px 14px;
+                margin: 10px 0;
+            }
+            .pdf-dialog-block h3 {
+                color: #3498db; font-size: 14px; margin: 0 0 6px 0;
+            }
+            .pdf-match-table {
+                width: 100%; border-collapse: collapse; margin: 10px 0;
+            }
+            .pdf-match-table th {
+                background: #2c3e50; color: white;
+                padding: 8px 12px; text-align: left; font-size: 13px;
+            }
+            .pdf-match-table td {
+                border: 1px solid #ddd; padding: 7px 12px;
+                font-size: 13px; vertical-align: top;
+            }
+            .pdf-match-table tr:nth-child(even) { background: #f4f6f7; }
+            .pdf-match-arrow {
+                color: #27ae60; font-weight: bold; text-align: center;
+            }
+            .pdf-footer {
+                margin-top: 20px; padding-top: 8px;
+                border-top: 1px solid #ccc;
+                font-size: 11px; color: #999;
+            }
+            .pdf-word-bank {
+                background: #eaf2f8; border: 1px dashed #3498db;
+                border-radius: 5px; padding: 8px 12px;
+                margin: 8px 0; font-size: 13px;
+            }
+            .pdf-fill-table {
+                width: 100%; border-collapse: collapse; margin: 10px 0;
+            }
+            .pdf-fill-table td, .pdf-fill-table th {
+                border: 1px solid #ddd; padding: 8px 10px;
+                text-align: center; font-size: 13px;
+            }
+            .pdf-fill-table th {
+                background: #3498db; color: white;
+            }
+        </style>
+    `;
+
+    let html = pdfStyles + '<div class="pdf-page">';
+
+    // ── Header ──
+    html += '<div class="pdf-header">';
+    html += `<h1>${escHtml(chapterTitle)}</h1>`;
+    html += `<h2>${escHtml(exTitle)}</h2>`;
+    if (chapterInfo) html += `<p class="pdf-info">${escHtml(chapterInfo)}</p>`;
+    html += '</div>';
+
+    if (matchingObj) {
+        // ── Matching exercise ──
+        const instruction = document.querySelector('.instruction');
+        if (instruction) html += `<p class="pdf-instruction">${escHtml(instruction.textContent)}</p>`;
+
+        const correct = matchingObj.correctAnswers;
+        const left = matchingObj.leftItems;
+        const right = matchingObj.rightItems;
+
+        html += '<table class="pdf-match-table">';
+        html += '<tr><th style="width:5%">Nr</th><th style="width:42%">Element</th>';
+        html += '<th style="width:6%"></th><th style="width:5%"></th>';
+        html += '<th style="width:42%">Odpowiedź</th></tr>';
+
+        for (const [leftIdx, rightIdx] of Object.entries(correct)) {
+            const li = parseInt(leftIdx);
+            const letter = String.fromCharCode(65 + rightIdx);
+            html += `<tr>
+                <td><strong>${li}</strong></td>
+                <td>${escHtml(left[li])}</td>
+                <td class="pdf-match-arrow">→</td>
+                <td><strong>${letter}</strong></td>
+                <td>${escHtml(right[rightIdx])}</td>
+            </tr>`;
+        }
+        html += '</table>';
+
+    } else if (answers) {
+        // ── Fill-in / select exercise ──
+        const container = document.querySelector('.exercise-container');
+        if (container) {
+            const clone = container.cloneNode(true);
+
+            // Remove UI-only elements
+            clone.querySelectorAll('.buttons, #result, .result, .no-answers-warning').forEach(el => el.remove());
+
+            // Restyle word-bank
+            clone.querySelectorAll('.word-bank').forEach(wb => { wb.className = 'pdf-word-bank'; });
+
+            // Restyle tables
+            clone.querySelectorAll('.fill-table').forEach(t => { t.className = 'pdf-fill-table'; });
+
+            // Replace inputs/selects with styled answer spans
+            const inputs = clone.querySelectorAll('.answer-input');
+            inputs.forEach((input, index) => {
+                const answer = answers[index];
+                if (!answer) return;
+                const displayAnswer = Array.isArray(answer) ? answer[0] : answer;
+                const span = document.createElement('span');
+                span.className = 'pdf-answer';
+                span.textContent = displayAnswer;
+                input.replaceWith(span);
+            });
+
+            // Restyle dialog blocks
+            clone.querySelectorAll('.dialog-block').forEach(db => { db.className = 'pdf-dialog-block'; });
+
+            // Extract instruction separately
+            const cloneInstr = clone.querySelector('.instruction');
+            if (cloneInstr) {
+                html += `<p class="pdf-instruction">${escHtml(cloneInstr.textContent)}</p>`;
+                cloneInstr.remove();
+            }
+
+            html += '<div class="pdf-body">' + clone.innerHTML + '</div>';
+        }
+    }
+
+    // ── Footer ──
+    html += '<div class="pdf-footer">';
+    html += 'Materiały z podręcznika: B. Maliszewski, <em>Gramatyka z kulturą. Przez osoby</em>, Lublin 2023';
+    html += ' &bull; polskizkultura.com.pl';
+    html += '</div>';
+    html += '</div>';
+
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = html;
+    return wrapper;
+}
+
+/**
+ * Main entry: build styled content → render to PDF via html2pdf.js → download.
+ */
+function downloadExercisePDF(answers, matchingObj) {
+    const btn = document.querySelector('.btn-download');
+    if (btn) { btn.disabled = true; btn.innerHTML = '⏳ Generuję…'; }
+
+    loadHtml2Pdf()
+        .then(() => {
+            const content = buildPdfContent(answers, matchingObj);
+
+            // Temporarily add to DOM (hidden) so html2pdf can measure it
+            content.style.position = 'fixed';
+            content.style.left = '-9999px';
+            content.style.top = '0';
+            content.style.width = '180mm';
+            document.body.appendChild(content);
+
+            const opt = {
+                margin:      [12, 14, 12, 14],
+                filename:    pdfFilename() + '.pdf',
+                image:       { type: 'jpeg', quality: 0.95 },
+                html2canvas: { scale: 2, useCORS: true, logging: false },
+                jsPDF:       { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak:   { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+
+            return html2pdf().set(opt).from(content).save().then(() => {
+                document.body.removeChild(content);
+            });
+        })
+        .catch(err => {
+            console.error(err);
+            alert('Błąd: ' + err.message + '\n\nSpróbuj ponownie lub sprawdź połączenie internetowe.');
+        })
+        .finally(() => {
+            if (btn) { btn.disabled = false; btn.innerHTML = '📥 Pobierz PDF'; }
+        });
+}
+
+
+/* ===== Auto-inject download button into exercise pages ===== */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonsDiv = document.querySelector('.buttons');
+    if (!buttonsDiv) return;
+
+    const downloadBtn = document.createElement('button');
+    downloadBtn.className = 'btn btn-download';
+    downloadBtn.innerHTML = '📥 Pobierz PDF';
+    downloadBtn.title = 'Pobierz ćwiczenie z odpowiedziami jako PDF';
+    downloadBtn.addEventListener('click', function() {
+        if (typeof exercise !== 'undefined' && exercise instanceof MatchingExercise) {
+            downloadExercisePDF(null, exercise);
+        } else {
+            // Capture answers from checkAnswers() closure
+            const originalCheck = window.checkExercise;
+            let capturedAnswers = null;
+            window.checkExercise = function(a) { capturedAnswers = a; };
+            try { if (typeof checkAnswers === 'function') checkAnswers(); } catch(e) {}
+            window.checkExercise = originalCheck;
+
+            if (capturedAnswers) {
+                downloadExercisePDF(capturedAnswers);
+            } else {
+                alert('Nie udało się pobrać odpowiedzi dla tego ćwiczenia.');
+            }
+        }
+    });
+
+    const clearBtn = buttonsDiv.querySelector('.btn-clear');
+    if (clearBtn) {
+        clearBtn.insertAdjacentElement('afterend', downloadBtn);
+    } else {
+        buttonsDiv.insertBefore(downloadBtn, buttonsDiv.firstChild);
+    }
+});
+
+
 /* ===== Fill-in exercises ===== */
 
 function checkExercise(answers) {

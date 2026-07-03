@@ -176,6 +176,15 @@ select.incorrect {
     background: #2980b9;
 }
 
+.btn-download {
+    background: #8e44ad;
+    color: white;
+}
+
+.btn-download:hover {
+    background: #7d3c98;
+}
+
 /* Results */
 .result {
     margin-top: 15px;
