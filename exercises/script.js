@@ -201,9 +201,7 @@ function buildPdfContent(answers, matchingObj) {
     html += '</div>';
     html += '</div>';
 
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = html;
-    return wrapper;
+    return html;
 }
 
 /**
@@ -215,14 +213,7 @@ function downloadExercisePDF(answers, matchingObj) {
 
     loadHtml2Pdf()
         .then(() => {
-            const content = buildPdfContent(answers, matchingObj);
-
-            // Temporarily add to DOM (hidden) so html2pdf can measure it
-            content.style.position = 'fixed';
-            content.style.left = '-9999px';
-            content.style.top = '0';
-            content.style.width = '180mm';
-            document.body.appendChild(content);
+            const htmlString = buildPdfContent(answers, matchingObj);
 
             const opt = {
                 margin:      [12, 14, 12, 14],
@@ -233,9 +224,7 @@ function downloadExercisePDF(answers, matchingObj) {
                 pagebreak:   { mode: ['avoid-all', 'css', 'legacy'] }
             };
 
-            return html2pdf().set(opt).from(content).save().then(() => {
-                document.body.removeChild(content);
-            });
+            return html2pdf().set(opt).from(htmlString).save();
         })
         .catch(err => {
             console.error(err);
