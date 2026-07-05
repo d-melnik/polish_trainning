@@ -62,12 +62,24 @@ function buildPdfContent(answers, matchingObj) {
             .pdf-body p { margin: 4px 0; }
             .pdf-answer {
                 display: inline;
-                background: #d5f5e3;
-                color: #1a7a3a;
-                font-weight: bold;
                 padding: 1px 5px;
                 border-radius: 3px;
+                font-weight: bold;
+            }
+            .pdf-answer-correct {
+                background: #d5f5e3;
+                color: #1a7a3a;
                 border-bottom: 2px solid #27ae60;
+            }
+            .pdf-answer-incorrect {
+                background: #fdedec;
+                color: #c0392b;
+                border-bottom: 2px solid #e74c3c;
+            }
+            .pdf-answer-plain {
+                background: #f4f6f7;
+                color: #2c3e50;
+                border-bottom: 2px solid #bdc3c7;
             }
             .pdf-dialog-block {
                 background: #f9f9f9;
@@ -90,9 +102,20 @@ function buildPdfContent(answers, matchingObj) {
                 border: 1px solid #ddd; padding: 7px 12px;
                 font-size: 13px; vertical-align: top;
             }
-            .pdf-match-table tr:nth-child(even) { background: #f4f6f7; }
             .pdf-match-arrow {
                 color: #27ae60; font-weight: bold; text-align: center;
+            }
+            .pdf-match-row-correct {
+                background-color: #eafaf1;
+            }
+            .pdf-match-row-incorrect {
+                background-color: #fdedec;
+            }
+            .pdf-match-row-plain {
+                background-color: #f4f6f7;
+            }
+            .pdf-match-row-unanswered {
+                background-color: #ffffff;
             }
             .pdf-footer {
                 margin-top: 20px; padding-top: 8px;
@@ -134,21 +157,48 @@ function buildPdfContent(answers, matchingObj) {
         const correct = matchingObj.correctAnswers;
         const left = matchingObj.leftItems;
         const right = matchingObj.rightItems;
+        const pairs = matchingObj.pairs || {};
 
         html += '<table class="pdf-match-table">';
-        html += '<tr><th style="width:5%">Nr</th><th style="width:42%">Element</th>';
-        html += '<th style="width:6%"></th><th style="width:5%"></th>';
-        html += '<th style="width:42%">Odpowiedź</th></tr>';
+        html += '<tr><th style="width:5%">Nr</th><th style="width:40%">Element</th>';
+        html += '<th style="width:6%"></th><th style="width:49%">Odpowiedź</th></tr>';
 
-        for (const [leftIdx, rightIdx] of Object.entries(correct)) {
+        for (const [leftIdx, correctRightIdx] of Object.entries(correct)) {
             const li = parseInt(leftIdx);
-            const letter = String.fromCharCode(65 + rightIdx);
-            html += `<tr>
+            const userRightIdx = pairs[li];
+            const correctLetter = String.fromCharCode(65 + correctRightIdx);
+            
+            let rowClass = 'pdf-match-row-unanswered';
+            let arrow = '→';
+            let displayAnswer = '';
+
+            if (userRightIdx !== undefined) {
+                const userLetter = String.fromCharCode(65 + userRightIdx);
+                if (!matchingObj.checked) {
+                    rowClass = 'pdf-match-row-plain';
+                    displayAnswer = `<strong>${userLetter}</strong>. ${escHtml(right[userRightIdx])}`;
+                } else if (userRightIdx === correctRightIdx) {
+                    rowClass = 'pdf-match-row-correct';
+                    displayAnswer = `<strong>${userLetter}</strong>. ${escHtml(right[userRightIdx])}`;
+                } else {
+                    rowClass = 'pdf-match-row-incorrect';
+                    displayAnswer = `<span style="text-decoration: line-through; color: #c0392b;"><strong>${userLetter}</strong>. ${escHtml(right[userRightIdx])}</span> <span style="font-size: 11px; color: #555;">(poprawnie: <strong>${correctLetter}</strong>. ${escHtml(right[correctRightIdx])})</span>`;
+                    arrow = '≠';
+                }
+            } else {
+                rowClass = 'pdf-match-row-unanswered';
+                if (matchingObj.checked) {
+                    displayAnswer = `<span style="color: #777">—</span> <span style="font-size: 11px; color: #555;">(poprawnie: <strong>${correctLetter}</strong>. ${escHtml(right[correctRightIdx])})</span>`;
+                } else {
+                    displayAnswer = `<span style="color: #777">—</span>`;
+                }
+            }
+
+            html += `<tr class="${rowClass}">
                 <td><strong>${li}</strong></td>
                 <td>${escHtml(left[li])}</td>
-                <td class="pdf-match-arrow">→</td>
-                <td><strong>${letter}</strong></td>
-                <td>${escHtml(right[rightIdx])}</td>
+                <td class="pdf-match-arrow">${arrow}</td>
+                <td>${displayAnswer}</td>
             </tr>`;
         }
         html += '</table>';
@@ -168,15 +218,33 @@ function buildPdfContent(answers, matchingObj) {
             // Restyle tables
             clone.querySelectorAll('.fill-table').forEach(t => { t.className = 'pdf-fill-table'; });
 
-            // Replace inputs/selects with styled answer spans
-            const inputs = clone.querySelectorAll('.answer-input');
-            inputs.forEach((input, index) => {
-                const answer = answers[index];
-                if (!answer) return;
-                const displayAnswer = Array.isArray(answer) ? answer[0] : answer;
+            // Replace inputs/selects with styled answer spans based on user's actual live responses
+            const liveInputs = container.querySelectorAll('.answer-input');
+            const clonedInputs = clone.querySelectorAll('.answer-input');
+            
+            clonedInputs.forEach((input, index) => {
+                const liveInput = liveInputs[index];
+                if (!liveInput) return;
+
+                const userValue = liveInput.value.trim();
+                const hasValue = userValue !== "" && userValue !== "—";
+                const correctAnswer = answers[index];
+                const displayAnswer = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswer;
+
+                const isCorrect = liveInput.classList.contains('correct');
+                const isIncorrect = liveInput.classList.contains('incorrect');
+
                 const span = document.createElement('span');
-                span.className = 'pdf-answer';
-                span.textContent = displayAnswer;
+                if (isCorrect) {
+                    span.className = 'pdf-answer pdf-answer-correct';
+                    span.textContent = userValue;
+                } else if (isIncorrect) {
+                    span.className = 'pdf-answer pdf-answer-incorrect';
+                    span.innerHTML = `<s>${escHtml(hasValue ? userValue : '—')}</s> <span style="font-weight: normal; font-size: 12px; color: #555;">(poprawnie: <strong>${escHtml(displayAnswer)}</strong>)</span>`;
+                } else {
+                    span.className = 'pdf-answer pdf-answer-plain';
+                    span.textContent = hasValue ? userValue : '_______';
+                }
                 input.replaceWith(span);
             });
 
