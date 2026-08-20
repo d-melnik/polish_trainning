@@ -352,9 +352,12 @@ function checkExercise(answers) {
     // Remove old corrections
     document.querySelectorAll('.correction').forEach(el => el.remove());
 
+    // Array-based answers are 0-indexed; object-based answers use 1-based keys ("1", "2", ...)
+    const isArray = Array.isArray(answers);
+
     inputs.forEach((input, index) => {
         const userAnswer = input.value.trim();
-        const correctAnswer = answers[index];
+        const correctAnswer = isArray ? answers[index] : answers[index + 1];
         
         input.classList.remove('correct', 'incorrect');
         
