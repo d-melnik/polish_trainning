@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 10b — Zadaj pytania: „wy" i „państwo"</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 10b — Zadaj pytania: „wy" i „państwo"</h2>
+
+    <div class="chapter-info">
+        str. 129 &bull; Czas przyszły prosty &bull; 2. osoba liczby mnogiej i forma grzecznościowa
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Zadaj pytania (nieoficjalne i oficjalne) zgodnie z podanym przykładem.</p>
+
+        <div class="word-bank">
+            <strong style="display:block;margin-bottom:6px">Słowa do użycia:</strong>
+            <span>podziękować</span><span>kupić</span><span>spotkać się</span>
+            <span>spróbować</span><span>złożyć</span>
+        </div>
+
+        <table class="fill-table">
+            <tr>
+                <th style="width:34%">pytanie nieoficjalne, forma „wy"</th>
+                <th style="width:38%">pytanie oficjalne, forma „państwo"</th>
+                <th style="width:28%">odpowiedź</th>
+            </tr>
+            <tr>
+                <td class="given">– Co kupicie?</td>
+                <td class="given">– Co państwo kupią?</td>
+                <td>– Ładny prezent.</td>
+            </tr>
+            <tr>
+                <td>– <input type="text" class="answer-input" placeholder="1" style="width:85%"></td>
+                <td>– <input type="text" class="answer-input" placeholder="2" style="width:85%"></td>
+                <td>– Piękne życzenia.</td>
+            </tr>
+            <tr>
+                <td>– <input type="text" class="answer-input" placeholder="3" style="width:85%"></td>
+                <td>– <input type="text" class="answer-input" placeholder="4" style="width:85%"></td>
+                <td>– Z przyjaciółmi.</td>
+            </tr>
+            <tr>
+                <td>– <input type="text" class="answer-input" placeholder="5" style="width:85%"></td>
+                <td>– <input type="text" class="answer-input" placeholder="6" style="width:85%"></td>
+                <td>– Pysznego tortu!</td>
+            </tr>
+            <tr>
+                <td>– <input type="text" class="answer-input" placeholder="7" style="width:85%"></td>
+                <td>– <input type="text" class="answer-input" placeholder="8" style="width:85%"></td>
+                <td>– Za świetną imprezę.</td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s2_ex10a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s3_ex1bc.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    // Klucz podaje pytania ze znakiem zapytania; wariant bez „?" też akceptujemy.
+    const answers = {
+        "1": ["Co złożycie?", "Co złożycie"],
+        "2": ["Co państwo złożą?", "Co państwo złożą"],
+        "3": ["Z kim się spotkacie?", "Z kim się spotkacie"],
+        "4": ["Z kim państwo się spotkają?", "Z kim państwo się spotkają"],
+        "5": ["Czego spróbujecie?", "Czego spróbujecie"],
+        "6": ["Czego państwo spróbują?", "Czego państwo spróbują"],
+        "7": ["Za co podziękujecie?", "Za co podziękujecie"],
+        "8": ["Za co państwo podziękują?", "Za co państwo podziękują"]
+    };
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>

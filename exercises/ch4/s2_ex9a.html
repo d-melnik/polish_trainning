@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 9a — Co on / ona jutro zrobi?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 9a — Co on / ona jutro zrobi?</h2>
+
+    <div class="chapter-info">
+        str. 128 &bull; Czas przyszły prosty &bull; 3. osoba liczby pojedynczej
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Co on / ona jutro zrobi? Uzupełnij teksty zgodnie z podanym przykładem.</p>
+
+        <div class="dialog-block">
+            <h3>Grzegorz</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>zalogować się</span><span>wypić</span><span>włączyć</span>
+                <span>odpowiedzieć</span><span>przeczytać</span>
+            </div>
+            <p>
+                Grzegorz <b>wypije</b><span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>
+                poranną kawę, a potem <input type="text" class="answer-input" placeholder="1" style="width:130px"> komputer i
+                <input type="text" class="answer-input" placeholder="2" style="width:130px"> do poczty służbowej.
+                Uważnie <input type="text" class="answer-input" placeholder="3" style="width:130px"> maile od mieszkańców miasta
+                i – jeśli tylko będzie mógł – krótko <input type="text" class="answer-input" placeholder="4" style="width:130px">
+                na ich pytania.
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Sylwia</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>wstać</span><span>zabrać</span><span>pojechać</span><span>zjeść</span>
+            </div>
+            <p>
+                Sylwia <input type="text" class="answer-input" placeholder="5" style="width:130px"> o wpół do siódmej.
+                Na śniadanie <input type="text" class="answer-input" placeholder="6" style="width:130px">
+                płatki owsiane z jogurtem truskawkowym, a później
+                <input type="text" class="answer-input" placeholder="7" style="width:130px"> telefon, plecak oraz klucze i
+                <input type="text" class="answer-input" placeholder="8" style="width:130px"> rowerem do szkoły.
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Paweł</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>zająć</span><span>wsiąść</span><span>pójść</span><span>wysiąść</span>
+            </div>
+            <p>
+                Paweł <input type="text" class="answer-input" placeholder="9" style="width:130px"> rano na przystanek,
+                a potem <input type="text" class="answer-input" placeholder="10" style="width:130px"> do tramwaju,
+                <input type="text" class="answer-input" placeholder="11" style="width:130px"> miejsce przy oknie
+                (jeśli tylko będzie wolne) i <input type="text" class="answer-input" placeholder="12" style="width:130px">
+                przed centrum handlowym, w którym od roku pracuje.
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Michał</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>wyjąć</span><span>wejść</span><span>zrobić</span><span>pokroić</span>
+            </div>
+            <p>
+                Michał <input type="text" class="answer-input" placeholder="13" style="width:130px"> do kuchni,
+                a potem <input type="text" class="answer-input" placeholder="14" style="width:130px"> nóż z szuflady,
+                <input type="text" class="answer-input" placeholder="15" style="width:130px"> nim warzywa i
+                <input type="text" class="answer-input" placeholder="16" style="width:130px"> z nich pyszne sałatki.
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Irena</h3>
+            <div class="word-bank" style="margin-bottom:10px">
+                <span>zdobyć</span><span>zacząć</span><span>zagrać</span><span>posłuchać</span>
+            </div>
+            <p>
+                Irena <input type="text" class="answer-input" placeholder="17" style="width:130px">
+                dzień od prostych ćwiczeń gimnastycznych, a potem
+                <input type="text" class="answer-input" placeholder="18" style="width:130px"> muzyki,
+                żeby się trochę zrelaksować. Po południu
+                <input type="text" class="answer-input" placeholder="19" style="width:130px"> w ważnym meczu
+                i ma nadzieję, że <input type="text" class="answer-input" placeholder="20" style="width:130px">
+                w nim co najmniej jedną bramkę.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s2_ex8b.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s2_ex9b.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = {
+        "1": "włączy",
+        "2": "zaloguje się",
+        "3": "przeczyta",
+        "4": "odpowie",
+        "5": "wstanie",
+        "6": "zje",
+        "7": "zabierze",
+        "8": "pojedzie",
+        "9": "pójdzie",
+        "10": "wsiądzie",
+        "11": "zajmie",
+        "12": "wysiądzie",
+        "13": "wejdzie",
+        "14": "wyjmie",
+        "15": "pokroi",
+        "16": "zrobi",
+        "17": "zacznie",
+        "18": "posłucha",
+        "19": "zagra",
+        "20": "zdobędzie"
+    };
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>

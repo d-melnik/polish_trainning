@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 8a — #Co jutro zrobisz?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 8a — #Co jutro zrobisz?</h2>
+
+    <div class="chapter-info">
+        str. 127 &bull; Czas przyszły prosty &bull; 1. osoba liczby pojedynczej
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij teksty zgodnie z podanym przykładem.</p>
+
+        <div class="word-bank">
+            <span>pójść</span><span>zająć</span><span>kupić</span><span>zrobić</span><span>poczekać</span>
+            <span>powiedzieć</span><span>wziąć</span><span>wstać</span><span>zdobyć</span><span>wrócić</span>
+            <span>sprawdzić</span><span>poczęstować</span><span>wejść</span><span>poprosić</span>
+            <span>zwiedzić</span><span>poszukać</span><span>wypić</span><span>zacząć</span>
+            <span>pojechać</span><span>wysiąść</span><span>zjeść</span>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Witek</h3>
+            <p>
+                Co jutro <b>zrobię</b><span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>?
+                To moja prywatna sprawa, ale dobrze – wszystko
+                <input type="text" class="answer-input" placeholder="1" style="width:120px">.
+                Wieczorem <input type="text" class="answer-input" placeholder="2" style="width:120px"> na rynek,
+                a tam przy Sukiennicach <input type="text" class="answer-input" placeholder="3" style="width:120px">
+                bukiet pięknych róż, a później <input type="text" class="answer-input" placeholder="4" style="width:120px">
+                mały stolik pod parasolem i <input type="text" class="answer-input" placeholder="5" style="width:120px">
+                na koleżankę, z którą umówiłem się na randkę!
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Wanda</h3>
+            <p>
+                Jutro <input type="text" class="answer-input" placeholder="6" style="width:120px"> wcześnie rano i
+                <input type="text" class="answer-input" placeholder="7" style="width:120px"> pogodę za oknem.
+                Jeśli nie będzie pochmurno i deszczowo, to
+                <input type="text" class="answer-input" placeholder="8" style="width:120px"> swój plecak i pójdę w góry.
+                Mam nadzieję, że <input type="text" class="answer-input" placeholder="9" style="width:120px"> wysokie szczyty
+                i jeszcze przed zachodem słońca <input type="text" class="answer-input" placeholder="10" style="width:120px">
+                do pensjonatu – trochę zmęczona, ale szczęśliwa.
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Łukasz</h3>
+            <p>
+                Moje plany na jutro? Przed południem
+                <input type="text" class="answer-input" placeholder="11" style="width:120px"> Dom Mikołaja Kopernika,
+                a później <input type="text" class="answer-input" placeholder="12" style="width:120px">
+                na wieżę zabytkowego ratusza. Po południu
+                <input type="text" class="answer-input" placeholder="13" style="width:120px"> sklepu z piernikami,
+                a tam <input type="text" class="answer-input" placeholder="14" style="width:120px">
+                o wielką paczkę tych ciasteczek i <input type="text" class="answer-input" placeholder="15" style="width:120px">
+                nimi swoich znajomych. Będzie miło!
+            </p>
+        </div>
+
+        <div class="dialog-block">
+            <h3>Nadia</h3>
+            <p>
+                Co jutro zrobię? Jak zwykle <input type="text" class="answer-input" placeholder="16" style="width:120px">
+                dzień od zdrowego śniadania – <input type="text" class="answer-input" placeholder="17" style="width:120px">
+                płatki kukurydziane z mlekiem i <input type="text" class="answer-input" placeholder="18" style="width:120px">
+                szklankę świeżego soku. Potem <input type="text" class="answer-input" placeholder="19" style="width:120px">
+                metrem do centrum, <input type="text" class="answer-input" placeholder="20" style="width:120px">
+                na stacji Świętokrzyska i pójdę do Pałacu Kultury, ale wcale nie będę go zwiedzać, bo ja tam pracuję.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s2_ex7b.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s2_ex8b.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = {
+        "1": "powiem",
+        "2": "pójdę",
+        "3": "kupię",
+        "4": "zajmę",
+        "5": "poczekam",
+        "6": "wstanę",
+        "7": "sprawdzę",
+        "8": "wezmę",
+        "9": "zdobędę",
+        "10": "wrócę",
+        "11": "zwiedzę",
+        "12": "wejdę",
+        "13": "poszukam",
+        "14": "poproszę",
+        "15": "poczęstuję",
+        "16": "zacznę",
+        "17": "zjem",
+        "18": "wypiję",
+        "19": "pojadę",
+        "20": "wysiądę"
+    };
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>

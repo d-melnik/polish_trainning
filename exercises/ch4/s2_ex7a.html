@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 7a — Wielka podróż (wiersz)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 7a — Wielka podróż (wiersz)</h2>
+
+    <div class="chapter-info">
+        str. 126 &bull; Czas przyszły prosty &bull; 1. osoba liczby pojedynczej
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij wiersz zgodnie z podanym przykładem.</p>
+
+        <div class="dialog-block">
+            <h3>Wielka podróż</h3>
+            <p>
+                Gdy będzie za zimno, za ciemno, za nudno,<br>
+                to wtedy <b>ucieknę</b><span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> <em>(uciec)</em><sub>0</sub> na wyspę bezludną.<br>
+
+                <input type="text" class="answer-input" placeholder="(Wyjąć)₁" style="width:110px"> namiot z szafki,
+                <input type="text" class="answer-input" placeholder="(wziąć)₂" style="width:110px"> trzy kanapki<br>
+
+                i <input type="text" class="answer-input" placeholder="(pójść)₃" style="width:110px"> do portu, skąd ruszają statki.<br>
+
+                <input type="text" class="answer-input" placeholder="(Wsiąść)₄" style="width:110px"> i popłynę! Dokąd? Za horyzont,<br>
+                gdzie kwiaty nie więdną, komary nie gryzą.<br>
+
+                <input type="text" class="answer-input" placeholder="(Znaleźć)₅" style="width:110px"> małą wyspę – tam, na oceanie,<br>
+
+                i gdy będzie miło, to <input type="text" class="answer-input" placeholder="(zostać)₆" style="width:110px"> na niej.<br>
+
+                <input type="text" class="answer-input" placeholder="(Rozbić)₇" style="width:110px"> swój namiot pod palmą wysoką<br>
+                albo trochę dalej, bo może spaść kokos.<br>
+
+                <input type="text" class="answer-input" placeholder="(Odpocząć)₈" style="width:120px"> od szkoły, sportu i sprzątania,<br>
+                będę spać, śnić, leżeć, czasem się opalać.<br>
+
+                A co będzie potem? Pewnie szybko <input type="text" class="answer-input" placeholder="(wrócić)₉" style="width:110px">,<br>
+                bo z bezludnej wyspy także zechcę uciec.<br>
+
+                A gdy tu przypłynę i dom swój <input type="text" class="answer-input" placeholder="(zobaczyć)₁₀" style="width:120px">,<br>
+                to będę już patrzeć na niego inaczej.
+            </p>
+            <p style="text-align:right;font-style:italic;color:#777;margin-top:10px">
+                Gramatyka w wierszykach &bull; B. Maliszewski
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s2_ex3.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s2_ex7b.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = {
+        "1": "Wyjmę",
+        "2": "wezmę",
+        "3": "pójdę",
+        "4": "Wsiądę",
+        "5": "Znajdę",
+        "6": "zostanę",
+        "7": "Rozbiję",
+        "8": "Odpocznę",
+        "9": "wrócę",
+        "10": "zobaczę"
+    };
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>

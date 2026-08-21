@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 8b — Czy wiesz, kto tam jest?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 8b — Czy wiesz, kto tam jest?</h2>
+
+    <div class="chapter-info">
+        str. 127 &bull; Na podstawie tekstów z ćwiczenia 8a
+    </div>
+
+    <p class="no-answers-warning" style="background:#fff3cd;padding:10px;border-radius:4px">
+        ℹ️ W podręczniku miasta są pokazane na fotografiach. Tutaj zastąpiono je nazwami miast.
+    </p>
+
+    <div class="exercise-container">
+        <p class="instruction">Czy wiesz, kto tam jest? Połącz miasta z osobami z ćwiczenia 8a.</p>
+
+        <div id="matching-container"></div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="exercise.check()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="exercise.clear()">Wyczyść ✕</button>
+            <a href="s2_ex8a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s2_ex9a.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+const exercise = new MatchingExercise(
+    'matching-container',
+    ['KRAKÓW', 'WARSZAWA', 'TORUŃ', 'ZAKOPANE'],
+    ['Witek', 'Wanda', 'Łukasz', 'Nadia'],
+    { "0": 0, "1": 3, "2": 2, "3": 1 },
+    { "0": 0 }
+);
+</script>
+</body>
+</html>

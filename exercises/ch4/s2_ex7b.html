@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 7b — Co on / ona zrobi?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 7b — Co on / ona zrobi?</h2>
+
+    <div class="chapter-info">
+        str. 126 &bull; Czas przyszły prosty &bull; 3. osoba liczby pojedynczej
+    </div>
+
+    <div class="exercise-container">
+        <p class="instruction">Co on / ona zrobi? Uzupełnij tekst zgodnie z podanym przykładem.</p>
+
+        <div class="word-bank">
+            <span>pójść</span><span>znaleźć</span><span>wsiąść</span><span>wziąć</span><span>wyjąć</span>
+            <span>odpocząć</span><span>popłynąć</span><span>wrócić</span><span>rozbić</span>
+        </div>
+
+        <div class="dialog-block">
+            <p>
+                On / Ona <b>wyjmie</b><span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> namiot z szafy,
+                <input type="text" class="answer-input" placeholder="1" style="width:110px"> trzy kanapki i
+                <input type="text" class="answer-input" placeholder="2" style="width:110px"> do portu, a tam
+                <input type="text" class="answer-input" placeholder="3" style="width:110px"> na statek i
+                <input type="text" class="answer-input" placeholder="4" style="width:110px"> nim bardzo daleko.
+                W końcu <input type="text" class="answer-input" placeholder="5" style="width:110px"> małą wyspę na wielkim oceanie –
+                <input type="text" class="answer-input" placeholder="6" style="width:110px"> namiot pod palmą,
+                <input type="text" class="answer-input" placeholder="7" style="width:110px"> od szkoły, sportu, sprzątania,
+                ale potem szybko <input type="text" class="answer-input" placeholder="8" style="width:110px"> do domu.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s2_ex7a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s2_ex8a.html" class="btn btn-nav">Dalej →</a>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+function checkAnswers() {
+    const answers = {
+        "1": "weźmie",
+        "2": "pójdzie",
+        "3": "wsiądzie",
+        "4": "popłynie",
+        "5": "znajdzie",
+        "6": "rozbije",
+        "7": "odpocznie",
+        "8": "wróci"
+    };
+    checkExercise(answers);
+}
+</script>
+</body>
+</html>
