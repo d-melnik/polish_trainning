@@ -50,6 +50,18 @@ book or the answer key.
 - Prefer official answer-key values from the textbook.
 - If multiple answers are accepted, use an array of accepted strings in the answer
   position, following the existing `checkExercise()` behavior.
+- There is exactly one answer per `.answer-input` field, in document order. Never
+  include the worked example in the answers: the example is rendered text, not a
+  field, so an extra leading entry shifts every item by one.
+- Two answer container formats are supported. An array is indexed from 0; an object
+  must use string keys `"1".."N"` matching the visible item numbers. Do not mix them.
+- For `<select>` items the answer must be the **full option text** (`"c) obwarzanka"`),
+  not the bare letter, because `checkExercise()` compares against `select.value`.
+- Do not use radio inputs for gradable fields. `checkExercise()` reads `input.value`,
+  which for a radio is its static `value=` attribute and ignores the user's choice.
+  Use a `<select class="answer-input">` instead.
+- Run `node tools/check-answers.js` after changing any exercise; it verifies all of
+  the above and exits non-zero on failure.
 - Preserve Polish diacritics exactly: `ą ć ę ł ń ó ś ź ż`.
 - Do not normalize away punctuation or case unless shared JS explicitly supports it.
 - Do not silently change the exercise into a different task type to make checking
