@@ -222,13 +222,16 @@ function buildPdfContent(answers, matchingObj) {
             const liveInputs = container.querySelectorAll('.answer-input');
             const clonedInputs = clone.querySelectorAll('.answer-input');
             
+            // Array-based answers are 0-indexed; object-based answers use 1-based keys ("1", "2", ...)
+            const isArray = Array.isArray(answers);
+
             clonedInputs.forEach((input, index) => {
                 const liveInput = liveInputs[index];
                 if (!liveInput) return;
 
                 const userValue = liveInput.value.trim();
                 const hasValue = userValue !== "" && userValue !== "—";
-                const correctAnswer = answers[index];
+                const correctAnswer = isArray ? answers[index] : answers[index + 1];
                 const displayAnswer = Array.isArray(correctAnswer) ? correctAnswer[0] : correctAnswer;
 
                 const isCorrect = liveInput.classList.contains('correct');
