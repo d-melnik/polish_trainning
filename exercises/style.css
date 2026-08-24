@@ -303,6 +303,14 @@ nav a.active {
     border: 1px solid #bdc3c7;
 }
 
+/* Infinitive / person hints next to a blank */
+.answer-hint {
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
 /* Correction hints */
 .correction {
     color: #27ae60;
