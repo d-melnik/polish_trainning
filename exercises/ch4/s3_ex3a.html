@@ -1,1 +1,140 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ćw. 3a — Dialog: plany na weekend</title><link rel="stylesheet" href="../style.css"></head><body><h1>Rozdział IV: Tu będzie czas przyszły</h1><h2>Ćw. 3a — Dialog: plany na weekend</h2><div class="chapter-info">str. 132</div><div class="exercise-container"><p class="instruction">Uzupełnij dialog właściwymi formami czasowników z nawiasów.</p><div class="exercise-item"><p><b>Michał:</b> – Masz plany na sobotę?</p><p><b>Paweł:</b> – Pewnie <b>zostanę</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span> w domu i przez cały dzień <b>będę odpoczywać</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>.</p><p><b>Michał:</b> – Czyli <input class="answer-input" type="text" size="11" autocomplete="off">(1) o dziesiątej, a potem godzinami <input class="answer-input" type="text" size="12" autocomplete="off">(2) na komputerze?</p><p><b>Paweł:</b> – Widzę, że dobrze mnie znasz. Może <input class="answer-input" type="text" size="12" autocomplete="off">(3) na grę online?</p><p><b>Michał:</b> – A może <input class="answer-input" type="text" size="10" autocomplete="off">(4) rowery i <input class="answer-input" type="text" size="10" autocomplete="off">(5) nad zalew?</p><p><b>Paweł:</b> – Chyba jednak <input class="answer-input" type="text" size="10" autocomplete="off">(6) dom i komputer.</p><p><b>Michał:</b> – Ale gdy tylko <input class="answer-input" type="text" size="10" autocomplete="off">(7) na rower, od razu <input class="answer-input" type="text" size="13" autocomplete="off">(8) świetnie i <input class="answer-input" type="text" size="11" autocomplete="off">(9) narzekać na zmęczenie.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;<input class="answer-input" type="text" size="12" autocomplete="off">(10) nad wodą, <input class="answer-input" type="text" size="10" autocomplete="off">(11) kajaki, a potem <input class="answer-input" type="text" size="10" autocomplete="off">(12) w badmintona albo siatkówkę plażową.</p><p><b>Paweł:</b> – A kto jeszcze <input class="answer-input" type="text" size="10" autocomplete="off">(13)?</p><p><b>Michał:</b> – Z Magdą, Kingą i Tomkiem. Niestety, Tomek nie <input class="answer-input" type="text" size="8" autocomplete="off">(14) się przyłączyć, ale dziewczyny chętnie <input class="answer-input" type="text" size="10" autocomplete="off">(15) nad zalew.</p><p><b>Paweł:</b> – To masz rację! O której <input class="answer-input" type="text" size="11" autocomplete="off">(16)?</p></div><div class="buttons"><button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button><button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button><a href="s3_ex1bc.html" class="btn btn-nav">← Wstecz</a><a href="../index.html" class="btn btn-nav">Menu</a><a href="s3_ex4.html" class="btn btn-nav">Dalej →</a></div><div id="result" class="result"></div></div><script src="../script.js"></script><script>function checkAnswers(){const answers={"1": "wstaniesz", "2": "będziesz grać", "3": "umówimy się", "4": "weźmiemy", "5": "pojedziemy", "6": "wybiorę", "7": "wsiądziesz", "8": "poczujesz się", "9": "przestaniesz", "10": "Odpoczniemy", "11": "wynajmiemy", "12": "zagramy", "13": "pojedzie", "14": "może", "15": "pojadą", "16": "wyjedziemy"};checkExercise(answers);}</script></body></html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 3a — Dialog: plany na weekend</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 3a — Dialog: plany na weekend</h2>
+
+    <div class="chapter-info">str. 132 &bull; Czas przyszły złożony i prosty</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij dialog zgodnie z podanym przykładem.</p>
+
+        <div class="exercise-item">
+            <p><b>Michał:</b> – Cześć, Paweł! Co słychać?</p>
+
+            <p><b>Paweł:</b> – Cześć, Michał. U mnie w porządku, a co u ciebie?</p>
+
+            <p><b>Michał:</b> – Wszystko świetnie, bo już niedługo weekend. Masz plany na sobotę?</p>
+
+            <p><b>Paweł:</b> – Pewnie <b>zostanę</b>
+                <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>
+                <span class="answer-hint">(ja-zostać)</span><sup>0</sup> w domu i przez cały dzień <b>będę odpoczywać</b>
+                <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span>
+                <span class="answer-hint">(ja-odpoczywać)</span><sup>0</sup>.</p>
+
+            <p><b>Michał:</b> – Czyli <input class="answer-input" type="text" size="11" autocomplete="off">
+                <span class="answer-hint">(ty-wstać)</span><sup>1</sup> o dziesiątej, a potem godzinami
+                <input class="answer-input" type="text" size="16" autocomplete="off">
+                <span class="answer-hint">(ty-grać)</span><sup>2</sup> na komputerze?</p>
+
+            <p><b>Paweł:</b> – Widzę, że dobrze mnie znasz. Może
+                <input class="answer-input" type="text" size="13" autocomplete="off">
+                <span class="answer-hint">(my-umówić się)</span><sup>3</sup> na grę online?</p>
+
+            <p><b>Michał:</b> – A może <input class="answer-input" type="text" size="11" autocomplete="off">
+                <span class="answer-hint">(my-wziąć)</span><sup>4</sup> rowery i
+                <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(my-pojechać)</span><sup>5</sup> nad zalew? Co
+                <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(ty-powiedzieć)</span><sup>6</sup> na taką wycieczkę?</p>
+
+            <p><b>Paweł:</b> – Czy ja wiem? Ostatnio jestem trochę zmęczony. Chyba jednak
+                <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(ja-wybrać)</span><sup>7</sup> dom i komputer.</p>
+
+            <p><b>Michał:</b> – Ale gdy tylko <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(ty-wsiąść)</span><sup>8</sup> na rower, od razu
+                <input class="answer-input" type="text" size="13" autocomplete="off">
+                <span class="answer-hint">(ty-poczuć się)</span><sup>9</sup> świetnie i
+                <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(ty-przestać)</span><sup>10</sup> narzekać na zmęczenie.
+                <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(My-odpocząć)</span><sup>11</sup> nad wodą,
+                <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(my-wynająć)</span><sup>12</sup> kajaki, a potem
+                <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(my-zagrać)</span><sup>13</sup> w badmintona albo w siatkówkę plażową.</p>
+
+            <p><b>Paweł:</b> – W siatkówkę plażową? We dwóch?</p>
+
+            <p><b>Michał:</b> – Oj, zapomniałem powiedzieć, że
+                <input class="answer-input" type="text" size="8" autocomplete="off">
+                <span class="answer-hint">(być)</span><sup>14</sup> jeszcze inne osoby.</p>
+
+            <p><b>Paweł:</b> – A kto jeszcze <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(pojechać)</span><sup>15</sup>? Z kim rozmawiałeś?</p>
+
+            <p><b>Michał:</b> – Z Magdą, Kingą i Tomkiem. Niestety, Tomek nie
+                <input class="answer-input" type="text" size="13" autocomplete="off">
+                <span class="answer-hint">(móc)</span><sup>16</sup> się przyłączyć, bo ma zepsuty rower i w weekend
+                <input class="answer-input" type="text" size="14" autocomplete="off">
+                <span class="answer-hint">(musieć)</span><sup>17</sup> go naprawiać, ale dziewczyny chętnie
+                <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(pojechać)</span><sup>18</sup> nad zalew.</p>
+
+            <p><b>Paweł:</b> – Taaak? To jednak masz rację. Nie warto siedzieć w domu. O której
+                <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(my-wyjechać)</span><sup>19</sup>?</p>
+
+            <p><b>Michał:</b> – Myślę, że około dziesiątej, ale jeszcze
+                <input class="answer-input" type="text" size="10" autocomplete="off">
+                <span class="answer-hint">(ja-wysłać)</span><sup>20</sup> SMS do dziewczyn albo do nich
+                <input class="answer-input" type="text" size="11" autocomplete="off">
+                <span class="answer-hint">(ja-zadzwonić)</span><sup>21</sup>, żeby się upewnić, czy ta godzina
+                im odpowiada, a potem znowu <input class="answer-input" type="text" size="12" autocomplete="off">
+                <span class="answer-hint">(ja-odezwać się)</span><sup>22</sup> do ciebie.</p>
+
+            <p><b>Paweł:</b> – Dobrze! To czekam na kolejny telefon.</p>
+
+            <p><b>Michał:</b> – Będziemy w kontakcie. Na razie!</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s3_ex1bc.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s3_ex4.html" class="btn btn-nav">Dalej →</a>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                "1": "wstaniesz",
+                "2": ["będziesz grać", "będziesz grał"],
+                "3": ["umówimy się", "się umówimy"],
+                "4": "weźmiemy",
+                "5": "pojedziemy",
+                "6": "powiesz",
+                "7": "wybiorę",
+                "8": "wsiądziesz",
+                "9": ["poczujesz się", "się poczujesz"],
+                "10": "przestaniesz",
+                "11": "Odpoczniemy",
+                "12": "wynajmiemy",
+                "13": "zagramy",
+                "14": "będą",
+                "15": "pojedzie",
+                "16": "będzie mógł",
+                "17": "będzie musiał",
+                "18": "pojadą",
+                "19": "wyjedziemy",
+                "20": "wyślę",
+                "21": "zadzwonię",
+                "22": ["odezwę się", "się odezwę"]
+            };
+            checkExercise(answers);
+        }
+    </script>
+</body>
+</html>
