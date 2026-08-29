@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 7b — Jakie to słowo?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 7b — Jakie to słowo?</h2>
+
+    <div class="chapter-info">str. 136 &bull; Anagramy</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Jakie to słowo? Ułóż litery we właściwej kolejności zgodnie z podanym przykładem.</p>
+
+        <table class="fill-table">
+            <tr><th style="width:12%">nr</th><th style="width:38%">litery</th><th style="width:50%">słowo</th></tr>
+            <tr><td>0</td><td>widrz</td><td class="given">drzwi <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span></td></tr>
+            <tr><td>1</td><td>bioda</td><td><input type="text" class="answer-input" placeholder="1" style="width:80%"></td></tr>
+            <tr><td>2</td><td>wikat</td><td><input type="text" class="answer-input" placeholder="2" style="width:80%"></td></tr>
+            <tr><td>3</td><td>kietub</td><td><input type="text" class="answer-input" placeholder="3" style="width:80%"></td></tr>
+            <tr><td>4</td><td>łomiść</td><td><input type="text" class="answer-input" placeholder="4" style="width:80%"></td></tr>
+            <tr><td>5</td><td>rzamenie</td><td><input type="text" class="answer-input" placeholder="5" style="width:80%"></td></tr>
+        </table>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s3_ex7a.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+            <a href="s3_ex7c.html" class="btn btn-nav">Dalej →</a>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                "1": "obiad",
+                "2": "kwiat",
+                "3": "bukiet",
+                "4": "miłość",
+                "5": "marzenie"
+            };
+            checkExercise(answers);
+        }
+    </script>
+</body>
+</html>

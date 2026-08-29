@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćw. 7c — O piosenkach</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Rozdział IV: Tu będzie czas przyszły</h1>
+    <h2>Ćw. 7c — O piosenkach</h2>
+
+    <div class="chapter-info">str. 136 &bull; Czas przyszły złożony i prosty</div>
+
+    <div class="exercise-container">
+        <p class="instruction">Uzupełnij tekst zgodnie z podanym przykładem.</p>
+
+        <div class="word-bank">
+            <span>nadejdzie</span><span>przeszkodzi</span><span>zaprosi</span><span>zaśpiewa</span><span>będzie padać</span><span>będzie czekał</span><span>będzie szła</span><span>będą</span><span>wypiją</span><span>będą mogły</span><span>będą chcieli</span>
+        </div>
+
+        <div class="exercise-item">
+            <h3>O piosenkach</h3>
+            <p><i>Jej piosenka o miłości</i> i <i>Jego piosenka o miłości</i> mają tę samą muzykę oraz bardzo
+                podobny tekst, który opowiada o prostym, pięknym marzeniu. To marzenie jest o tym, że ona i on
+                <b>będą</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span><sup>0</sup>
+                razem i nic im w tym nie
+                <input class="answer-input" type="text" size="12" autocomplete="off"><sup>1</sup>.
+                Nawet jeśli będzie bardzo brzydka pogoda – gdy
+                <input class="answer-input" type="text" size="13" autocomplete="off"><sup>2</sup> albo gdy
+                <input class="answer-input" type="text" size="11" autocomplete="off"><sup>3</sup> gęsta mgła, to oni i tak
+                <input class="answer-input" type="text" size="13" autocomplete="off"><sup>4</sup> się spotkać.
+                Ona do niego <input class="answer-input" type="text" size="12" autocomplete="off"><sup>5</sup>,
+                a on na nią <input class="answer-input" type="text" size="13" autocomplete="off"><sup>6</sup>
+                z bukietem pięknych kwiatów i
+                <input class="answer-input" type="text" size="10" autocomplete="off"><sup>7</sup>
+                ją na gorącą kawę, którą razem
+                <input class="answer-input" type="text" size="10" autocomplete="off"><sup>8</sup>.
+                Prawda, że to proste i piękne marzenie?
+                W pierwszej piosence <input class="answer-input" type="text" size="11" autocomplete="off"><sup>9</sup>
+                o nim dziewczyna, a w drugiej – chłopak. A czy ich marzenia
+                <input class="answer-input" type="text" size="13" autocomplete="off"><sup>10</sup> się spełnić? Kto to wie…</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+            <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+            <a href="s3_ex7b.html" class="btn btn-nav">← Wstecz</a>
+            <a href="../index.html" class="btn btn-nav">Menu</a>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                "1": "przeszkodzi",
+                "2": "będzie padać",
+                "3": "nadejdzie",
+                "4": "będą chcieli",
+                "5": "będzie szła",
+                "6": "będzie czekał",
+                "7": "zaprosi",
+                "8": "wypiją",
+                "9": "zaśpiewa",
+                "10": "będą mogły"
+            };
+            checkExercise(answers);
+        }
+    </script>
+</body>
+</html>
