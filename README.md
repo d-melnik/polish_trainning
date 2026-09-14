@@ -36,7 +36,9 @@ The exercises cover all 12 chapters of the textbook, from the present tense thro
 
 ### How to use
 
-Open `exercises/index.html` in a browser — no server or installation required. All exercises run locally.
+Online: **https://polishtrain.linkpc.net/textbook/**
+
+Offline: open `exercises/index.html` in a browser — no server or installation required. All exercises run locally.
 
 ---
 
@@ -59,7 +61,9 @@ Open `exercises/index.html` in a browser — no server or installation required.
 
 ### Как использовать
 
-Открой файл `exercises/index.html` в браузере. Сервер и установка не нужны — всё работает локально.
+Онлайн: **https://polishtrain.linkpc.net/textbook/**
+
+Без интернета: открой файл `exercises/index.html` в браузере. Сервер и установка не нужны — всё работает локально.
 
 ---
 
@@ -82,7 +86,9 @@ Interaktywne ćwiczenia z gramatyki języka polskiego oparte na podręczniku **B
 
 ### Jak używać
 
-Otwórz plik `exercises/index.html` w przeglądarce. Nie jest potrzebny serwer ani instalacja — wszystko działa lokalnie.
+Online: **https://polishtrain.linkpc.net/textbook/**
+
+Offline: otwórz plik `exercises/index.html` w przeglądarce. Nie jest potrzebny serwer ani instalacja — wszystko działa lokalnie.
 
 ---
 
