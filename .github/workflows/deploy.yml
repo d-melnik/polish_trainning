@@ -12,7 +12,7 @@ jobs:
       - name: Pull latest code on server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 5.253.84.234
+          host: 62.105.222.143
           username: root
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
