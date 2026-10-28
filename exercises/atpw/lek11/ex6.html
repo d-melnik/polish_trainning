@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VI — Zamień na liczbę mnogą</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 11. Polacy nie są tak towarzyscy jak Włosi</h1>
+<h2>Ćwiczenie VI — Zamień na liczbę mnogą</h2>
+<div class="chapter-info">Strona 101–102 podręcznika. Mianownik liczby mnogiej rodzaju męskoosobowego</div>
+<div class="exercise-container">
+<p class="instruction">Proszę zamienić na liczbę mnogą (rodzaj męskoosobowy i niemęskoosobowy). Wpisz całe zdanie.</p>
+<p style="background:#eafaf1;border-left:3px solid #27ae60;padding:6px 12px;margin:8px 0;border-radius:0 4px 4px 0"><b>0.</b> Ten profesor jest znany. — <b>Ci profesorowie są znani.</b> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span></p>
+<ol class="ex-list"><li>Ten Włoch to świetny kucharz.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>1</sup></li><li>Człowiek, który pyta mnie o drogę, to cudzoziemiec.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>2</sup></li><li>Jaki jest twój nauczyciel?<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>3</sup></li><li>Czy tamten pracownik jest doświadczony?<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>4</sup></li><li>Tamten pan jest zmęczony.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>5</sup></li><li>Mój dziadek to emeryt.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>6</sup></li><li>Nasz gość jest miły.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>7</sup></li><li>To jest popularny polski artysta.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>8</sup></li><li>Ich ojciec jest mądry.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>9</sup></li><li>Człowiek, który tam stoi, to Rosjanin.<br><input class="answer-input" type="text" size="56" autocomplete="off"><sup>10</sup></li></ol>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex7.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = [["Ci Włosi to świetni kucharze.", "Ci Włosi to świetni kucharze"], ["Ludzie, którzy pytają mnie o drogę, to cudzoziemcy.", "Ludzie, którzy pytają mnie o drogę, to cudzoziemcy"], ["Jacy są twoi nauczyciele?", "Jacy są twoi nauczyciele"], ["Czy tamci pracownicy są doświadczeni?", "Czy tamci pracownicy są doświadczeni"], ["Tamci panowie są zmęczeni.", "Tamci panowie są zmęczeni"], ["Moi dziadkowie to emeryci.", "Moi dziadkowie to emeryci"], ["Nasi goście są mili.", "Nasi goście są mili"], ["To są popularni polscy artyści.", "To są popularni polscy artyści"], ["Ich ojcowie są mądrzy.", "Ich ojcowie są mądrzy"], ["Ludzie, którzy tam stoją, to Rosjanie.", "Ludzie, którzy tam stoją, to Rosjanie"]];
+    checkExercise(answers);
+}
+</script>
+</body></html>

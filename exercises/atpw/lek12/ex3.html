@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>III — Dopasuj wyrazy do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 12. Oczywiście, że jestem tolerancyjny, ale...</h1>
+<h2>Ćwiczenie III — Dopasuj wyrazy do definicji</h2>
+<div class="chapter-info">Strona 110 podręcznika. Biernik liczby mnogiej. Dopełniacz i biernik rodzaju męskoosobowego. Negacja</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyrazy do definicji. Pozycja 0 (dentysta – G) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex2.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["dentysta", "drużyna", "tolerancja", "doręczyciel", "egoista", "rasizm", "krętacz", "żenada", "donosiciel", "preferencje", "kreator mody"],
+    ["to po prostu listonosz", "są wtedy, gdy lubisz coś najbardziej", "jest wtedy, gdy przeszkadza nam u ludzi inny kolor skóry", "grupa ludzi, która razem coś robi, w coś gra…", "on chętnie wyda każdy sekret i każdą tajemnicę", "jest ci niezręcznie i jesteś zakłopotany…", "lekarz, który leczy zęby", "on zawsze oszukuje", "ktoś, kto decyduje o tym, jak się ubieramy", "jest wtedy, kiedy szanujesz przekonania i zachowania innych ludzi", "myśli tylko o sobie"],
+    {"0": 6, "1": 3, "2": 9, "3": 0, "4": 10, "5": 2, "6": 7, "7": 5, "8": 4, "9": 1, "10": 8},
+    {"0": 6}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>
