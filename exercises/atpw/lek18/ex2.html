@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II — Dopasuj wyraz do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 18. Na łonie natury</h1>
+<h2>Ćwiczenie II — Dopasuj wyraz do definicji</h2>
+<div class="chapter-info">Strona 171 podręcznika. Przyimki z podwójną rekcją (na wieś / na wsi)</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyraz do definicji. Pozycja 0 (bryczesy – F) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["bryczesy", "ranczo", "sierść", "kuc", "sztaluga", "przenieść na płótno", "przeceniać kogoś / coś", "oficerki", "siodło", "kask", "pastwisko"],
+    ["skórzane buty na płaskim obcasie, z wysoką, sztywną cholewą", "ocenić kogoś lub coś zbyt wysoko", "ochronne nakrycie głowy w kształcie hełmu", "stojak, najczęściej o trzech nogach, skonstruowany z listew, na którym malarz umieszcza obraz w czasie malowania", "okrywa włosowa większości zwierząt z gatunku ssaków", "specjalne spodnie do jazdy konnej", "wielkie gospodarstwo rolne, zwykle hodowlane", "siedzenie wkładane na grzbiet konia, służy do jazdy wierzchem", "teren porośnięty trawą, na którym pasie się bydło", "niewielki koń o wysokości nieprzekraczającej 148 centymetrów", "namalować obraz, sportretować, uwiecznić coś"],
+    {"0": 5, "1": 6, "2": 4, "3": 9, "4": 3, "5": 10, "6": 1, "7": 0, "8": 7, "9": 2, "10": 8},
+    {"0": 5}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>

@@ -40,6 +40,12 @@ Online: **https://polishtrain.linkpc.net/textbook/**
 
 Offline: open `exercises/index.html` in a browser — no server or installation required. All exercises run locally.
 
+### Second textbook — *A to polski właśnie* (part 1)
+
+A separate set of exercises is based on **P. Garncarek (ed.) et al., „A to polski właśnie", part 1** (Warsaw 2016) — 19 lessons, 145 exercises.
+Only exercises with unambiguous answers in the textbook key (pp. 185–199) are included; open-ended tasks are omitted.
+Start here: `exercises/atpw/index.html` (also linked from the main page).
+
 ---
 
 ## 🇷🇺 Русский
@@ -64,6 +70,12 @@ Offline: open `exercises/index.html` in a browser — no server or installation 
 Онлайн: **https://polishtrain.linkpc.net/textbook/**
 
 Без интернета: открой файл `exercises/index.html` в браузере. Сервер и установка не нужны — всё работает локально.
+
+### Второй учебник — *A to polski właśnie* (часть 1)
+
+Отдельный набор упражнений сделан по учебнику **P. Garncarek (ред.) и др., «A to polski właśnie», часть 1** (Варшава, 2016) — 19 уроков, 145 упражнений.
+Взяты только задания с однозначными ответами в ключе учебника (стр. 185–199); открытые задания (придумать, описать) пропущены.
+Начало: `exercises/atpw/index.html` (ссылка есть и на главной странице).
 
 ---
 
@@ -90,6 +102,14 @@ Online: **https://polishtrain.linkpc.net/textbook/**
 
 Offline: otwórz plik `exercises/index.html` w przeglądarce. Nie jest potrzebny serwer ani instalacja — wszystko działa lokalnie.
 
+### Drugi podręcznik — *A to polski właśnie* (część 1)
+
+Osobny zestaw ćwiczeń powstał na podstawie podręcznika **P. Garncarek (red.) i in., „A to polski właśnie", cz. 1** (Warszawa 2016) — 19 lekcji, 145 ćwiczeń.
+Uwzględniono tylko ćwiczenia z jednoznacznymi odpowiedziami w kluczu podręcznika (str. 185–199); zadania otwarte pominięto.
+Start: `exercises/atpw/index.html` (link jest też na stronie głównej).
+
 ---
 
 *Based on: Bartłomiej Maliszewski, „Gramatyka z kulturą. Przez osoby", Wydawnictwo Uniwersytetu Marii Curie-Skłodowskiej, Lublin 2023*
+
+*and: Piotr Garncarek (red.), Anna Rabczuk, Marta Skura, Magdalena Stasieczek-Górna, Aleksandra Święcka, Natalia Yaumen, „A to polski właśnie", cz. 1, Fundacja „Pomoc Polakom na Wschodzie", Warszawa 2016*

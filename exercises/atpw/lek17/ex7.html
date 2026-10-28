@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VII — Dopasuj wyraz do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 17. Ruch to zdrowie</h1>
+<h2>Ćwiczenie VII — Dopasuj wyraz do definicji</h2>
+<div class="chapter-info">Strona 165 podręcznika. Aspekt czasowników ruchu. Zasady pisowni małą literą</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyraz do definicji. Pozycja 0 (ścieżka rowerowa – F) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex5.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ro1.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["ścieżka rowerowa", "skręcać", "meta", "chodzić piechotą", "półmaraton", "raz dwa", "dać radę", "wycieczka", "rower miejski", "zakupy", "samoobsługowe"],
+    ["bieg nie tak długi jak maraton", "po to chodzi się do sklepu", "poradzić sobie mimo problemów", "tam kończy się każdy wyścig", "obsługiwanie samego siebie w sklepie lub wypożyczalni", "trasa wyznaczona tylko dla rowerzystów", "bardzo szybko", "iść lub jechać, ale nie prosto", "możesz na nim jeździć, chociaż nie jest twój", "iść albo jechać gdzieś dla przyjemności", "korzystać z własnych nóg"],
+    {"0": 5, "1": 7, "2": 3, "3": 10, "4": 0, "5": 6, "6": 2, "7": 9, "8": 8, "9": 1, "10": 4},
+    {"0": 5}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>

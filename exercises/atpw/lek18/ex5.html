@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V — Idę — jestem</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 18. Na łonie natury</h1>
+<h2>Ćwiczenie V — Idę — jestem</h2>
+<div class="chapter-info">Strona 174 podręcznika. Przyimki z podwójną rekcją (na wieś / na wsi)</div>
+<div class="exercise-container">
+<p class="instruction">Uzupełnij tabelę: formom z biernikiem (dokąd idę?) dopisz formy z miejscownikiem lub narzędnikiem (gdzie jestem?).</p>
+<table class="fill-table"><tr><th>Idę…</th><th>Jestem…</th></tr><tr><td>na pole</td><td><b>na polu</b></td></tr><tr><td>nad rzekę</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>1</sup></td></tr><tr><td>w góry</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>2</sup></td></tr><tr><td>nad morze</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>3</sup></td></tr><tr><td>nad jezioro</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>4</sup></td></tr><tr><td>na lekcję jazdy konnej</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>5</sup></td></tr><tr><td>na podwórko</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>6</sup></td></tr><tr><td>nad strumień</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>7</sup></td></tr><tr><td>na wycieczkę górską</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>8</sup></td></tr><tr><td>na łąkę</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>9</sup></td></tr><tr><td>na ognisko</td><td><input class="answer-input" type="text" size="24" autocomplete="off"><sup>10</sup></td></tr></table>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex4.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex6.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["nad rzeką", "w górach", "nad morzem", "nad jeziorem", "na lekcji jazdy konnej", "na podwórku", "nad strumieniem", "na wycieczce górskiej", "na łące", "na ognisku"];
+    checkExercise(answers);
+}
+</script>
+</body></html>
