@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II — Dopasuj wyrazy i zwroty do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 6. Czarna owca czy biały kruk?</h1>
+<h2>Ćwiczenie II — Dopasuj wyrazy i zwroty do definicji</h2>
+<div class="chapter-info">Strona 56 podręcznika. Powtórzenie czasu teraźniejszego – koniugacje III i IV. Zasady pisowni „rz”</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyrazy i zwroty do definicji. Pozycja 0 (nieprawdopodobne – D) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="../lek05/nu3.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["nieprawdopodobne", "schronisko", "umysł ścisły", "czarna owca", "piwnica", "czasopismo", "biały kruk", "łeb jak sklep", "gamoń", "umierać z nudów", "unikatowy"],
+    ["ktoś mało inteligentny", "pomieszczenie pod domem", "miejsce dla bezdomnych zwierząt", "coś, w co trudno uwierzyć", "gazeta, która jest wydawana co jakiś czas", "bardzo rzadko spotykany", "osoba mająca zdolności techniczne, matematyczne", "zupełnie nic nie robić", "o kimś, kto ma wyjątkową wiedzę na jakiś temat", "osoba, która jest gorsza od innych i nie pasuje do grupy", "coś bardzo rzadko spotykanego"],
+    {"0": 3, "1": 2, "2": 6, "3": 9, "4": 1, "5": 4, "6": 10, "7": 8, "8": 0, "9": 7, "10": 5},
+    {"0": 3}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>

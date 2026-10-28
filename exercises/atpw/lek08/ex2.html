@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II — Dopasuj wyraz do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 8. Sposób na jesienną chandrę</h1>
+<h2>Ćwiczenie II — Dopasuj wyraz do definicji</h2>
+<div class="chapter-info">Strona 74 podręcznika. Powtórzenie dopełniacza liczby pojedynczej. Zaimki. Negacja. Zasady pisowni „ż”</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyraz do definicji. Pozycja 0 (koktajl – D) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["koktajl", "rozprawka", "wena", "chandra", "schronisko", "wolontariusz", "przepis", "menu", "dietetyczny", "woda sodowa", "stresujący"],
+    ["Stan przygnębienia, złe samopoczucie, apatia.", "Wywołujący presję, stres, strach.", "Zdrowy, niskokaloryczny.", "Napój orzeźwiający z owoców, mleka i dodatków smakowych.", "Osoba dobrowolnie pracująca bez wynagrodzenia w celu niesienia pomocy innym.", "Forma wypowiedzi pisemnej w szkole.", "Woda pitna sztucznie nasycona dwutlenkiem węgla.", "Zapał twórczy, zdolność, łatwość tworzenia.", "Karta potraw w restauracji.", "Miejsce, gdzie można się schronić.", "Informacja o tym, w jaki sposób przygotować jakąś potrawę."],
+    {"0": 3, "1": 5, "2": 7, "3": 0, "4": 9, "5": 4, "6": 10, "7": 8, "8": 2, "9": 6, "10": 1},
+    {"0": 3}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>

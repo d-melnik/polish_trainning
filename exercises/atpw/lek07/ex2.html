@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II — Dopasuj wyrazy do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 7. To niesprawiedliwe, że musimy się uczyć w taką pogodę!</h1>
+<h2>Ćwiczenie II — Dopasuj wyrazy do definicji</h2>
+<div class="chapter-info">Strona 65 podręcznika. Biernik liczby pojedynczej. Zaimki osobowe</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyrazy do definicji. Pozycja 0 (lornetka – H) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["lornetka", "pilnować kogoś", "wypracowanie", "ocena", "upał", "masz rację", "ściąga / ściągawka", "głuchy", "ślepy", "taras widokowy", "ryzykowny"],
+    ["Wysoka temperatura, gorące powietrze.", "Uważać, żeby komuś nie stało się nic złego; chronić kogoś.", "Osoba, która nie słyszy lub słabo słyszy.", "Miejsce położone wysoko, służące do oglądania krajobrazu.", "Kawałek papieru z informacjami, służący jako pomoc na egzaminie.", "Wiążący się z ryzykiem, niebezpieczny.", "Osoba, która nie widzi, niewidomy.", "Przyrząd optyczny do obserwowania z dużej odległości.", "Praca pisemna w szkole.", "Zgadzam się z tobą; to, co mówisz, jest słuszne.", "Miara progresu ucznia w nauce, stopień."],
+    {"0": 7, "1": 1, "2": 8, "3": 10, "4": 0, "5": 9, "6": 4, "7": 2, "8": 6, "9": 3, "10": 5},
+    {"0": 7}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>
