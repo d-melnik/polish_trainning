@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>III — Uzupełnij pytania</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 1. Sprawdź, zanim zaczniesz</h1>
+<h2>Ćwiczenie III — Uzupełnij pytania</h2>
+<div class="chapter-info">Strona 9 podręcznika. Podstawowe wiadomości dotyczące gramatyki</div>
+<div class="exercise-container">
+<p class="instruction">Czy potrafisz uzupełnić pytania?</p>
+<p style="background:#eafaf1;border-left:3px solid #27ae60;padding:6px 12px;margin:8px 0;border-radius:0 4px 4px 0"><b>0.</b> <b>Kiedy</b> do nas przyjdziesz? <i>Przyjdę do was w weekend.</i> <span style="background:#27ae60;color:#fff;border-radius:3px;padding:1px 6px;font-size:.85em">✓ przykład</span></p>
+<ol class="ex-list"><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>1</sup> będziecie jeść na kolację? <i>Na kolację będziemy jeść sałatkę z pomidorami.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>2</sup> gra główną rolę w tym filmie? <i>Główną rolę w tym filmie gra Jerzy Stuhr.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>3</sup> mieszkasz? <i>Mieszkam w Warszawie.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>4</sup> jesteś? <i>Jestem z Polski.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>5</sup> pójdziemy dziś po szkole? <i>Pójdziemy do kawiarni.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>6</sup> jest twój nowy kolega? <i>Jest sympatyczny i bardzo przystojny.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>7</sup> miejsce w szkolnych zawodach sportowych zajęła nasza klasa? <i>Nasza klasa zajęła trzecie miejsce.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>8</sup> trwa szkolna lekcja w Polsce? <i>Lekcja w Polsce trwa 45 minut.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>9</sup> spotykasz się z kolegami z klasy? <i>Spotykam się z nimi codziennie.</i></li><li><input class="answer-input" type="text" size="10" autocomplete="off"><sup>10</sup> nie byłeś w szkole? <i>Byłem chory.</i></li></ol>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex2.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex4.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+function checkAnswers() {
+    const answers = ["Co", "Kto", "Gdzie", "Skąd", "Dokąd", "Jaki", "Które", ["Ile", "Jak długo"], "Jak często", "Dlaczego"];
+    checkExercise(answers);
+}
+</script>
+</body></html>

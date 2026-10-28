@@ -266,9 +266,11 @@ function buildPdfContent(answers, matchingObj) {
     }
 
     // ── Footer ──
+    // Pages may override the source line via <body data-source="...">
+    const source = document.body.dataset.source
+        || 'Materiały z podręcznika: B. Maliszewski, Gramatyka z kulturą. Przez osoby, Lublin 2023 • polskizkultura.com.pl';
     html += '<div class="pdf-footer">';
-    html += 'Materiały z podręcznika: B. Maliszewski, <em>Gramatyka z kulturą. Przez osoby</em>, Lublin 2023';
-    html += ' &bull; polskizkultura.com.pl';
+    html += escHtml(source);
     html += '</div>';
     html += '</div>';
 

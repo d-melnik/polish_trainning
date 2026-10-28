@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>II — Dopasuj wyraz do definicji</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-source="Materiały z podręcznika: P. Garncarek (red.) i in., A to polski właśnie, cz. 1, Warszawa 2016">
+<h1>Lekcja 3. Masz problem</h1>
+<h2>Ćwiczenie II — Dopasuj wyraz do definicji</h2>
+<div class="chapter-info">Strona 25 podręcznika. Narzędnik liczby pojedynczej i mnogiej. Czasowniki i przyimki o rekcji narzędnikowej</div>
+<div class="exercise-container">
+<p class="instruction">Dopasuj wyraz do definicji. Pozycja 0 (sierota – D) jest już połączona jako przykład.</p>
+<div id="matching-container"></div>
+<div class="buttons">
+    <button class="btn btn-check" onclick="checkAnswers()">Sprawdź ✓</button>
+    <button class="btn btn-clear" onclick="clearExercise()">Wyczyść ✕</button>
+    <a href="ex1.html" class="btn btn-nav">← Wstecz</a>
+    <a href="../index.html" class="btn btn-nav">Menu</a>
+    <a href="ex3.html" class="btn btn-nav">Dalej →</a>
+</div>
+<div id="result" class="result"></div>
+</div>
+<script src="../../script.js"></script>
+<script>
+const exercise = new MatchingExercise(
+    "matching-container",
+    ["sierota", "słodycze", "ekologia", "poglądy", "infantylne", "samobójca", "szczerość", "nadwaga", "fajne", "zupełnie", "zdrowy rozsądek"],
+    ["Mówienie prawdy.", "Całkowicie, sto procent.", "Za dużo kilogramów.", "Ktoś, kogo rodzice już nie żyją.", "Ciekawe, ładne, dobre, interesujące, miłe.", "Osoba, która pozbawia się życia.", "Mądrość, inteligencja, racjonalne myślenie.", "Niedojrzałe, dziecinne.", "Ciastka, lody, torty, czekolada.", "Badanie i ochrona przyrody.", "Przekonania, przemyślenia, własny punkt widzenia."],
+    {"0": 3, "1": 8, "2": 9, "3": 10, "4": 7, "5": 5, "6": 0, "7": 2, "8": 4, "9": 1, "10": 6},
+    {"0": 3}
+);
+function checkAnswers() { exercise.check(); }
+function clearExercise() { exercise.clear(); }
+
+</script>
+</body></html>
